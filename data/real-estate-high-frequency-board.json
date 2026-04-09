@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-09T17:34:41+08:00",
+  "updated_at": "2026-04-09T17:41:23+08:00",
   "source": "input_data/bingshan_index.xlsx + input_data/new_house.xlsx",
   "stale_after_minutes": 1440,
   "status": "ok",
