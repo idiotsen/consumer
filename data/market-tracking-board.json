@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-09T23:26:57+08:00",
+  "updated_at": "2026-04-10T00:09:07+08:00",
   "source": "Tushare sw_daily + fina_indicator_vip + index_daily(000985.CSI) + broker_recommend + index_member + index_classify(SW2021)",
   "stale_after_minutes": 1440,
   "status": "ok",
