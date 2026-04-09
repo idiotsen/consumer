@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-09T17:36:30+08:00",
+  "updated_at": "2026-04-09T23:24:33+08:00",
   "source": "Tushare sw_daily + index_member + fina_indicator_vip",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -28,32 +28,32 @@
           "enabled": true,
           "status": "ready",
           "status_message": "用申万地产指数观察股价、PB、ROE 历史位置与交易拥挤度。",
-          "latest_trade_date": "2026-04-08",
-          "latest_close": 2038.72,
-          "latest_pct_change": 3.72,
-          "pb": 0.81,
-          "amount": 1566176.0,
-          "float_mv": 47032953.0,
+          "latest_trade_date": "2026-04-09",
+          "latest_close": 2014.9,
+          "latest_pct_change": -1.17,
+          "pb": 0.8,
+          "amount": 1557081.0,
+          "float_mv": 46625621.0,
           "member_count": 99,
           "pb_percentiles": {
-            "three_year": 71.3,
-            "five_year": 43.8
+            "three_year": 65.5,
+            "five_year": 40.0
           },
           "crowdedness": {
-            "amount_pct": 29.8,
+            "amount_pct": 29.4,
             "turnover_ratio_pct": 33.7,
-            "score": 31.8,
+            "score": 31.6,
             "label": "不拥挤"
           },
           "pb_roe_alignment": {
-            "pb_pct_3y": 71.3,
-            "pb_pct_5y": 43.8,
+            "pb_pct_3y": 65.5,
+            "pb_pct_5y": 40.0,
             "roe_pct_20q": 21.1,
             "current_roe": -0.18,
             "current_roe_period": "2025-12-31",
-            "match_gap": 22.7,
-            "status": "expensive_vs_roe",
-            "label": "估值高于业绩"
+            "match_gap": 18.9,
+            "status": "balanced",
+            "label": "估值与业绩基本匹配"
           }
         },
         {
@@ -89,30 +89,30 @@
           "enabled": true,
           "status": "ready",
           "status_message": "关注调味发酵品板块的 PB 位置、ROE 韧性与成交拥挤度。",
-          "latest_trade_date": "2026-04-08",
-          "latest_close": 7249.17,
-          "latest_pct_change": 1.12,
+          "latest_trade_date": "2026-04-09",
+          "latest_close": 7251.16,
+          "latest_pct_change": 0.03,
           "pb": 3.69,
-          "amount": 336149.0,
-          "float_mv": 13506343.0,
+          "amount": 381932.0,
+          "float_mv": 13510051.0,
           "member_count": 14,
           "pb_percentiles": {
-            "three_year": 33.6,
-            "five_year": 20.1
+            "three_year": 33.7,
+            "five_year": 20.2
           },
           "crowdedness": {
-            "amount_pct": 77.4,
-            "turnover_ratio_pct": 73.4,
-            "score": 75.4,
-            "label": "中性"
+            "amount_pct": 87.3,
+            "turnover_ratio_pct": 84.9,
+            "score": 86.1,
+            "label": "拥挤"
           },
           "pb_roe_alignment": {
-            "pb_pct_3y": 33.6,
-            "pb_pct_5y": 20.1,
+            "pb_pct_3y": 33.7,
+            "pb_pct_5y": 20.2,
             "roe_pct_20q": 100.0,
             "current_roe": 11.15,
             "current_roe_period": "2025-12-31",
-            "match_gap": -79.9,
+            "match_gap": -79.8,
             "status": "cheap_vs_roe",
             "label": "业绩强于估值"
           }
@@ -124,30 +124,30 @@
           "enabled": true,
           "status": "ready",
           "status_message": "关注食品加工板块的 PB 位置、ROE 韧性与成交拥挤度。",
-          "latest_trade_date": "2026-04-08",
-          "latest_close": 14355.14,
-          "latest_pct_change": 0.72,
-          "pb": 2.26,
-          "amount": 391455.0,
-          "float_mv": 10894884.0,
+          "latest_trade_date": "2026-04-09",
+          "latest_close": 14235.53,
+          "latest_pct_change": -0.83,
+          "pb": 2.24,
+          "amount": 276855.0,
+          "float_mv": 10804109.0,
           "member_count": 25,
           "pb_percentiles": {
-            "three_year": 37.7,
-            "five_year": 22.6
+            "three_year": 29.8,
+            "five_year": 17.9
           },
           "crowdedness": {
-            "amount_pct": 75.0,
-            "turnover_ratio_pct": 70.6,
-            "score": 72.8,
-            "label": "中性"
+            "amount_pct": 30.2,
+            "turnover_ratio_pct": 24.2,
+            "score": 27.2,
+            "label": "不拥挤"
           },
           "pb_roe_alignment": {
-            "pb_pct_3y": 37.7,
-            "pb_pct_5y": 22.6,
+            "pb_pct_3y": 29.8,
+            "pb_pct_5y": 17.9,
             "roe_pct_20q": 89.5,
             "current_roe": 7.47,
             "current_roe_period": "2025-12-31",
-            "match_gap": -66.9,
+            "match_gap": -71.6,
             "status": "cheap_vs_roe",
             "label": "业绩强于估值"
           }
@@ -177,30 +177,30 @@
           "enabled": true,
           "status": "ready",
           "status_message": "关注酒店板块的 PB 位置、ROE 修复与交易拥挤度。",
-          "latest_trade_date": "2026-04-08",
-          "latest_close": 3118.9,
-          "latest_pct_change": 3.63,
-          "pb": 1.72,
-          "amount": 116372.0,
-          "float_mv": 2603694.0,
+          "latest_trade_date": "2026-04-09",
+          "latest_close": 3039.84,
+          "latest_pct_change": -2.53,
+          "pb": 1.68,
+          "amount": 91973.0,
+          "float_mv": 2537697.0,
           "member_count": 5,
           "pb_percentiles": {
-            "three_year": 55.6,
-            "five_year": 33.3
+            "three_year": 51.9,
+            "five_year": 31.2
           },
           "crowdedness": {
-            "amount_pct": 69.4,
-            "turnover_ratio_pct": 64.3,
-            "score": 66.8,
+            "amount_pct": 52.8,
+            "turnover_ratio_pct": 47.2,
+            "score": 50.0,
             "label": "中性"
           },
           "pb_roe_alignment": {
-            "pb_pct_3y": 55.6,
-            "pb_pct_5y": 33.3,
+            "pb_pct_3y": 51.9,
+            "pb_pct_5y": 31.2,
             "roe_pct_20q": 100.0,
             "current_roe": 6.02,
             "current_roe_period": "2025-12-31",
-            "match_gap": -66.7,
+            "match_gap": -68.8,
             "status": "cheap_vs_roe",
             "label": "业绩强于估值"
           }
@@ -212,30 +212,30 @@
           "enabled": true,
           "status": "ready",
           "status_message": "关注旅游及景区板块的 PB 位置、ROE 修复与交易拥挤度。",
-          "latest_trade_date": "2026-04-08",
-          "latest_close": 2356.72,
-          "latest_pct_change": 3.69,
-          "pb": 3.04,
-          "amount": 361281.0,
-          "float_mv": 7692794.0,
+          "latest_trade_date": "2026-04-09",
+          "latest_close": 2286.61,
+          "latest_pct_change": -2.97,
+          "pb": 2.95,
+          "amount": 361562.0,
+          "float_mv": 7463945.0,
           "member_count": 24,
           "pb_percentiles": {
-            "three_year": 51.5,
-            "five_year": 63.7
+            "three_year": 42.8,
+            "five_year": 56.0
           },
           "crowdedness": {
-            "amount_pct": 25.4,
-            "turnover_ratio_pct": 22.2,
-            "score": 23.8,
+            "amount_pct": 25.8,
+            "turnover_ratio_pct": 22.6,
+            "score": 24.2,
             "label": "不拥挤"
           },
           "pb_roe_alignment": {
-            "pb_pct_3y": 51.5,
-            "pb_pct_5y": 63.7,
+            "pb_pct_3y": 42.8,
+            "pb_pct_5y": 56.0,
             "roe_pct_20q": 100.0,
             "current_roe": 8.67,
             "current_roe_period": "2025-12-31",
-            "match_gap": -36.3,
+            "match_gap": -44.0,
             "status": "cheap_vs_roe",
             "label": "业绩强于估值"
           }
