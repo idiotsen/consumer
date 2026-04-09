@@ -1,0 +1,340 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "updated_at",
+    "source",
+    "stale_after_minutes",
+    "status",
+    "status_message",
+    "board_id",
+    "title",
+    "description",
+    "sections"
+  ],
+  "properties": {
+    "updated_at": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stale_after_minutes": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": ["ok", "partial", "error"]
+    },
+    "status_message": {
+      "type": "string"
+    },
+    "board_id": {
+      "type": "string",
+      "const": "macro"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["section_id", "title", "description", "status"],
+        "properties": {
+          "section_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": ["ready", "coming_soon", "error"]
+          },
+          "placeholder_message": {
+            "type": "string"
+          },
+          "chart": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "chart_id",
+              "title",
+              "description",
+              "chart_type",
+              "x_axis_label",
+              "latest_label",
+              "latest_time_text",
+              "labels",
+              "series"
+            ],
+            "properties": {
+              "chart_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              },
+              "chart_type": {
+                "type": "string",
+                "enum": ["line", "combo"]
+              },
+              "x_axis_label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "latest_label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "latest_time_text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "show_point_markers": {
+                "type": "boolean"
+              },
+              "latest_changes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["label", "basis_label", "direction", "delta_value", "unit"],
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "basis_label": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "direction": {
+                      "type": "string",
+                      "enum": ["up", "down", "flat"]
+                    },
+                    "delta_value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "labels": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string"
+                }
+              },
+              "series": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["series_id", "label", "unit", "y_axis_id", "span_gaps", "values"],
+                  "properties": {
+                    "series_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "label": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "unit": {
+                      "type": "string"
+                    },
+                    "y_axis_id": {
+                      "type": "string",
+                      "enum": ["left", "right"]
+                    },
+                    "render_type": {
+                      "type": "string",
+                      "enum": ["line", "bar"]
+                    },
+                    "stack": {
+                      "type": "string"
+                    },
+                    "span_gaps": {
+                      "type": "boolean"
+                    },
+                    "show_point_markers": {
+                      "type": "boolean"
+                    },
+                    "values": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": ["number", "null"]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "charts": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "chart_id",
+                "title",
+                "description",
+                "chart_type",
+                "x_axis_label",
+                "latest_label",
+                "latest_time_text",
+                "labels",
+                "series"
+              ],
+              "properties": {
+                "chart_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "description": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "chart_type": {
+                  "type": "string",
+                  "enum": ["line", "combo"]
+                },
+                "x_axis_label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "latest_label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "latest_time_text": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "show_point_markers": {
+                  "type": "boolean"
+                },
+                "latest_changes": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": ["label", "basis_label", "direction", "delta_value", "unit"],
+                    "properties": {
+                      "label": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "basis_label": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "direction": {
+                        "type": "string",
+                        "enum": ["up", "down", "flat"]
+                      },
+                      "delta_value": {
+                        "type": "number"
+                      },
+                      "unit": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "labels": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "series": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": ["series_id", "label", "unit", "y_axis_id", "span_gaps", "values"],
+                    "properties": {
+                      "series_id": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "label": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "unit": {
+                        "type": "string"
+                      },
+                    "y_axis_id": {
+                      "type": "string",
+                      "enum": ["left", "right"]
+                    },
+                    "render_type": {
+                      "type": "string",
+                      "enum": ["line", "bar"]
+                    },
+                    "stack": {
+                      "type": "string"
+                    },
+                    "span_gaps": {
+                      "type": "boolean"
+                    },
+                    "show_point_markers": {
+                      "type": "boolean"
+                    },
+                    "values": {
+                      "type": "array",
+                      "minItems": 1,
+                        "items": {
+                          "type": ["number", "null"]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

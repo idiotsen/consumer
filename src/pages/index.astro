@@ -1,0 +1,33 @@
+---
+import { withBasePath } from "@/lib/site";
+
+const targetPath = withBasePath("/macro");
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>跳转至宏观看板</title>
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content={`0;url=${targetPath}`} />
+    <link rel="canonical" href={targetPath} />
+  </head>
+  <body style="margin:0;font-family:'IBM Plex Sans','Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;background:#f6f9fc;color:#132236;">
+    <script is:inline define:vars={{ targetPath }}>
+      window.location.replace(targetPath);
+    </script>
+    <main style="display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px;">
+      <div style="max-width:520px;border:1px solid rgba(148,163,184,0.25);border-radius:24px;background:#fff;padding:32px;box-shadow:0 24px 60px -30px rgba(15,23,42,0.25);text-align:center;">
+        <p style="margin:0 0 12px;font-size:14px;font-weight:600;color:#0f766e;letter-spacing:0.08em;text-transform:uppercase;">Macro Board</p>
+        <h1 style="margin:0 0 12px;font-size:28px;line-height:1.2;color:#0f172a;">正在进入宏观看板</h1>
+        <p style="margin:0;font-size:15px;line-height:1.7;color:#475569;">
+          如果页面没有自动跳转，请点击
+          <a href={targetPath} style="color:#0f766e;font-weight:600;text-decoration:none;">这里</a>
+          继续访问。
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+---
+import { formatDateOnly, formatNullableNumber } from "@/lib/data";
+import type { SectorSeriesItem } from "@/lib/types";
+
+interface Props {
+  title: string;
+  description: string;
+  series: SectorSeriesItem[];
+}
+
+const { title, description, series } = Astro.props;
+const chartId = `sector-chart-${crypto.randomUUID()}`;
+const latestTimeText =
+  series
+    .map((item) => item.latest_trade_date)
+    .filter((value): value is string => Boolean(value))
+    .sort()
+    .at(-1) ?? null;
+---
+
+<section class="surface-panel overflow-hidden">
+  <div class="border-b border-slate-200 px-5 py-4">
+    <h3 class="section-title">{title}</h3>
+    <p class="mt-2 text-sm leading-6 text-slate-500">{description}</p>
+  </div>
+
+  {
+    series.length > 0 ? (
+      <>
+        <div
+          class="h-[22rem] p-5"
+          data-sector-trend-chart
+          data-canvas-id={chartId}
+          data-payload-id={`${chartId}-payload`}
+        >
+          <canvas id={chartId}></canvas>
+        </div>
+        <div class="px-5 pb-4 text-left text-xs text-slate-400">
+          数据截至 {latestTimeText ?? "待补充"}
+        </div>
+
+        <div class="grid gap-4 border-t border-slate-200 bg-slate-50/70 p-5 md:grid-cols-2">
+          {
+            series.map((item) => {
+              const latestNormalized = item.normalized_close[item.normalized_close.length - 1] ?? null;
+              const latestClose = item.close[item.close.length - 1] ?? null;
+              const latestRelative = item.relative_to_benchmark[item.relative_to_benchmark.length - 1] ?? null;
+              return (
+                <div class="rounded-2xl border border-slate-200 bg-white px-4 py-3">
+                  <div class="flex items-start justify-between gap-4">
+                    <div>
+                      <p class="text-sm font-semibold text-slate-800">{item.label}</p>
+                      <p class="mt-1 text-xs text-slate-500">{formatDateOnly(item.latest_trade_date ?? undefined)}</p>
+                    </div>
+                    <span class="rounded-full bg-slate-900 px-3 py-1 text-xs font-semibold text-white">
+                      起点 {formatNullableNumber(latestNormalized, 1)}
+                    </span>
+                  </div>
+                  <p class="mt-3 text-sm text-slate-500">最新收盘：{formatNullableNumber(latestClose, 2)}</p>
+                  <p class="mt-1 text-sm text-slate-500">
+                    相对{item.benchmark_label}：{formatNullableNumber(latestRelative, 1)}
+                  </p>
+                </div>
+              );
+            })
+          }
+        </div>
+      </>
+    ) : (
+      <div class="p-5 text-sm text-slate-500">当前没有可绘制的行业走势数据。</div>
+    )
+  }
+</section>
+
+<script
+  is:inline
+  type="application/json"
+  id={`${chartId}-payload`}
+  set:html={JSON.stringify(series)}
+></script>
+
+<script>
+  import { Chart, registerables } from "chart.js";
+
+  Chart.register(...registerables);
+
+  const palette = ["#1d4ed8", "#0f766e", "#ea580c", "#dc2626"];
+
+  document.querySelectorAll("[data-sector-trend-chart]").forEach((root) => {
+    if (!(root instanceof HTMLElement)) {
+      return;
+    }
+
+    const canvasId = root.dataset.canvasId;
+    const payloadId = root.dataset.payloadId;
+    if (!canvasId || !payloadId) {
+      return;
+    }
+
+    const canvas = document.getElementById(canvasId);
+    const payloadNode = document.getElementById(payloadId);
+    if (!(canvas instanceof HTMLCanvasElement) || !payloadNode?.textContent) {
+      return;
+    }
+
+    const payload = JSON.parse(payloadNode.textContent);
+    if (!Array.isArray(payload) || payload.length === 0) {
+      return;
+    }
+
+    const labels = payload[0].dates;
+    Chart.getChart(canvas)?.destroy();
+
+    new Chart(canvas, {
+      type: "line",
+      data: {
+        labels,
+        datasets: payload.flatMap((item, index) => {
+          const color = palette[index % palette.length];
+          return [
+            {
+              label: `${item.label} 指数`,
+              data: item.normalized_close,
+              borderColor: color,
+              backgroundColor: `${color}1a`,
+              pointRadius: 0,
+              borderWidth: 2.5,
+              tension: 0.25,
+              fill: false,
+            },
+            {
+              label: `${item.label} / ${item.benchmark_label}`,
+              data: item.relative_to_benchmark,
+              borderColor: color,
+              backgroundColor: `${color}12`,
+              pointRadius: 0,
+              borderWidth: 2,
+              borderDash: [7, 5],
+              tension: 0.25,
+              fill: false,
+            },
+          ];
+        }),
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: {
+          mode: "index",
+          intersect: false,
+        },
+        plugins: {
+          legend: {
+            position: "bottom",
+            labels: {
+              boxWidth: 14,
+              usePointStyle: true,
+            },
+          },
+          tooltip: {
+            callbacks: {
+              label(context) {
+                const normalized = context.raw ?? null;
+                const item = payload[Math.floor(context.datasetIndex / 2)];
+                const isRelative = context.datasetIndex % 2 === 1;
+                const close = item.close?.[context.dataIndex] ?? null;
+                const benchmarkClose = item.benchmark_close?.[context.dataIndex] ?? null;
+                const pb = item.pb?.[context.dataIndex] ?? null;
+                const parts = [`${context.dataset.label}: ${normalized ?? "--"}`];
+                if (!isRelative && close !== null) {
+                  parts.push(`行业收盘 ${close}`);
+                }
+                if (isRelative && benchmarkClose !== null) {
+                  parts.push(`${item.benchmark_label} ${benchmarkClose}`);
+                }
+                if (pb !== null) {
+                  parts.push(`PB ${pb}`);
+                }
+                return parts.join(" | ");
+              },
+            },
+          },
+        },
+        scales: {
+          x: {
+            grid: {
+              color: "rgba(148, 163, 184, 0.14)",
+            },
+          },
+          y: {
+            title: {
+              display: true,
+              text: "过去一年走势，起点 = 100",
+            },
+            grid: {
+              color: "rgba(148, 163, 184, 0.14)",
+            },
+          },
+        },
+      },
+    });
+  });
+</script>

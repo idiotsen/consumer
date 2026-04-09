@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["updated_at", "source", "stale_after_minutes", "topic", "alerts", "metrics", "source_status"],
+  "properties": {
+    "updated_at": { "type": "string" },
+    "source": { "type": "string" },
+    "stale_after_minutes": { "type": "integer", "minimum": 1 },
+    "status": { "type": "string" },
+    "status_message": { "type": "string" },
+    "topic": {
+      "type": "object",
+      "required": ["slug", "title", "subtitle", "description"],
+      "properties": {
+        "slug": { "type": "string" },
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "description": { "type": "string" }
+      }
+    },
+    "alerts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["level", "title", "description"],
+        "properties": {
+          "level": { "type": "string" },
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "link": { "type": "string" }
+        }
+      }
+    },
+    "metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "value", "unit", "status", "trend", "delta_text", "description"],
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "value": { "type": ["number", "string"] },
+          "unit": { "type": "string" },
+          "status": { "type": "string" },
+          "trend": { "type": "string" },
+          "delta_text": { "type": "string" },
+          "description": { "type": "string" }
+        }
+      }
+    },
+    "source_status": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "status", "last_updated", "latency_minutes", "detail"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "status": { "type": "string" },
+          "last_updated": { "type": "string" },
+          "latency_minutes": { "type": "number" },
+          "detail": { "type": "string" }
+        }
+      }
+    },
+    "highlights": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

@@ -1,0 +1,196 @@
+---
+import type { MacroChartConfig } from "@/lib/types";
+
+interface Props {
+  chart: MacroChartConfig;
+  embedded?: boolean;
+  footerSuffix?: string;
+}
+
+const { chart, embedded = false, footerSuffix } = Astro.props;
+const chartId = `macro-combo-chart-${crypto.randomUUID()}`;
+const containerClass = embedded
+  ? "overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white shadow-[0_18px_40px_rgba(15,23,42,0.06)]"
+  : "surface-panel overflow-hidden";
+const chartHeightClass = embedded ? "h-[16.5rem] md:h-[17.5rem]" : "h-[22rem]";
+---
+
+<section class={containerClass}>
+  <div class="border-b border-slate-200 px-5 py-4">
+    <h3 class="section-title">{chart.title}</h3>
+    <p class="mt-2 text-sm leading-6 text-slate-500">{chart.description}</p>
+  </div>
+
+  <div
+    class:list={[chartHeightClass, "p-5"]}
+    data-macro-combo-chart
+    data-canvas-id={chartId}
+    data-payload-id={`${chartId}-payload`}
+  >
+    <canvas id={chartId}></canvas>
+  </div>
+  <div class="px-5 pb-4 text-left text-xs text-slate-400">
+    {chart.latest_label} {chart.latest_time_text}{footerSuffix ?? ""}
+  </div>
+</section>
+
+<script
+  is:inline
+  type="application/json"
+  id={`${chartId}-payload`}
+  set:html={JSON.stringify(chart)}
+></script>
+
+<script>
+  import { Chart, registerables } from "chart.js";
+
+  type MacroComboSeriesPayload = {
+    series_id: string;
+    label: string;
+    unit?: string;
+    y_axis_id: "left" | "right";
+    render_type?: "line" | "bar";
+    stack?: string;
+    span_gaps: boolean;
+    show_point_markers?: boolean;
+    values: Array<number | null>;
+  };
+
+  type MacroComboPayload = {
+    labels: string[];
+    x_axis_label: string;
+    series: MacroComboSeriesPayload[];
+  };
+
+  Chart.register(...registerables);
+
+  const linePalette = ["#0f766e", "#1d4ed8", "#dc2626"];
+  const barPalette = ["rgba(29, 78, 216, 0.72)", "rgba(234, 88, 12, 0.72)", "rgba(15, 118, 110, 0.72)"];
+  const barBorderPalette = ["#1d4ed8", "#ea580c", "#0f766e"];
+
+  document.querySelectorAll("[data-macro-combo-chart]").forEach((root) => {
+    if (!(root instanceof HTMLElement)) {
+      return;
+    }
+
+    const canvasId = root.dataset.canvasId;
+    const payloadId = root.dataset.payloadId;
+    if (!canvasId || !payloadId) {
+      return;
+    }
+
+    const canvas = document.getElementById(canvasId);
+    const payloadNode = document.getElementById(payloadId);
+    if (!(canvas instanceof HTMLCanvasElement) || !payloadNode?.textContent) {
+      return;
+    }
+
+    const payload = JSON.parse(payloadNode.textContent) as MacroComboPayload;
+    if (!payload || !Array.isArray(payload.labels) || !Array.isArray(payload.series)) {
+      return;
+    }
+
+    const hasRightAxis = payload.series.some((item) => item.y_axis_id === "right");
+    Chart.getChart(canvas)?.destroy();
+
+    new Chart(canvas, {
+      data: {
+        labels: payload.labels,
+        datasets: payload.series.map((item, index) => {
+          const renderType = item.render_type ?? "line";
+          const showMarkers = item.show_point_markers ?? false;
+          if (renderType === "bar") {
+            return {
+              type: "bar",
+              label: item.label,
+              data: item.values,
+              yAxisID: item.y_axis_id === "right" ? "yRight" : "yLeft",
+              stack: item.stack ?? "default",
+              backgroundColor: barPalette[index % barPalette.length],
+              borderColor: barBorderPalette[index % barBorderPalette.length],
+              borderWidth: 1,
+              borderRadius: 6,
+              borderSkipped: false,
+              order: 2,
+            };
+          }
+
+          return {
+            type: "line",
+            label: item.label,
+            data: item.values,
+            yAxisID: item.y_axis_id === "right" ? "yRight" : "yLeft",
+            borderColor: linePalette[index % linePalette.length],
+            backgroundColor: `${linePalette[index % linePalette.length]}22`,
+            pointRadius: showMarkers ? 3 : 0,
+            pointHoverRadius: showMarkers ? 4.5 : 3,
+            pointBackgroundColor: linePalette[index % linePalette.length],
+            pointBorderColor: "#ffffff",
+            pointBorderWidth: showMarkers ? 1.5 : 0,
+            borderWidth: 2.5,
+            tension: 0.25,
+            fill: false,
+            spanGaps: item.span_gaps,
+            order: 1,
+          };
+        }),
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: {
+          mode: "index",
+          intersect: false,
+        },
+        plugins: {
+          legend: {
+            position: "bottom",
+            labels: {
+              boxWidth: 14,
+              usePointStyle: true,
+            },
+          },
+          tooltip: {
+            callbacks: {
+              label(context) {
+                const item = payload.series[context.datasetIndex];
+                const value = context.raw;
+                const suffix = item?.unit ? ` ${item.unit}` : "";
+                return `${context.dataset.label}: ${value ?? "--"}${suffix}`;
+              },
+            },
+          },
+        },
+        scales: {
+          x: {
+            stacked: true,
+            title: {
+              display: true,
+              text: payload.x_axis_label,
+            },
+            grid: {
+              color: "rgba(148, 163, 184, 0.08)",
+            },
+          },
+          yLeft: {
+            type: "linear",
+            position: "left",
+            stacked: true,
+            grid: {
+              color: "rgba(148, 163, 184, 0.14)",
+            },
+          },
+          yRight: {
+            type: "linear",
+            position: "right",
+            stacked: false,
+            display: hasRightAxis,
+            grid: {
+              drawOnChartArea: false,
+            },
+          },
+        },
+      },
+    });
+  });
+</script>

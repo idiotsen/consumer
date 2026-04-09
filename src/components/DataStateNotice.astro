@@ -1,0 +1,48 @@
+---
+import { formatDateTime } from "@/lib/data";
+import type { BasePayload, LoadedPayload } from "@/lib/types";
+
+interface Props {
+  load: LoadedPayload<BasePayload>;
+}
+
+const { load } = Astro.props;
+
+const config = {
+  ready: {
+    label: "数据正常",
+    className: "border-emerald-200 bg-emerald-50 text-emerald-900",
+  },
+  partial: {
+    label: "部分数据可用",
+    className: "border-amber-200 bg-amber-50 text-amber-900",
+  },
+  stale: {
+    label: "数据可能过期",
+    className: "border-orange-200 bg-orange-50 text-orange-900",
+  },
+  missing: {
+    label: "数据文件缺失",
+    className: "border-slate-200 bg-slate-50 text-slate-800",
+  },
+  error: {
+    label: "数据加载异常",
+    className: "border-rose-200 bg-rose-50 text-rose-900",
+  },
+}[load.state];
+---
+
+<div class:list={["surface-panel p-4", config.className]}>
+  <div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+    <div>
+      <p class="text-sm font-semibold">{config.label}</p>
+      <p class="mt-1 text-sm opacity-80">
+        {load.data.status_message ?? "该页面会根据 JSON 状态自动给出空数据、过期或异常提示。"}
+      </p>
+    </div>
+    <div class="text-sm opacity-80">
+      <p>更新时间：{formatDateTime(load.data.updated_at)}</p>
+      <p>来源：{load.data.source}</p>
+    </div>
+  </div>
+</div>

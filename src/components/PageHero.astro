@@ -1,0 +1,38 @@
+---
+interface Props {
+  eyebrow: string;
+  title: string;
+  description: string;
+  chips?: string[];
+}
+
+const { eyebrow, title, description, chips = [] } = Astro.props;
+---
+
+<section class="glass-panel overflow-hidden">
+  <div class="grid gap-8 p-6 md:grid-cols-[1.6fr_1fr] md:p-8">
+    <div class="space-y-5">
+      <span class="inline-flex rounded-full border border-cyan-200 bg-cyan-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.22em] text-cyan-800">
+        {eyebrow}
+      </span>
+      <div class="space-y-3">
+        <h1 class="max-w-4xl text-3xl font-semibold tracking-tight text-slate-950 md:text-5xl">
+          {title}
+        </h1>
+        <p class="max-w-3xl text-sm leading-7 text-slate-600 md:text-base">
+          {description}
+        </p>
+      </div>
+    </div>
+
+    <div class="grid gap-3 self-start">
+      {
+        chips.map((chip) => (
+          <div class="meta-chip justify-center text-center">
+            {chip}
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

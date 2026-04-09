@@ -1,0 +1,331 @@
+---
+import type { MacroChartConfig } from "@/lib/types";
+
+interface Props {
+  chart: MacroChartConfig;
+  embedded?: boolean;
+  footerSuffix?: string;
+}
+
+const { chart, embedded = false, footerSuffix } = Astro.props;
+const chartId = `macro-chart-${crypto.randomUUID()}`;
+const containerClass = embedded
+  ? "overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white shadow-[0_18px_40px_rgba(15,23,42,0.06)]"
+  : "surface-panel overflow-hidden";
+const chartHeightClass = embedded ? "h-[16.5rem] md:h-[17.5rem]" : "h-[22rem]";
+---
+
+<section class={containerClass}>
+  <div class="border-b border-slate-200 px-5 py-4">
+    <h3 class="section-title">{chart.title}</h3>
+    <p class="mt-2 text-sm leading-6 text-slate-500">{chart.description}</p>
+    {
+      chart.latest_changes?.length ? (
+        <div class="mt-4 flex flex-wrap gap-2">
+          {
+            chart.latest_changes.map((item) => {
+              const toneClass =
+                item.direction === "up"
+                  ? "bg-red-50 text-red-700 ring-red-200"
+                  : item.direction === "down"
+                    ? "bg-emerald-50 text-emerald-700 ring-emerald-200"
+                    : "bg-slate-100 text-slate-700 ring-slate-200";
+              const arrow = item.direction === "up" ? "↑" : item.direction === "down" ? "↓" : "→";
+              const sign = item.delta_value > 0 ? "+" : item.delta_value < 0 ? "-" : "";
+              const absValue = Math.abs(item.delta_value).toFixed(2).replace(/\.00$/, "");
+              return (
+                <span class:list={["inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold ring-1", toneClass]}>
+                  <span>{item.label}</span>
+                  <span class="text-slate-400">|</span>
+                  <span>{item.basis_label}</span>
+                  <span>{arrow}</span>
+                  <span>{`${sign}${absValue}${item.unit}`}</span>
+                </span>
+              );
+            })
+          }
+        </div>
+      ) : null
+    }
+  </div>
+
+  <div
+    class:list={[chartHeightClass, "p-5"]}
+    data-macro-line-chart
+    data-canvas-id={chartId}
+    data-payload-id={`${chartId}-payload`}
+  >
+    <canvas id={chartId}></canvas>
+  </div>
+  <div class="px-5 pb-4 text-left text-xs text-slate-400">
+    {chart.latest_label} {chart.latest_time_text}{footerSuffix ?? ""}
+  </div>
+</section>
+
+<script
+  is:inline
+  type="application/json"
+  id={`${chartId}-payload`}
+  set:html={JSON.stringify(chart)}
+></script>
+
+<script>
+  import { Chart, registerables } from "chart.js";
+
+  type MacroChartAnnotationPayload = {
+    series_id: string;
+    point_index: number;
+    label: string;
+    tone?: "latest" | "high" | "low" | "neutral";
+    dx?: number;
+    dy?: number;
+  };
+
+  type MacroChartSeriesPayload = {
+    series_id: string;
+    label: string;
+    unit?: string;
+    y_axis_id: "left" | "right";
+    span_gaps: boolean;
+    show_point_markers?: boolean;
+    values: Array<number | null>;
+  };
+
+  type MacroChartPayload = {
+    labels: string[];
+    x_axis_label: string;
+    show_point_markers?: boolean;
+    annotations?: MacroChartAnnotationPayload[];
+    series: MacroChartSeriesPayload[];
+  };
+
+  function drawRoundedRect(
+    ctx: CanvasRenderingContext2D,
+    x: number,
+    y: number,
+    width: number,
+    height: number,
+    radius: number,
+  ) {
+    const safeRadius = Math.min(radius, width / 2, height / 2);
+    ctx.beginPath();
+    ctx.moveTo(x + safeRadius, y);
+    ctx.lineTo(x + width - safeRadius, y);
+    ctx.quadraticCurveTo(x + width, y, x + width, y + safeRadius);
+    ctx.lineTo(x + width, y + height - safeRadius);
+    ctx.quadraticCurveTo(x + width, y + height, x + width - safeRadius, y + height);
+    ctx.lineTo(x + safeRadius, y + height);
+    ctx.quadraticCurveTo(x, y + height, x, y + height - safeRadius);
+    ctx.lineTo(x, y + safeRadius);
+    ctx.quadraticCurveTo(x, y, x + safeRadius, y);
+    ctx.closePath();
+  }
+
+  const annotationPlugin = {
+    id: "macroAnnotations",
+    afterDatasetsDraw(chart: Chart, _args: unknown, pluginOptions?: { annotations?: MacroChartAnnotationPayload[] }) {
+      const annotations = Array.isArray(pluginOptions?.annotations) ? pluginOptions.annotations : [];
+      if (!annotations.length) {
+        return;
+      }
+
+      const { ctx, chartArea } = chart;
+      const palette = {
+        latest: {
+          fill: "rgba(15, 23, 42, 0.92)",
+          stroke: "#0f172a",
+          text: "#ffffff",
+        },
+        high: {
+          fill: "rgba(220, 38, 38, 0.92)",
+          stroke: "#dc2626",
+          text: "#ffffff",
+        },
+        low: {
+          fill: "rgba(5, 150, 105, 0.92)",
+          stroke: "#059669",
+          text: "#ffffff",
+        },
+        neutral: {
+          fill: "rgba(71, 85, 105, 0.92)",
+          stroke: "#475569",
+          text: "#ffffff",
+        },
+      };
+
+      ctx.save();
+      ctx.font = '12px "Microsoft YaHei", "PingFang SC", sans-serif';
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+
+      for (const annotation of annotations) {
+        const datasetIndex = chart.data.datasets.findIndex(
+          (dataset) => (dataset as { seriesId?: string }).seriesId === annotation.series_id,
+        );
+        if (datasetIndex === -1) {
+          continue;
+        }
+
+        const dataset = chart.data.datasets[datasetIndex] as { data: Array<number | null> };
+        if (dataset.data[annotation.point_index] === null || dataset.data[annotation.point_index] === undefined) {
+          continue;
+        }
+
+        const point = chart.getDatasetMeta(datasetIndex).data[annotation.point_index];
+        if (!point) {
+          continue;
+        }
+
+        const pointProps = point.getProps(["x", "y"], true) as { x: number; y: number };
+        const theme = palette[annotation.tone ?? "neutral"];
+        const paddingX = 8;
+        const boxHeight = 24;
+        const textWidth = ctx.measureText(annotation.label).width;
+        const boxWidth = textWidth + paddingX * 2;
+        const defaultDy =
+          annotation.tone === "low" ? 20 : annotation.tone === "latest" ? -20 : annotation.tone === "neutral" ? -20 : -22;
+        const defaultDx = annotation.tone === "latest" ? 18 : 0;
+        let centerX = pointProps.x + (annotation.dx ?? defaultDx);
+        let centerY = pointProps.y + (annotation.dy ?? defaultDy);
+
+        centerX = Math.min(Math.max(centerX, chartArea.left + boxWidth / 2), chartArea.right - boxWidth / 2);
+        centerY = Math.min(Math.max(centerY, chartArea.top + boxHeight / 2), chartArea.bottom - boxHeight / 2);
+
+        const rectX = centerX - boxWidth / 2;
+        const rectY = centerY - boxHeight / 2;
+
+        ctx.fillStyle = theme.fill;
+        drawRoundedRect(ctx, rectX, rectY, boxWidth, boxHeight, 10);
+        ctx.fill();
+
+        ctx.fillStyle = theme.text;
+        ctx.fillText(annotation.label, centerX, centerY + 0.5);
+
+        ctx.beginPath();
+        ctx.arc(pointProps.x, pointProps.y, 4, 0, Math.PI * 2);
+        ctx.fillStyle = theme.stroke;
+        ctx.fill();
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = "#ffffff";
+        ctx.stroke();
+      }
+
+      ctx.restore();
+    },
+  };
+
+  Chart.register(...registerables, annotationPlugin);
+
+  const palette = ["#1d4ed8", "#0f766e", "#ea580c", "#dc2626", "#7c3aed", "#0891b2", "#be123c", "#4f46e5"];
+
+  document.querySelectorAll("[data-macro-line-chart]").forEach((root) => {
+    if (!(root instanceof HTMLElement)) {
+      return;
+    }
+
+    const canvasId = root.dataset.canvasId;
+    const payloadId = root.dataset.payloadId;
+    if (!canvasId || !payloadId) {
+      return;
+    }
+
+    const canvas = document.getElementById(canvasId);
+    const payloadNode = document.getElementById(payloadId);
+    if (!(canvas instanceof HTMLCanvasElement) || !payloadNode?.textContent) {
+      return;
+    }
+
+    const payload = JSON.parse(payloadNode.textContent) as MacroChartPayload;
+    if (!payload || !Array.isArray(payload.labels) || !Array.isArray(payload.series)) {
+      return;
+    }
+
+    const hasRightAxis = payload.series.some((item) => item.y_axis_id === "right");
+    Chart.getChart(canvas)?.destroy();
+
+    const config: any = {
+      type: "line",
+      data: {
+        labels: payload.labels,
+        datasets: payload.series.map((item, index) => {
+          const showMarkers = item.show_point_markers ?? payload.show_point_markers ?? false;
+          return {
+            label: item.label,
+            seriesId: item.series_id,
+            data: item.values,
+            yAxisID: item.y_axis_id === "right" ? "yRight" : "yLeft",
+            borderColor: palette[index % palette.length],
+            backgroundColor: `${palette[index % palette.length]}1a`,
+            pointRadius: showMarkers ? 3 : 0,
+            pointHoverRadius: showMarkers ? 4.5 : 3,
+            pointBackgroundColor: palette[index % palette.length],
+            pointBorderColor: "#ffffff",
+            pointBorderWidth: showMarkers ? 1.5 : 0,
+            borderWidth: 2.5,
+            tension: 0.25,
+            fill: false,
+            spanGaps: item.span_gaps,
+          };
+        }),
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: {
+          mode: "index",
+          intersect: false,
+        },
+        plugins: {
+          macroAnnotations: {
+            annotations: payload.annotations ?? [],
+          },
+          legend: {
+            position: "bottom",
+            labels: {
+              boxWidth: 14,
+              usePointStyle: true,
+            },
+          },
+          tooltip: {
+            callbacks: {
+              label(context: { datasetIndex: number; dataset: { label?: string }; raw: number | null }) {
+                const item = payload.series[context.datasetIndex];
+                const value = context.raw;
+                const suffix = item?.unit ? ` ${item.unit}` : "";
+                return `${context.dataset.label}: ${value ?? "--"}${suffix}`;
+              },
+            },
+          },
+        },
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: payload.x_axis_label,
+            },
+            grid: {
+              color: "rgba(148, 163, 184, 0.14)",
+            },
+          },
+          yLeft: {
+            type: "linear",
+            position: "left",
+            grid: {
+              color: "rgba(148, 163, 184, 0.14)",
+            },
+          },
+          yRight: {
+            type: "linear",
+            position: "right",
+            display: hasRightAxis,
+            grid: {
+              drawOnChartArea: false,
+            },
+          },
+        },
+      },
+    };
+
+    new Chart(canvas, config);
+  });
+</script>

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["updated_at", "source", "stale_after_minutes", "briefing"],
+  "properties": {
+    "updated_at": { "type": "string" },
+    "source": { "type": "string" },
+    "stale_after_minutes": { "type": "integer", "minimum": 1 },
+    "status": { "type": "string" },
+    "status_message": { "type": "string" },
+    "briefing": {
+      "type": "object",
+      "required": ["id", "date", "title", "headline", "latest_updates", "timeline", "analysis_sections", "market_impacts", "watchlist", "review_status"],
+      "properties": {
+        "id": { "type": "string" },
+        "date": { "type": "string" },
+        "title": { "type": "string" },
+        "headline": { "type": "string" },
+        "latest_updates": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "timeline": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["time", "event"],
+            "properties": {
+              "time": { "type": "string" },
+              "event": { "type": "string" }
+            }
+          }
+        },
+        "analysis_sections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title", "body"],
+            "properties": {
+              "title": { "type": "string" },
+              "body": { "type": "string" }
+            }
+          }
+        },
+        "market_impacts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["asset", "impact"],
+            "properties": {
+              "asset": { "type": "string" },
+              "impact": { "type": "string" }
+            }
+          }
+        },
+        "watchlist": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "review_status": { "const": "approved" }
+      }
+    }
+  }
+}

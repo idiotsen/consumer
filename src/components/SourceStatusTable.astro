@@ -1,0 +1,51 @@
+---
+import { formatDateTime } from "@/lib/data";
+import type { SourceStatusItem } from "@/lib/types";
+
+interface Props {
+  items: SourceStatusItem[];
+}
+
+const { items } = Astro.props;
+
+const statusMap: Record<string, string> = {
+  healthy: "bg-emerald-100 text-emerald-800",
+  warning: "bg-amber-100 text-amber-800",
+  degraded: "bg-orange-100 text-orange-800",
+  error: "bg-rose-100 text-rose-800",
+};
+---
+
+<div class="surface-panel overflow-hidden">
+  <div class="border-b border-slate-200 px-5 py-4">
+    <h2 class="section-title">数据源状态</h2>
+  </div>
+  <div class="overflow-x-auto">
+    <table class="min-w-full divide-y divide-slate-200 text-sm">
+      <thead class="bg-slate-50 text-left text-slate-500">
+        <tr>
+          <th class="px-5 py-3 font-medium">来源</th>
+          <th class="px-5 py-3 font-medium">状态</th>
+          <th class="px-5 py-3 font-medium">最近更新</th>
+          <th class="px-5 py-3 font-medium">说明</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-100">
+        {
+          items.map((item) => (
+            <tr>
+              <td class="px-5 py-4 font-medium text-slate-800">{item.name}</td>
+              <td class="px-5 py-4">
+                <span class:list={["rounded-full px-3 py-1 text-xs font-semibold", statusMap[item.status] ?? "bg-slate-100 text-slate-700"]}>
+                  {item.status}
+                </span>
+              </td>
+              <td class="px-5 py-4 text-slate-600">{formatDateTime(item.last_updated)}</td>
+              <td class="px-5 py-4 text-slate-500">{item.detail}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["updated_at", "source", "stale_after_minutes", "series"],
+  "properties": {
+    "updated_at": { "type": "string" },
+    "source": { "type": "string" },
+    "stale_after_minutes": { "type": "integer", "minimum": 1 },
+    "status": { "type": "string" },
+    "status_message": { "type": "string" },
+    "series": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["series_id", "label", "group", "unit", "source", "updated_at", "dates", "values"],
+        "properties": {
+          "series_id": { "type": "string" },
+          "label": { "type": "string" },
+          "group": { "type": "string" },
+          "unit": { "type": "string" },
+          "source": { "type": "string" },
+          "source_url": { "type": "string" },
+          "updated_at": { "type": "string" },
+          "dates": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "values": {
+            "type": "array",
+            "items": { "type": ["number", "null"] }
+          },
+          "mom_values": {
+            "type": "array",
+            "items": { "type": ["number", "null"] }
+          },
+          "yoy_values": {
+            "type": "array",
+            "items": { "type": ["number", "null"] }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+---
+import SectorIndustryCard from "@/components/SectorIndustryCard.astro";
+import SectorTrendChart from "@/components/SectorTrendChart.astro";
+import type { SectorBoard, SectorSeriesItem } from "@/lib/types";
+
+interface Props {
+  board: SectorBoard;
+  series: SectorSeriesItem[];
+}
+
+const { board, series } = Astro.props;
+---
+
+<section class="grid gap-6">
+  <div class="surface-panel p-6">
+    <div class="flex items-center justify-between gap-4">
+      <div>
+        <h3 class="section-title">一、基本面数据跟踪</h3>
+        <p class="mt-2 text-sm leading-6 text-slate-500">{board.fundamentals_placeholder.description}</p>
+      </div>
+      <span class="rounded-full bg-slate-900 px-3 py-1 text-xs font-semibold text-white">占位中</span>
+    </div>
+
+    <div class="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+      {
+        board.fundamentals_placeholder.planned_metrics.map((item) => (
+          <div class="rounded-2xl border border-dashed border-slate-200 bg-slate-50 px-4 py-4 text-sm text-slate-600">
+            {item}
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  <div class="grid gap-6 xl:grid-cols-[1.2fr_1fr]">
+    <SectorTrendChart
+      title="二、行业股价走势"
+      description="默认展示过去一年的两类折线：行业指数自身走势，以及行业相对中证800的相对走势。"
+      series={series}
+    />
+
+    <div class="grid gap-4">
+      {
+        board.industries.map((industry) => (
+          <SectorIndustryCard industry={industry} />
+        ))
+      }
+    </div>
+  </div>
+</section>

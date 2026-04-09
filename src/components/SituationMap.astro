@@ -1,0 +1,97 @@
+---
+import "leaflet/dist/leaflet.css";
+
+import type { GeoEventsPayload } from "@/lib/types";
+
+interface Props {
+  payload: GeoEventsPayload;
+}
+
+const { payload } = Astro.props;
+const mapId = `map-${crypto.randomUUID()}`;
+const serializedMapPayload = JSON.stringify({ payload, events: payload.events });
+void serializedMapPayload;
+---
+
+<section class="surface-panel overflow-hidden">
+  <div class="border-b border-slate-200 px-5 py-4">
+    <h2 class="section-title">地缘事件地图</h2>
+    <p class="mt-2 text-sm text-slate-500">使用 Leaflet 承载点位、状态分层与外部参考链接。</p>
+  </div>
+  <div
+    id={mapId}
+    class="h-[28rem] w-full"
+    data-situation-map
+    data-map-id={mapId}
+    data-payload-id={`${mapId}-payload`}
+  ></div>
+</section>
+
+<script is:inline type="application/json" id={`${mapId}-payload`}>{serializedMapPayload}</script>
+
+<script>
+  import L from "leaflet";
+
+  document.querySelectorAll("[data-situation-map]").forEach((target) => {
+    if (!(target instanceof HTMLElement)) {
+      return;
+    }
+
+    const payloadId = target.dataset.payloadId;
+    if (!payloadId) {
+      return;
+    }
+
+    const payloadNode = document.getElementById(payloadId);
+    if (!payloadNode?.textContent) {
+      return;
+    }
+
+    const parsed = JSON.parse(payloadNode.textContent) as {
+      payload: {
+        center: { lat: number; lng: number; zoom: number };
+      };
+      events: Array<{
+        lat: number;
+        lng: number;
+        status: string;
+        title: string;
+        summary: string;
+      }>;
+    };
+    const { payload, events } = parsed;
+    const map = L.map(target, {
+      scrollWheelZoom: false,
+    }).setView([payload.center.lat, payload.center.lng], payload.center.zoom);
+
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 18,
+      attribution: "&copy; OpenStreetMap contributors",
+    }).addTo(map);
+
+    const colorMap: Record<string, string> = {
+      critical: "#dc2626",
+      warning: "#f59e0b",
+      stable: "#0f766e",
+    };
+
+    events.forEach((event) => {
+      const color = colorMap[event.status] ?? "#2563eb";
+      L.circleMarker([event.lat, event.lng], {
+        radius: 8,
+        color,
+        fillColor: color,
+        fillOpacity: 0.9,
+        weight: 2,
+      })
+        .addTo(map)
+        .bindPopup(`
+          <div style="min-width: 220px;">
+            <strong>${event.title}</strong>
+            <p style="margin: 8px 0; color: #475569;">${event.summary}</p>
+            <p style="margin: 0; font-size: 12px; color: #64748b;">状态：${event.status}</p>
+          </div>
+        `);
+    });
+  });
+</script>
