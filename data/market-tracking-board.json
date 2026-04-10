@@ -1,13 +1,309 @@
 {
-  "updated_at": "2026-04-10T00:09:07+08:00",
-  "source": "Tushare sw_daily + fina_indicator_vip + index_daily(000985.CSI) + broker_recommend + index_member + index_classify(SW2021)",
+  "updated_at": "2026-04-10T11:26:32+08:00",
+  "source": "Tushare sw_daily + fina_indicator_vip + income_vip + balancesheet_vip + index_daily(000985.CSI) + broker_recommend + index_member + index_classify(SW2021)",
   "stale_after_minutes": 1440,
   "status": "ok",
-  "status_message": "已接入 3 个市场跟踪栏目，0 个栏目保留占位，0 个栏目加载失败。",
+  "status_message": "已接入 4 个市场跟踪栏目，0 个栏目保留占位，0 个栏目加载失败。",
   "board_id": "market-tracking",
   "title": "市场跟踪",
   "description": "市场跟踪板块用于补充消费相关行业 PB-ROE、拥挤度和券商金股中消费个股占比观察。",
   "sections": [
+    {
+      "section_id": "consumer-fundamental-cycle",
+      "title": "基本面位置刻画",
+      "description": "基于消费二级行业当前成分股聚合的 ROE(TTM)，展示其十年历史分位和相较上一期的边际变化方向。",
+      "status": "ready",
+      "cycle_chart": {
+        "chart_id": "consumer-fundamental-cycle-chart",
+        "title": "基本面位置刻画",
+        "description": "基于当前成分股聚合的消费二级行业 ROE(TTM)，展示其过去十年历史分位与相较上一期的边际方向。",
+        "latest_label": "报告期截至",
+        "latest_time_text": "2025Q3",
+        "latest_report_period": "2025Q3",
+        "points": [
+          {
+            "ts_code": "801202.SI",
+            "industry_name": "贸易Ⅱ",
+            "latest_roe_ttm": 7.05,
+            "previous_roe_ttm": 7.35,
+            "roe_percentile_10y": 67.5,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801014.SI",
+            "industry_name": "饲料",
+            "latest_roe_ttm": 12.26,
+            "previous_roe_ttm": 14.39,
+            "roe_percentile_10y": 62.5,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801017.SI",
+            "industry_name": "养殖业",
+            "latest_roe_ttm": 16.17,
+            "previous_roe_ttm": 23.25,
+            "roe_percentile_10y": 57.5,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801206.SI",
+            "industry_name": "互联网电商",
+            "latest_roe_ttm": 2.89,
+            "previous_roe_ttm": 3.62,
+            "roe_percentile_10y": 47.5,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801131.SI",
+            "industry_name": "纺织制造",
+            "latest_roe_ttm": 8.81,
+            "previous_roe_ttm": 9.41,
+            "roe_percentile_10y": 45.0,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801993.SI",
+            "industry_name": "旅游及景区",
+            "latest_roe_ttm": 2.62,
+            "previous_roe_ttm": 3.78,
+            "roe_percentile_10y": 37.5,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801125.SI",
+            "industry_name": "白酒Ⅱ",
+            "latest_roe_ttm": 25.27,
+            "previous_roe_ttm": 27.97,
+            "roe_percentile_10y": 32.5,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801113.SI",
+            "industry_name": "小家电",
+            "latest_roe_ttm": 14.1,
+            "previous_roe_ttm": 14.19,
+            "roe_percentile_10y": 30.0,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801994.SI",
+            "industry_name": "教育",
+            "latest_roe_ttm": -2.98,
+            "previous_roe_ttm": -2.83,
+            "roe_percentile_10y": 27.5,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801111.SI",
+            "industry_name": "白色家电",
+            "latest_roe_ttm": 20.15,
+            "previous_roe_ttm": 21.63,
+            "roe_percentile_10y": 25.0,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801133.SI",
+            "industry_name": "饰品",
+            "latest_roe_ttm": 7.42,
+            "previous_roe_ttm": 7.98,
+            "roe_percentile_10y": 22.5,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801204.SI",
+            "industry_name": "专业连锁Ⅱ",
+            "latest_roe_ttm": 2.67,
+            "previous_roe_ttm": 4.08,
+            "roe_percentile_10y": 20.0,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801145.SI",
+            "industry_name": "文娱用品",
+            "latest_roe_ttm": 6.03,
+            "previous_roe_ttm": 6.45,
+            "roe_percentile_10y": 20.0,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801124.SI",
+            "industry_name": "食品加工",
+            "latest_roe_ttm": 9.42,
+            "previous_roe_ttm": 9.63,
+            "roe_percentile_10y": 15.0,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801115.SI",
+            "industry_name": "照明设备Ⅱ",
+            "latest_roe_ttm": 3.67,
+            "previous_roe_ttm": 4.83,
+            "roe_percentile_10y": 12.5,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801129.SI",
+            "industry_name": "调味发酵品Ⅱ",
+            "latest_roe_ttm": 14.58,
+            "previous_roe_ttm": 14.83,
+            "roe_percentile_10y": 10.0,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801142.SI",
+            "industry_name": "家居用品",
+            "latest_roe_ttm": 7.75,
+            "previous_roe_ttm": 8.05,
+            "roe_percentile_10y": 5.0,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801203.SI",
+            "industry_name": "一般零售",
+            "latest_roe_ttm": 0.05,
+            "previous_roe_ttm": 1.21,
+            "roe_percentile_10y": 2.5,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801128.SI",
+            "industry_name": "休闲食品",
+            "latest_roe_ttm": 6.32,
+            "previous_roe_ttm": 7.26,
+            "roe_percentile_10y": 2.5,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801114.SI",
+            "industry_name": "厨卫电器",
+            "latest_roe_ttm": 9.19,
+            "previous_roe_ttm": 9.64,
+            "roe_percentile_10y": 2.5,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801132.SI",
+            "industry_name": "服装家纺",
+            "latest_roe_ttm": 1.63,
+            "previous_roe_ttm": 1.64,
+            "roe_percentile_10y": 2.5,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801015.SI",
+            "industry_name": "渔业",
+            "latest_roe_ttm": -16.82,
+            "previous_roe_ttm": -14.4,
+            "roe_percentile_10y": 2.5,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801143.SI",
+            "industry_name": "造纸",
+            "latest_roe_ttm": -6.27,
+            "previous_roe_ttm": -4.89,
+            "roe_percentile_10y": 2.5,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801126.SI",
+            "industry_name": "非白酒",
+            "latest_roe_ttm": 10.52,
+            "previous_roe_ttm": 10.46,
+            "roe_percentile_10y": 97.5,
+            "direction": "up"
+          },
+          {
+            "ts_code": "801112.SI",
+            "industry_name": "黑色家电",
+            "latest_roe_ttm": 8.88,
+            "previous_roe_ttm": 8.31,
+            "roe_percentile_10y": 95.0,
+            "direction": "up"
+          },
+          {
+            "ts_code": "801116.SI",
+            "industry_name": "家电零部件Ⅱ",
+            "latest_roe_ttm": 10.69,
+            "previous_roe_ttm": 10.47,
+            "roe_percentile_10y": 70.0,
+            "direction": "up"
+          },
+          {
+            "ts_code": "801012.SI",
+            "industry_name": "农产品加工",
+            "latest_roe_ttm": 4.41,
+            "previous_roe_ttm": 3.69,
+            "roe_percentile_10y": 57.5,
+            "direction": "up"
+          },
+          {
+            "ts_code": "801981.SI",
+            "industry_name": "个护用品",
+            "latest_roe_ttm": 7.26,
+            "previous_roe_ttm": 6.86,
+            "roe_percentile_10y": 40.0,
+            "direction": "up"
+          },
+          {
+            "ts_code": "801218.SI",
+            "industry_name": "专业服务",
+            "latest_roe_ttm": 8.17,
+            "previous_roe_ttm": 8.1,
+            "roe_percentile_10y": 37.5,
+            "direction": "up"
+          },
+          {
+            "ts_code": "801219.SI",
+            "industry_name": "酒店餐饮",
+            "latest_roe_ttm": 3.11,
+            "previous_roe_ttm": 3.09,
+            "roe_percentile_10y": 37.5,
+            "direction": "up"
+          },
+          {
+            "ts_code": "801016.SI",
+            "industry_name": "种植业",
+            "latest_roe_ttm": 4.16,
+            "previous_roe_ttm": 3.82,
+            "roe_percentile_10y": 32.5,
+            "direction": "up"
+          },
+          {
+            "ts_code": "801141.SI",
+            "industry_name": "包装印刷",
+            "latest_roe_ttm": 5.0,
+            "previous_roe_ttm": 4.92,
+            "roe_percentile_10y": 20.0,
+            "direction": "up"
+          },
+          {
+            "ts_code": "801018.SI",
+            "industry_name": "动物保健Ⅱ",
+            "latest_roe_ttm": 4.19,
+            "previous_roe_ttm": 3.15,
+            "roe_percentile_10y": 15.0,
+            "direction": "up"
+          },
+          {
+            "ts_code": "801982.SI",
+            "industry_name": "化妆品",
+            "latest_roe_ttm": 6.37,
+            "previous_roe_ttm": 6.08,
+            "roe_percentile_10y": 15.0,
+            "direction": "up"
+          },
+          {
+            "ts_code": "801127.SI",
+            "industry_name": "饮料乳品",
+            "latest_roe_ttm": 13.08,
+            "previous_roe_ttm": 13.03,
+            "roe_percentile_10y": 15.0,
+            "direction": "up"
+          }
+        ]
+      }
+    },
     {
       "section_id": "consumer-pb-roe",
       "title": "消费相关行业 PB-ROE 图",
@@ -30,10 +326,10 @@
               "level": "L1",
               "parent_l1_name": null,
               "pb_percentile_5y": 36.6,
-              "roe_percentile_5y": 89.5,
+              "roe_percentile_5y": 94.7,
               "latest_pb": 1.32,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 5.87,
+              "latest_roe": 6.22,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": false
             },
@@ -46,7 +342,7 @@
               "roe_percentile_5y": 63.2,
               "latest_pb": 3.0,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 2.11,
+              "latest_roe": 2.07,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": false
             },
@@ -59,7 +355,7 @@
               "roe_percentile_5y": 100.0,
               "latest_pb": 1.68,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 7.51,
+              "latest_roe": 7.27,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": false
             },
@@ -72,7 +368,7 @@
               "roe_percentile_5y": 100.0,
               "latest_pb": 2.5,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 5.25,
+              "latest_roe": 3.77,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": true
             },
@@ -111,7 +407,7 @@
               "roe_percentile_5y": 68.4,
               "latest_pb": 3.71,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 2.42,
+              "latest_roe": 2.36,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": false
             },
@@ -134,10 +430,10 @@
               "level": "L1",
               "parent_l1_name": null,
               "pb_percentile_5y": 15.6,
-              "roe_percentile_5y": 84.2,
+              "roe_percentile_5y": 89.5,
               "latest_pb": 2.31,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 8.57,
+              "latest_roe": 8.76,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": true
             },
@@ -147,10 +443,10 @@
               "level": "L1",
               "parent_l1_name": null,
               "pb_percentile_5y": 57.0,
-              "roe_percentile_5y": 57.9,
+              "roe_percentile_5y": 52.6,
               "latest_pb": 1.53,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 2.09,
+              "latest_roe": 1.96,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": false
             },
@@ -163,7 +459,7 @@
               "roe_percentile_5y": 84.2,
               "latest_pb": 0.86,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 4.35,
+              "latest_roe": 3.92,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": false
             },
@@ -173,10 +469,10 @@
               "level": "L1",
               "parent_l1_name": null,
               "pb_percentile_5y": 40.0,
-              "roe_percentile_5y": 21.1,
+              "roe_percentile_5y": 15.8,
               "latest_pb": 0.8,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": -0.18,
+              "latest_roe": -0.37,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": false
             },
@@ -189,7 +485,7 @@
               "roe_percentile_5y": 100.0,
               "latest_pb": 3.78,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 11.35,
+              "latest_roe": 11.15,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": false
             },
@@ -202,7 +498,7 @@
               "roe_percentile_5y": 84.2,
               "latest_pb": 3.28,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 5.33,
+              "latest_roe": 5.15,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": false
             },
@@ -215,7 +511,7 @@
               "roe_percentile_5y": 100.0,
               "latest_pb": 2.55,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 7.15,
+              "latest_roe": 7.2,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": false
             },
@@ -238,7 +534,7 @@
               "level": "L1",
               "parent_l1_name": null,
               "pb_percentile_5y": 83.3,
-              "roe_percentile_5y": 85.0,
+              "roe_percentile_5y": 90.0,
               "latest_pb": 1.78,
               "latest_pb_date": "2026-04-09",
               "latest_roe": 5.54,
@@ -280,7 +576,7 @@
               "roe_percentile_5y": 94.7,
               "latest_pb": 1.61,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 5.04,
+              "latest_roe": 4.31,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": false
             },
@@ -306,7 +602,7 @@
               "roe_percentile_5y": 89.5,
               "latest_pb": 1.86,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 4.82,
+              "latest_roe": 5.43,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": true
             },
@@ -319,7 +615,7 @@
               "roe_percentile_5y": 100.0,
               "latest_pb": 2.8,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 4.08,
+              "latest_roe": 5.9,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": false
             },
@@ -345,7 +641,7 @@
               "roe_percentile_5y": 94.7,
               "latest_pb": 4.18,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 3.23,
+              "latest_roe": 2.94,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": false
             },
@@ -381,10 +677,10 @@
               "level": "L1",
               "parent_l1_name": null,
               "pb_percentile_5y": 80.6,
-              "roe_percentile_5y": 5.3,
+              "roe_percentile_5y": 57.9,
               "latest_pb": 1.21,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": -0.82,
+              "latest_roe": 2.85,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": false
             },
@@ -423,7 +719,7 @@
               "roe_percentile_5y": 94.7,
               "latest_pb": 3.67,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 7.86,
+              "latest_roe": 8.0,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": true
             }
@@ -497,10 +793,10 @@
               "level": "L2",
               "parent_l1_name": "食品饮料",
               "pb_percentile_5y": 17.9,
-              "roe_percentile_5y": 89.5,
+              "roe_percentile_5y": 100.0,
               "latest_pb": 2.24,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 7.47,
+              "latest_roe": 8.75,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": true
             },
@@ -526,7 +822,7 @@
               "roe_percentile_5y": 94.7,
               "latest_pb": 2.46,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 3.86,
+              "latest_roe": 3.77,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": true
             },
@@ -578,7 +874,7 @@
               "roe_percentile_5y": 100.0,
               "latest_pb": 2.93,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 11.02,
+              "latest_roe": 8.89,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": true
             },
@@ -682,7 +978,7 @@
               "roe_percentile_5y": 94.7,
               "latest_pb": 2.03,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 16.17,
+              "latest_roe": 16.47,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": true
             },
@@ -760,7 +1056,7 @@
               "roe_percentile_5y": 100.0,
               "latest_pb": 2.61,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 11.08,
+              "latest_roe": 10.09,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": true
             },
@@ -874,10 +1170,10 @@
               "level": "L2",
               "parent_l1_name": "纺织服饰",
               "pb_percentile_5y": 88.8,
-              "roe_percentile_5y": 84.2,
+              "roe_percentile_5y": 100.0,
               "latest_pb": 1.76,
               "latest_pb_date": "2026-04-09",
-              "latest_roe": 5.43,
+              "latest_roe": 7.6,
               "latest_roe_period": "2025-12-31",
               "is_consumer_related": true
             },
