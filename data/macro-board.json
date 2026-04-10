@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-10T11:20:34+08:00",
+  "updated_at": "2026-04-10T15:18:40+08:00",
   "source": "内部通胀与收入数据表 + input_data/household_asset.xlsx + 中国人民银行 + 国家统计局 + 手动维护的消费者信心月度数据",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -20,33 +20,32 @@
         "chart_type": "line",
         "x_axis_label": "时间",
         "latest_label": "数据截至",
-        "latest_time_text": "2026-02",
+        "latest_time_text": "2026-03",
         "show_point_markers": false,
         "latest_changes": [
           {
             "label": "PPI同比",
             "basis_label": "环比",
             "direction": "up",
-            "delta_value": 0.5,
+            "delta_value": 1.4,
             "unit": "%"
           },
           {
             "label": "CPI同比",
             "basis_label": "环比",
-            "direction": "flat",
-            "delta_value": 0.0,
+            "direction": "up",
+            "delta_value": 0.2,
             "unit": "%"
           },
           {
             "label": "核心CPI同比（剔除其他用品与服务）",
             "basis_label": "环比",
-            "direction": "up",
-            "delta_value": 0.16,
+            "direction": "down",
+            "delta_value": -0.17,
             "unit": "%"
           }
         ],
         "labels": [
-          "2016-01",
           "2016-02",
           "2016-03",
           "2016-04",
@@ -167,7 +166,8 @@
           "2025-11",
           "2025-12",
           "2026-01",
-          "2026-02"
+          "2026-02",
+          "2026-03"
         ],
         "series": [
           {
@@ -177,7 +177,6 @@
             "y_axis_id": "left",
             "span_gaps": false,
             "values": [
-              -5.3,
               -4.9,
               -4.3,
               -3.4,
@@ -298,7 +297,8 @@
               -2.2,
               -1.9,
               -1.4,
-              -0.9
+              -0.9,
+              0.5
             ]
           },
           {
@@ -308,7 +308,6 @@
             "y_axis_id": "right",
             "span_gaps": true,
             "values": [
-              null,
               2.0,
               2.3,
               2.33,
@@ -429,7 +428,8 @@
               0.7,
               0.8,
               null,
-              0.8
+              0.8,
+              1.0
             ]
           },
           {
@@ -439,7 +439,6 @@
             "y_axis_id": "right",
             "span_gaps": true,
             "values": [
-              null,
               1.4,
               1.45,
               1.45,
@@ -560,7 +559,8 @@
               0.81,
               0.72,
               null,
-              0.88
+              0.88,
+              0.71
             ]
           }
         ]
