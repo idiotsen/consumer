@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-13T23:29:40+08:00",
+  "updated_at": "2026-04-14T08:59:54+08:00",
   "source": "Tushare sw_daily + index_member + fina_indicator_vip",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -49,7 +49,7 @@
             "pb_pct_3y": 75.4,
             "pb_pct_5y": 46.4,
             "roe_pct_20q": 10.5,
-            "current_roe": -2.13,
+            "current_roe": -1.56,
             "current_roe_period": "2025-12-31",
             "match_gap": 35.9,
             "status": "expensive_vs_roe",
