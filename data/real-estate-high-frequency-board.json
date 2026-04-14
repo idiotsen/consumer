@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-14T09:17:06+08:00",
+  "updated_at": "2026-04-14T13:12:55",
   "source": "input_data/bingshan_index.xlsx + input_data/new_house.xlsx + input_data/industry_data.xlsx",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -2029,7 +2029,7 @@
         {
           "chart_id": "new-home-price-tier",
           "title": "70大中城市新房价格同环比",
-          "description": "70 大中城市新建商品住宅价格当月同比与环比，滚动5年展示。",
+          "description": "70 大中城市新建商品住宅价格当月同比与环比，滚动 5 年展示。",
           "chart_type": "combo",
           "x_axis_label": "月份",
           "latest_label": "数据截至",
@@ -2249,7 +2249,7 @@
         {
           "chart_id": "new-home-sales-monthly",
           "title": "新房销售面积和金额同比",
-          "description": "新建商品住宅销售面积和销售金额当月同比，滚动5年展示。",
+          "description": "新建商品住宅销售面积和销售金额当月同比，滚动 5 年展示。",
           "chart_type": "line",
           "x_axis_label": "月份",
           "latest_label": "数据截至",
@@ -2326,6 +2326,7 @@
               "unit": "%",
               "y_axis_id": "left",
               "span_gaps": true,
+              "show_point_markers": true,
               "values": [
                 108.43,
                 42.37,
@@ -2396,6 +2397,7 @@
               "unit": "%",
               "y_axis_id": "left",
               "span_gaps": true,
+              "show_point_markers": true,
               "values": [
                 143.5,
                 63.26,

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-14T09:23:22+08:00",
+  "updated_at": "2026-04-14T13:13:41",
   "source": "input_data/industry_data.xlsx",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -4225,7 +4225,7 @@
         {
           "chart_id": "restaurant-social-retail",
           "title": "社零和餐饮社零走势",
-          "description": "社会消费品零售总额与餐饮收入当月同比，滚动4年展示。",
+          "description": "社会消费品零售总额与餐饮收入当月同比，滚动 4 年展示。",
           "chart_type": "line",
           "x_axis_label": "月份",
           "latest_label": "数据截至",

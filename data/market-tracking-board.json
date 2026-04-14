@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-14T09:17:11+08:00",
+  "updated_at": "2026-04-14T13:12:56",
   "source": "Tushare sw_daily + fina_indicator_vip + income_vip + balancesheet_vip + daily + stock_basic + index_daily(000985.CSI) + broker_recommend + index_member + index_classify(SW2021)",
   "stale_after_minutes": 1440,
   "status": "partial",
@@ -1661,7 +1661,7 @@
       "chart": {
         "chart_id": "consumer-broker-share",
         "title": "券商金股中消费个股占比统计",
-        "description": "统计 Tushare 券商每月荐股中，属于食品饮料、农林牧渔、美容护理、家用电器、商贸零售、社会服务、轻工制造和纺织服饰的个股占全部荐股条目的比例。",
+        "description": "统计 Tushare 券商每月荐股中，属于食品饮料、农林牧渔、美容护理、家用电器、商贸零售、社会服务、轻工制造和纺织服饰的个股占全部荐股条目的比率。",
         "chart_type": "line",
         "x_axis_label": "时间",
         "latest_label": "数据截至",
@@ -1736,6 +1736,7 @@
             "unit": "%",
             "y_axis_id": "left",
             "span_gaps": false,
+            "show_point_markers": true,
             "values": [
               17.54,
               20.0,
