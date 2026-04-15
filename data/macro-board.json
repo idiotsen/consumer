@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-14T20:25:08",
+  "updated_at": "2026-04-15T21:58:55",
   "source": "内部通胀与收入数据表 + input_data/household_asset.xlsx + 中国人民银行 + 国家统计局 + 手动维护的消费者信心月度数据",
   "stale_after_minutes": 1440,
   "status": "partial",
@@ -645,8 +645,6 @@
                 "unit": "%",
                 "y_axis_id": "left",
                 "span_gaps": false,
-                "render_type": "line",
-                "show_point_markers": true,
                 "values": [
                   0.1,
                   0.0,
@@ -657,7 +655,9 @@
                   0.8,
                   0.8,
                   1.0
-                ]
+                ],
+                "render_type": "line",
+                "show_point_markers": true
               },
               {
                 "series_id": "service-pull",
@@ -665,9 +665,6 @@
                 "unit": "pct",
                 "y_axis_id": "left",
                 "span_gaps": false,
-                "render_type": "bar",
-                "stack": "cpi-passthrough",
-                "show_point_markers": false,
                 "values": [
                   0.23,
                   0.23,
@@ -678,7 +675,10 @@
                   0.27,
                   0.36,
                   0.36
-                ]
+                ],
+                "render_type": "bar",
+                "stack": "cpi-passthrough",
+                "show_point_markers": false
               },
               {
                 "series_id": "food-pull",
@@ -686,9 +686,6 @@
                 "unit": "pct",
                 "y_axis_id": "left",
                 "span_gaps": false,
-                "render_type": "bar",
-                "stack": "cpi-passthrough",
-                "show_point_markers": false,
                 "values": [
                   -0.05,
                   -0.28,
@@ -699,7 +696,10 @@
                   0.19,
                   0.09,
                   0.05
-                ]
+                ],
+                "render_type": "bar",
+                "stack": "cpi-passthrough",
+                "show_point_markers": false
               },
               {
                 "series_id": "transport-fuel-pull",
@@ -707,9 +707,6 @@
                 "unit": "pct",
                 "y_axis_id": "left",
                 "span_gaps": false,
-                "render_type": "bar",
-                "stack": "cpi-passthrough",
-                "show_point_markers": false,
                 "values": [
                   -0.38,
                   -0.31,
@@ -720,7 +717,10 @@
                   -0.29,
                   -0.34,
                   0.12
-                ]
+                ],
+                "render_type": "bar",
+                "stack": "cpi-passthrough",
+                "show_point_markers": false
               },
               {
                 "series_id": "gold-pull",
@@ -728,9 +728,6 @@
                 "unit": "pct",
                 "y_axis_id": "left",
                 "span_gaps": false,
-                "render_type": "bar",
-                "stack": "cpi-passthrough",
-                "show_point_markers": false,
                 "values": [
                   0.24,
                   0.22,
@@ -741,7 +738,10 @@
                   0.41,
                   0.46,
                   0.39
-                ]
+                ],
+                "render_type": "bar",
+                "stack": "cpi-passthrough",
+                "show_point_markers": false
               },
               {
                 "series_id": "industrial-consumer-pull",
@@ -749,9 +749,6 @@
                 "unit": "pct",
                 "y_axis_id": "left",
                 "span_gaps": false,
-                "render_type": "bar",
-                "stack": "cpi-passthrough",
-                "show_point_markers": false,
                 "values": [
                   0.07,
                   0.14,
@@ -762,7 +759,10 @@
                   0.22,
                   0.23,
                   0.07
-                ]
+                ],
+                "render_type": "bar",
+                "stack": "cpi-passthrough",
+                "show_point_markers": false
               }
             ]
           }
@@ -825,10 +825,7 @@
             "label": "住房资产环比变化（4Q累计）",
             "unit": "%",
             "y_axis_id": "left",
-            "render_type": "bar",
-            "stack": "household-balance-sheet",
             "span_gaps": false,
-            "show_point_markers": false,
             "values": [
               57.17,
               61.69,
@@ -851,17 +848,17 @@
               -36.07,
               -41.42,
               -36.4
-            ]
+            ],
+            "render_type": "bar",
+            "stack": "household-balance-sheet",
+            "show_point_markers": false
           },
           {
             "series_id": "stock",
             "label": "股票资产环比变化（4Q累计）",
             "unit": "%",
             "y_axis_id": "left",
-            "render_type": "bar",
-            "stack": "household-balance-sheet",
             "span_gaps": false,
-            "show_point_markers": false,
             "values": [
               9.35,
               9.2,
@@ -884,17 +881,17 @@
               9.99,
               10.64,
               13.45
-            ]
+            ],
+            "render_type": "bar",
+            "stack": "household-balance-sheet",
+            "show_point_markers": false
           },
           {
             "series_id": "deposit",
             "label": "储蓄存款环比变化（4Q累计）",
             "unit": "%",
             "y_axis_id": "left",
-            "render_type": "bar",
-            "stack": "household-balance-sheet",
             "span_gaps": false,
-            "show_point_markers": false,
             "values": [
               11.51,
               10.42,
@@ -917,16 +914,17 @@
               15.14,
               14.64,
               null
-            ]
+            ],
+            "render_type": "bar",
+            "stack": "household-balance-sheet",
+            "show_point_markers": false
           },
           {
             "series_id": "total",
             "label": "三项合计（4Q累计）",
             "unit": "%",
             "y_axis_id": "left",
-            "render_type": "line",
             "span_gaps": false,
-            "show_point_markers": true,
             "values": [
               78.03,
               81.3,
@@ -949,7 +947,9 @@
               -10.95,
               -16.13,
               null
-            ]
+            ],
+            "render_type": "line",
+            "show_point_markers": true
           }
         ]
       }
@@ -1029,7 +1029,6 @@
               "unit": "%",
               "y_axis_id": "left",
               "span_gaps": false,
-              "show_point_markers": true,
               "values": [
                 25.9,
                 26.4,
@@ -1059,7 +1058,8 @@
                 23.3,
                 19.2,
                 22.5
-              ]
+              ],
+              "show_point_markers": true
             },
             {
               "series_id": "more-investment",
@@ -1067,7 +1067,6 @@
               "unit": "%",
               "y_axis_id": "left",
               "span_gaps": false,
-              "show_point_markers": true,
               "values": [
                 29.2,
                 28.2,
@@ -1097,7 +1096,8 @@
                 12.9,
                 18.5,
                 14.6
-              ]
+              ],
+              "show_point_markers": true
             },
             {
               "series_id": "more-savings",
@@ -1105,7 +1105,6 @@
               "unit": "%",
               "y_axis_id": "left",
               "span_gaps": false,
-              "show_point_markers": true,
               "values": [
                 45.0,
                 45.4,
@@ -1135,7 +1134,8 @@
                 63.8,
                 62.3,
                 62.9
-              ]
+              ],
+              "show_point_markers": true
             }
           ]
         },
