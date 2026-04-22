@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-20T11:38:53",
-  "source": "内部通胀与收入数据表 + input_data/household_asset.xlsx + 手动维护的消费者信心月度数据 + iFind（收入、储户意愿、消费倾向；失败时回退国家统计局/中国人民银行）",
+  "updated_at": "2026-04-22T16:41:31",
+  "source": "内部通胀与收入数据表 + input_data/household_asset.xlsx + 手动维护的消费者信心月度数据 + iFind（收入、储户意愿增量更新） + data_sources/raw/macro_depositor_intentions_history.csv（储户意愿历史基线） + data_sources/raw/macro_urban_apc_history.csv（平均消费倾向）",
   "stale_after_minutes": 1440,
   "status": "ok",
   "status_message": "已接入 4 个宏观栏目，0 个栏目保留占位，0 个栏目加载失败。",
@@ -1302,7 +1302,7 @@
         {
           "chart_id": "urban-apc-seasonal",
           "title": "城镇居民平均消费倾向",
-          "description": "根据国家统计局季度发布的城镇居民人均消费支出与城镇居民人均可支配收入计算，按季度节点展示季节性变化。",
+          "description": "基于本地维护的平均消费倾向季度序列，按季度节点展示季节性变化。",
           "chart_type": "line",
           "x_axis_label": "季度",
           "latest_label": "数据截至",
