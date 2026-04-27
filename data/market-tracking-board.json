@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-26T17:32:48",
+  "updated_at": "2026-04-27T22:21:25",
   "source": "Tushare sw_daily + fina_indicator_vip + income_vip + balancesheet_vip + daily + stock_basic + index_daily(000985.CSI) + broker_recommend + index_member + index_classify(SW2021)",
   "stale_after_minutes": 1440,
   "status": "partial",
@@ -1210,7 +1210,7 @@
         {
           "group_id": "l1",
           "title": "申万一级行业",
-          "as_of_date": "2026-04-24",
+          "as_of_date": "2026-04-27",
           "industries": [
             {
               "ts_code": "801010.SI",
@@ -1297,17 +1297,17 @@
         {
           "group_id": "l2",
           "title": "申万二级行业",
-          "as_of_date": "2026-04-24",
+          "as_of_date": "2026-04-27",
           "industries": [
             {
               "ts_code": "801129.SI",
               "industry_name": "调味发酵品Ⅱ",
               "level": "L2",
               "parent_l1_name": "食品饮料",
-              "total_score": 2,
+              "total_score": 1,
               "high_crowding": false,
               "excluded_signal": true,
-              "crowded_20d_count": 7
+              "crowded_20d_count": 6
             },
             {
               "ts_code": "801115.SI",
@@ -1324,16 +1324,6 @@
               "industry_name": "包装印刷",
               "level": "L2",
               "parent_l1_name": "轻工制造",
-              "total_score": 1,
-              "high_crowding": false,
-              "excluded_signal": false,
-              "crowded_20d_count": 0
-            },
-            {
-              "ts_code": "801113.SI",
-              "industry_name": "小家电",
-              "level": "L2",
-              "parent_l1_name": "家用电器",
               "total_score": 1,
               "high_crowding": false,
               "excluded_signal": false,
@@ -1462,6 +1452,16 @@
             {
               "ts_code": "801116.SI",
               "industry_name": "家电零部件Ⅱ",
+              "level": "L2",
+              "parent_l1_name": "家用电器",
+              "total_score": 0,
+              "high_crowding": false,
+              "excluded_signal": false,
+              "crowded_20d_count": 0
+            },
+            {
+              "ts_code": "801113.SI",
+              "industry_name": "小家电",
               "level": "L2",
               "parent_l1_name": "家用电器",
               "total_score": 0,

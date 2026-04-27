@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-26T17:32:43",
+  "updated_at": "2026-04-27T22:21:21",
   "source": "input_data/bingshan_index.xlsx + iFind（新房价格与销售；失败时回退 input_data/new_house.xlsx） + input_data/industry_data.xlsx",
   "stale_after_minutes": 1440,
   "status": "ok",
