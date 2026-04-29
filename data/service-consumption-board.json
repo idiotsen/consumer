@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-20T12:12:39",
+  "updated_at": "2026-04-29T18:12:27",
   "source": "餐饮指数来自 input_data/industry_data.xlsx；社零、餐饮社零、飞天批价与茅台相对PE主源来自 iFind，失败时回退国家统计局 / input_data/industry_data.xlsx",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -30,7 +30,7 @@
                 "chart_type": "line",
                 "x_axis_label": "自然日历",
                 "latest_label": "数据截至",
-                "latest_time_text": "2026-04-11",
+                "latest_time_text": "2026-04-18",
                 "show_point_markers": false,
                 "latest_changes": [],
                 "labels": [
@@ -749,7 +749,7 @@
                       null,
                       null,
                       null,
-                      307.77,
+                      286.12,
                       null,
                       null,
                       null,
@@ -966,7 +966,7 @@
                       null,
                       null,
                       null,
-                      null,
+                      284.61,
                       null,
                       null,
                       null,
@@ -1129,7 +1129,7 @@
                 "chart_type": "line",
                 "x_axis_label": "自然日历",
                 "latest_label": "数据截至",
-                "latest_time_text": "2026-04-11",
+                "latest_time_text": "2026-04-18",
                 "show_point_markers": false,
                 "latest_changes": [],
                 "labels": [
@@ -1848,7 +1848,7 @@
                       null,
                       null,
                       null,
-                      418.69,
+                      391.72,
                       null,
                       null,
                       null,
@@ -2065,7 +2065,7 @@
                       null,
                       null,
                       null,
-                      null,
+                      399.12,
                       null,
                       null,
                       null,
@@ -2228,7 +2228,7 @@
                 "chart_type": "line",
                 "x_axis_label": "自然日历",
                 "latest_label": "数据截至",
-                "latest_time_text": "2026-04-11",
+                "latest_time_text": "2026-04-18",
                 "show_point_markers": false,
                 "latest_changes": [],
                 "labels": [
@@ -2947,7 +2947,7 @@
                       null,
                       null,
                       null,
-                      73.51,
+                      73.04,
                       null,
                       null,
                       null,
@@ -3164,7 +3164,7 @@
                       null,
                       null,
                       null,
-                      null,
+                      71.31,
                       null,
                       null,
                       null,
@@ -3333,7 +3333,7 @@
                 "chart_type": "line",
                 "x_axis_label": "相对春节周序",
                 "latest_label": "数据截至",
-                "latest_time_text": "2026-04-11",
+                "latest_time_text": "2026-04-18",
                 "show_point_markers": false,
                 "latest_changes": [],
                 "labels": [
@@ -3449,7 +3449,7 @@
                       259.75,
                       236.62,
                       239.38,
-                      307.77,
+                      286.12,
                       284.64
                     ]
                   },
@@ -3478,7 +3478,7 @@
                       271.41,
                       256.65,
                       249.74,
-                      null,
+                      284.61,
                       null,
                       null,
                       null
@@ -3497,7 +3497,7 @@
                 "chart_type": "line",
                 "x_axis_label": "相对春节周序",
                 "latest_label": "数据截至",
-                "latest_time_text": "2026-04-11",
+                "latest_time_text": "2026-04-18",
                 "show_point_markers": false,
                 "latest_changes": [],
                 "labels": [
@@ -3613,7 +3613,7 @@
                       381.82,
                       390.34,
                       373.61,
-                      418.69,
+                      391.72,
                       406.63
                     ]
                   },
@@ -3642,7 +3642,7 @@
                       402.41,
                       405.58,
                       398.04,
-                      null,
+                      399.12,
                       null,
                       null,
                       null
@@ -3661,7 +3661,7 @@
                 "chart_type": "line",
                 "x_axis_label": "相对春节周序",
                 "latest_label": "数据截至",
-                "latest_time_text": "2026-04-11",
+                "latest_time_text": "2026-04-18",
                 "show_point_markers": false,
                 "latest_changes": [],
                 "labels": [
@@ -3777,7 +3777,7 @@
                       68.03,
                       60.62,
                       64.07,
-                      73.51,
+                      73.04,
                       70.0
                     ]
                   },
@@ -3806,7 +3806,7 @@
                       67.45,
                       63.28,
                       62.74,
-                      null,
+                      71.31,
                       null,
                       null,
                       null
