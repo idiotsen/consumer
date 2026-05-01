@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-02T04:45:52",
+  "updated_at": "2026-05-02T07:37:28",
   "source": "Tushare sw_daily + fina_indicator_vip + income_vip + balancesheet_vip + daily + stock_basic + index_daily(000985.CSI) + broker_recommend + index_member + index_classify(SW2021)",
   "stale_after_minutes": 1440,
   "status": "partial",
@@ -22,219 +22,187 @@
         "latest_report_period": "2026Q1",
         "points": [
           {
-            "ts_code": "801126.SI",
-            "industry_name": "非白酒",
-            "latest_roe_ttm": 10.55,
-            "previous_roe_ttm": 10.71,
-            "roe_percentile_10y": 95.0,
-            "direction": "down"
-          },
-          {
             "ts_code": "801112.SI",
             "industry_name": "黑色家电",
-            "latest_roe_ttm": 7.18,
-            "previous_roe_ttm": 7.78,
+            "latest_roe_ttm": 7.21,
+            "previous_roe_ttm": 7.76,
             "roe_percentile_10y": 60.0,
             "direction": "down"
           },
           {
             "ts_code": "801116.SI",
             "industry_name": "家电零部件Ⅱ",
-            "latest_roe_ttm": 9.79,
-            "previous_roe_ttm": 10.35,
-            "roe_percentile_10y": 57.5,
-            "direction": "down"
-          },
-          {
-            "ts_code": "801982.SI",
-            "industry_name": "化妆品",
-            "latest_roe_ttm": 7.96,
-            "previous_roe_ttm": 7.98,
-            "roe_percentile_10y": 37.5,
+            "latest_roe_ttm": 9.23,
+            "previous_roe_ttm": 9.92,
+            "roe_percentile_10y": 52.5,
             "direction": "down"
           },
           {
             "ts_code": "801131.SI",
             "industry_name": "纺织制造",
-            "latest_roe_ttm": 8.18,
-            "previous_roe_ttm": 8.94,
-            "roe_percentile_10y": 32.5,
-            "direction": "down"
-          },
-          {
-            "ts_code": "801981.SI",
-            "industry_name": "个护用品",
-            "latest_roe_ttm": 7.06,
-            "previous_roe_ttm": 7.14,
-            "roe_percentile_10y": 30.0,
-            "direction": "down"
-          },
-          {
-            "ts_code": "801127.SI",
-            "industry_name": "饮料乳品",
-            "latest_roe_ttm": 14.33,
-            "previous_roe_ttm": 14.85,
-            "roe_percentile_10y": 30.0,
+            "latest_roe_ttm": 8.23,
+            "previous_roe_ttm": 8.77,
+            "roe_percentile_10y": 37.5,
             "direction": "down"
           },
           {
             "ts_code": "801994.SI",
             "industry_name": "教育",
-            "latest_roe_ttm": -3.33,
-            "previous_roe_ttm": -2.32,
-            "roe_percentile_10y": 25.0,
+            "latest_roe_ttm": -3.31,
+            "previous_roe_ttm": -2.27,
+            "roe_percentile_10y": 30.0,
             "direction": "down"
           },
           {
             "ts_code": "801014.SI",
             "industry_name": "饲料",
-            "latest_roe_ttm": 1.82,
-            "previous_roe_ttm": 4.8,
+            "latest_roe_ttm": 1.81,
+            "previous_roe_ttm": 4.68,
             "roe_percentile_10y": 25.0,
             "direction": "down"
           },
           {
             "ts_code": "801017.SI",
             "industry_name": "养殖业",
-            "latest_roe_ttm": 2.11,
-            "previous_roe_ttm": 8.6,
+            "latest_roe_ttm": 2.12,
+            "previous_roe_ttm": 8.36,
             "roe_percentile_10y": 22.5,
-            "direction": "down"
-          },
-          {
-            "ts_code": "801018.SI",
-            "industry_name": "动物保健Ⅱ",
-            "latest_roe_ttm": 4.84,
-            "previous_roe_ttm": 4.95,
-            "roe_percentile_10y": 20.0,
             "direction": "down"
           },
           {
             "ts_code": "801218.SI",
             "industry_name": "专业服务",
-            "latest_roe_ttm": 7.07,
-            "previous_roe_ttm": 7.44,
-            "roe_percentile_10y": 12.5,
+            "latest_roe_ttm": 7.1,
+            "previous_roe_ttm": 7.35,
+            "roe_percentile_10y": 20.0,
             "direction": "down"
           },
           {
-            "ts_code": "801204.SI",
-            "industry_name": "专业连锁Ⅱ",
-            "latest_roe_ttm": 2.57,
-            "previous_roe_ttm": 2.59,
-            "roe_percentile_10y": 12.5,
+            "ts_code": "801018.SI",
+            "industry_name": "动物保健Ⅱ",
+            "latest_roe_ttm": 4.81,
+            "previous_roe_ttm": 4.9,
+            "roe_percentile_10y": 20.0,
             "direction": "down"
           },
           {
             "ts_code": "801113.SI",
             "industry_name": "小家电",
-            "latest_roe_ttm": 11.31,
-            "previous_roe_ttm": 12.66,
-            "roe_percentile_10y": 12.5,
-            "direction": "down"
-          },
-          {
-            "ts_code": "801132.SI",
-            "industry_name": "服装家纺",
-            "latest_roe_ttm": 4.51,
-            "previous_roe_ttm": 4.54,
-            "roe_percentile_10y": 12.5,
+            "latest_roe_ttm": 11.41,
+            "previous_roe_ttm": 12.58,
+            "roe_percentile_10y": 15.0,
             "direction": "down"
           },
           {
             "ts_code": "801115.SI",
             "industry_name": "照明设备Ⅱ",
-            "latest_roe_ttm": 3.3,
-            "previous_roe_ttm": 4.14,
+            "latest_roe_ttm": 3.36,
+            "previous_roe_ttm": 4.16,
             "roe_percentile_10y": 12.5,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801145.SI",
+            "industry_name": "文娱用品",
+            "latest_roe_ttm": 4.95,
+            "previous_roe_ttm": 5.16,
+            "roe_percentile_10y": 5.0,
+            "direction": "down"
+          },
+          {
+            "ts_code": "801111.SI",
+            "industry_name": "白色家电",
+            "latest_roe_ttm": 16.24,
+            "previous_roe_ttm": 16.52,
+            "roe_percentile_10y": 5.0,
             "direction": "down"
           },
           {
             "ts_code": "801141.SI",
             "industry_name": "包装印刷",
-            "latest_roe_ttm": 3.67,
-            "previous_roe_ttm": 4.02,
+            "latest_roe_ttm": 3.71,
+            "previous_roe_ttm": 3.99,
             "roe_percentile_10y": 2.5,
             "direction": "down"
           },
           {
             "ts_code": "801114.SI",
             "industry_name": "厨卫电器",
-            "latest_roe_ttm": 4.97,
-            "previous_roe_ttm": 5.49,
+            "latest_roe_ttm": 5.03,
+            "previous_roe_ttm": 5.46,
             "roe_percentile_10y": 2.5,
             "direction": "down"
           },
           {
             "ts_code": "801142.SI",
             "industry_name": "家居用品",
-            "latest_roe_ttm": 5.37,
-            "previous_roe_ttm": 6.57,
-            "roe_percentile_10y": 2.5,
-            "direction": "down"
-          },
-          {
-            "ts_code": "801145.SI",
-            "industry_name": "文娱用品",
-            "latest_roe_ttm": 4.92,
-            "previous_roe_ttm": 5.18,
+            "latest_roe_ttm": 5.42,
+            "previous_roe_ttm": 6.24,
             "roe_percentile_10y": 2.5,
             "direction": "down"
           },
           {
             "ts_code": "801015.SI",
             "industry_name": "渔业",
-            "latest_roe_ttm": -19.13,
-            "previous_roe_ttm": -18.34,
-            "roe_percentile_10y": 2.5,
-            "direction": "down"
-          },
-          {
-            "ts_code": "801111.SI",
-            "industry_name": "白色家电",
-            "latest_roe_ttm": 15.82,
-            "previous_roe_ttm": 16.78,
+            "latest_roe_ttm": -19.76,
+            "previous_roe_ttm": -18.04,
             "roe_percentile_10y": 2.5,
             "direction": "down"
           },
           {
             "ts_code": "801125.SI",
             "industry_name": "白酒Ⅱ",
-            "latest_roe_ttm": 17.74,
-            "previous_roe_ttm": 20.97,
+            "latest_roe_ttm": 18.56,
+            "previous_roe_ttm": 20.46,
             "roe_percentile_10y": 2.5,
             "direction": "down"
           },
           {
             "ts_code": "801124.SI",
             "industry_name": "食品加工",
-            "latest_roe_ttm": 6.95,
-            "previous_roe_ttm": 7.41,
+            "latest_roe_ttm": 6.97,
+            "previous_roe_ttm": 7.3,
             "roe_percentile_10y": 2.5,
             "direction": "down"
           },
           {
+            "ts_code": "801126.SI",
+            "industry_name": "非白酒",
+            "latest_roe_ttm": 10.6,
+            "previous_roe_ttm": 10.48,
+            "roe_percentile_10y": 100.0,
+            "direction": "up"
+          },
+          {
             "ts_code": "801202.SI",
             "industry_name": "贸易Ⅱ",
-            "latest_roe_ttm": 7.82,
-            "previous_roe_ttm": 6.96,
-            "roe_percentile_10y": 90.0,
+            "latest_roe_ttm": 7.78,
+            "previous_roe_ttm": 6.97,
+            "roe_percentile_10y": 97.5,
             "direction": "up"
           },
           {
             "ts_code": "801206.SI",
             "industry_name": "互联网电商",
-            "latest_roe_ttm": 5.2,
-            "previous_roe_ttm": 4.4,
+            "latest_roe_ttm": 5.17,
+            "previous_roe_ttm": 4.36,
             "roe_percentile_10y": 72.5,
             "direction": "up"
           },
           {
             "ts_code": "801016.SI",
             "industry_name": "种植业",
-            "latest_roe_ttm": 5.38,
-            "previous_roe_ttm": 5.03,
-            "roe_percentile_10y": 67.5,
+            "latest_roe_ttm": 5.42,
+            "previous_roe_ttm": 5.01,
+            "roe_percentile_10y": 70.0,
+            "direction": "up"
+          },
+          {
+            "ts_code": "801127.SI",
+            "industry_name": "饮料乳品",
+            "latest_roe_ttm": 15.09,
+            "previous_roe_ttm": 14.51,
+            "roe_percentile_10y": 62.5,
             "direction": "up"
           },
           {
@@ -242,66 +210,323 @@
             "industry_name": "酒店餐饮",
             "latest_roe_ttm": 4.62,
             "previous_roe_ttm": 4.36,
-            "roe_percentile_10y": 57.5,
+            "roe_percentile_10y": 60.0,
             "direction": "up"
           },
           {
             "ts_code": "801012.SI",
             "industry_name": "农产品加工",
             "latest_roe_ttm": 3.88,
-            "previous_roe_ttm": 3.68,
-            "roe_percentile_10y": 45.0,
+            "previous_roe_ttm": 3.65,
+            "roe_percentile_10y": 50.0,
             "direction": "up"
           },
           {
             "ts_code": "801993.SI",
             "industry_name": "旅游及景区",
             "latest_roe_ttm": 3.39,
-            "previous_roe_ttm": 3.33,
+            "previous_roe_ttm": 2.65,
             "roe_percentile_10y": 45.0,
+            "direction": "up"
+          },
+          {
+            "ts_code": "801982.SI",
+            "industry_name": "化妆品",
+            "latest_roe_ttm": 8.03,
+            "previous_roe_ttm": 7.93,
+            "roe_percentile_10y": 42.5,
             "direction": "up"
           },
           {
             "ts_code": "801133.SI",
             "industry_name": "饰品",
-            "latest_roe_ttm": 8.53,
-            "previous_roe_ttm": 8.21,
-            "roe_percentile_10y": 40.0,
+            "latest_roe_ttm": 8.72,
+            "previous_roe_ttm": 8.18,
+            "roe_percentile_10y": 42.5,
+            "direction": "up"
+          },
+          {
+            "ts_code": "801981.SI",
+            "industry_name": "个护用品",
+            "latest_roe_ttm": 7.09,
+            "previous_roe_ttm": 7.07,
+            "roe_percentile_10y": 37.5,
             "direction": "up"
           },
           {
             "ts_code": "801128.SI",
             "industry_name": "休闲食品",
-            "latest_roe_ttm": 8.93,
-            "previous_roe_ttm": 6.9,
-            "roe_percentile_10y": 25.0,
+            "latest_roe_ttm": 9.18,
+            "previous_roe_ttm": 6.92,
+            "roe_percentile_10y": 35.0,
+            "direction": "up"
+          },
+          {
+            "ts_code": "801204.SI",
+            "industry_name": "专业连锁Ⅱ",
+            "latest_roe_ttm": 2.61,
+            "previous_roe_ttm": 2.59,
+            "roe_percentile_10y": 20.0,
+            "direction": "up"
+          },
+          {
+            "ts_code": "801132.SI",
+            "industry_name": "服装家纺",
+            "latest_roe_ttm": 4.56,
+            "previous_roe_ttm": 4.51,
+            "roe_percentile_10y": 15.0,
             "direction": "up"
           },
           {
             "ts_code": "801129.SI",
             "industry_name": "调味发酵品Ⅱ",
-            "latest_roe_ttm": 14.43,
-            "previous_roe_ttm": 14.15,
-            "roe_percentile_10y": 12.5,
+            "latest_roe_ttm": 14.06,
+            "previous_roe_ttm": 13.75,
+            "roe_percentile_10y": 10.0,
             "direction": "up"
           },
           {
             "ts_code": "801143.SI",
             "industry_name": "造纸",
-            "latest_roe_ttm": -3.13,
-            "previous_roe_ttm": -3.44,
+            "latest_roe_ttm": -3.17,
+            "previous_roe_ttm": -3.63,
             "roe_percentile_10y": 10.0,
             "direction": "up"
           },
           {
             "ts_code": "801203.SI",
             "industry_name": "一般零售",
-            "latest_roe_ttm": -7.01,
-            "previous_roe_ttm": -7.71,
+            "latest_roe_ttm": -7.07,
+            "previous_roe_ttm": -7.52,
             "roe_percentile_10y": 5.0,
             "direction": "up"
           }
-        ]
+        ],
+        "constituent_streaks": {
+          "title": "中证800消费成分股 ROE(TTM) 连续变化",
+          "benchmark_name": "中证800",
+          "latest_report_period": "2026Q1",
+          "comparison_periods": [
+            "2025Q3",
+            "2025Q4",
+            "2026Q1"
+          ],
+          "consumer_stock_count": 69,
+          "groups": [
+            {
+              "direction": "up",
+              "label": "连续两季回升",
+              "stocks": [
+                {
+                  "ts_code": "600598.SH",
+                  "name": "北大荒",
+                  "industry_name": "农林牧渔"
+                },
+                {
+                  "ts_code": "300972.SZ",
+                  "name": "万辰集团",
+                  "industry_name": "商贸零售"
+                },
+                {
+                  "ts_code": "601888.SH",
+                  "name": "中国中免",
+                  "industry_name": "商贸零售"
+                },
+                {
+                  "ts_code": "300012.SZ",
+                  "name": "华测检测",
+                  "industry_name": "社会服务"
+                },
+                {
+                  "ts_code": "600754.SH",
+                  "name": "锦江酒店",
+                  "industry_name": "社会服务"
+                },
+                {
+                  "ts_code": "300957.SZ",
+                  "name": "贝泰妮",
+                  "industry_name": "美容护理"
+                },
+                {
+                  "ts_code": "603195.SH",
+                  "name": "公牛集团",
+                  "industry_name": "轻工制造"
+                },
+                {
+                  "ts_code": "600887.SH",
+                  "name": "伊利股份",
+                  "industry_name": "食品饮料"
+                },
+                {
+                  "ts_code": "600298.SH",
+                  "name": "安琪酵母",
+                  "industry_name": "食品饮料"
+                },
+                {
+                  "ts_code": "000729.SZ",
+                  "name": "燕京啤酒",
+                  "industry_name": "食品饮料"
+                }
+              ]
+            },
+            {
+              "direction": "down",
+              "label": "连续两季回落",
+              "stocks": [
+                {
+                  "ts_code": "301498.SZ",
+                  "name": "乖宝宠物",
+                  "industry_name": "农林牧渔"
+                },
+                {
+                  "ts_code": "002385.SZ",
+                  "name": "大北农",
+                  "industry_name": "农林牧渔"
+                },
+                {
+                  "ts_code": "000876.SZ",
+                  "name": "新希望",
+                  "industry_name": "农林牧渔"
+                },
+                {
+                  "ts_code": "002157.SZ",
+                  "name": "正邦科技",
+                  "industry_name": "农林牧渔"
+                },
+                {
+                  "ts_code": "601118.SH",
+                  "name": "海南橡胶",
+                  "industry_name": "农林牧渔"
+                },
+                {
+                  "ts_code": "002311.SZ",
+                  "name": "海大集团",
+                  "industry_name": "农林牧渔"
+                },
+                {
+                  "ts_code": "300498.SZ",
+                  "name": "温氏股份",
+                  "industry_name": "农林牧渔"
+                },
+                {
+                  "ts_code": "002714.SZ",
+                  "name": "牧原股份",
+                  "industry_name": "农林牧渔"
+                },
+                {
+                  "ts_code": "000785.SZ",
+                  "name": "居然智家",
+                  "industry_name": "商贸零售"
+                },
+                {
+                  "ts_code": "600655.SH",
+                  "name": "豫园股份",
+                  "industry_name": "商贸零售"
+                },
+                {
+                  "ts_code": "002050.SZ",
+                  "name": "三花智控",
+                  "industry_name": "家用电器"
+                },
+                {
+                  "ts_code": "000651.SZ",
+                  "name": "格力电器",
+                  "industry_name": "家用电器"
+                },
+                {
+                  "ts_code": "000921.SZ",
+                  "name": "海信家电",
+                  "industry_name": "家用电器"
+                },
+                {
+                  "ts_code": "600060.SH",
+                  "name": "海信视像",
+                  "industry_name": "家用电器"
+                },
+                {
+                  "ts_code": "600690.SH",
+                  "name": "海尔智家",
+                  "industry_name": "家用电器"
+                },
+                {
+                  "ts_code": "002508.SZ",
+                  "name": "老板电器",
+                  "industry_name": "家用电器"
+                },
+                {
+                  "ts_code": "300979.SZ",
+                  "name": "华利集团",
+                  "industry_name": "纺织服饰"
+                },
+                {
+                  "ts_code": "300896.SZ",
+                  "name": "爱美客",
+                  "industry_name": "美容护理"
+                },
+                {
+                  "ts_code": "603605.SH",
+                  "name": "珀莱雅",
+                  "industry_name": "美容护理"
+                },
+                {
+                  "ts_code": "300888.SZ",
+                  "name": "稳健医疗",
+                  "industry_name": "美容护理"
+                },
+                {
+                  "ts_code": "603833.SH",
+                  "name": "欧派家居",
+                  "industry_name": "轻工制造"
+                },
+                {
+                  "ts_code": "605499.SH",
+                  "name": "东鹏饮料",
+                  "industry_name": "食品饮料"
+                },
+                {
+                  "ts_code": "000858.SZ",
+                  "name": "五粮液",
+                  "industry_name": "食品饮料"
+                },
+                {
+                  "ts_code": "603369.SH",
+                  "name": "今世缘",
+                  "industry_name": "食品饮料"
+                },
+                {
+                  "ts_code": "603589.SH",
+                  "name": "口子窖",
+                  "industry_name": "食品饮料"
+                },
+                {
+                  "ts_code": "000596.SZ",
+                  "name": "古井贡酒",
+                  "industry_name": "食品饮料"
+                },
+                {
+                  "ts_code": "600809.SH",
+                  "name": "山西汾酒",
+                  "industry_name": "食品饮料"
+                },
+                {
+                  "ts_code": "000568.SZ",
+                  "name": "泸州老窖",
+                  "industry_name": "食品饮料"
+                },
+                {
+                  "ts_code": "603288.SH",
+                  "name": "海天味业",
+                  "industry_name": "食品饮料"
+                },
+                {
+                  "ts_code": "600519.SH",
+                  "name": "贵州茅台",
+                  "industry_name": "食品饮料"
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     {
