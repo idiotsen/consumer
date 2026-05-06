@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-02T07:37:28",
+  "updated_at": "2026-05-06T15:21:20",
   "source": "Tushare sw_daily + fina_indicator_vip + income_vip + balancesheet_vip + daily + stock_basic + index_daily(000985.CSI) + broker_recommend + index_member + index_classify(SW2021)",
   "stale_after_minutes": 1440,
   "status": "partial",
@@ -1890,7 +1890,7 @@
         "chart_type": "line",
         "x_axis_label": "时间",
         "latest_label": "数据截至",
-        "latest_time_text": "2026-04",
+        "latest_time_text": "2026-05",
         "show_point_markers": false,
         "latest_changes": [],
         "labels": [
@@ -1952,7 +1952,8 @@
           "2026-01",
           "2026-02",
           "2026-03",
-          "2026-04"
+          "2026-04",
+          "2026-05"
         ],
         "series": [
           {
@@ -2021,193 +2022,69 @@
               14.71,
               12.64,
               13.93,
-              14.32
+              14.32,
+              10.32
             ]
           }
         ]
       },
-      "notice_message": "样本月度间券商家数不一致，范围为 11-44 家。与最新月份 2026-04 相比，有 58 个月的券商名单不同。因此该占比更适合做趋势跟踪，不宜直接做严格横向比较。",
+      "notice_message": "样本月度间券商家数不一致，范围为 11-44 家。与最新月份 2026-05 相比，有 59 个月的券商名单不同。因此该占比更适合做趋势跟踪，不宜直接做严格横向比较。",
       "coverage": {
-        "latest_month": "2026-04",
-        "months_covered": 59,
-        "latest_broker_count": 38,
+        "latest_month": "2026-05",
+        "months_covered": 60,
+        "latest_broker_count": 16,
         "min_broker_count": 11,
         "max_broker_count": 44,
         "broker_count_consistent": false,
         "broker_members_consistent": false,
-        "latest_total_recommendations": 377,
-        "latest_consumer_recommendations": 54,
-        "latest_consumer_stock_count": 35,
-        "latest_consumer_share_pct": 14.32,
-        "comparison_note": "样本月度间券商家数不一致，范围为 11-44 家。与最新月份 2026-04 相比，有 58 个月的券商名单不同。因此该占比更适合做趋势跟踪，不宜直接做严格横向比较。"
+        "latest_total_recommendations": 155,
+        "latest_consumer_recommendations": 16,
+        "latest_consumer_stock_count": 12,
+        "latest_consumer_share_pct": 10.32,
+        "comparison_note": "样本月度间券商家数不一致，范围为 11-44 家。与最新月份 2026-05 相比，有 59 个月的券商名单不同。因此该占比更适合做趋势跟踪，不宜直接做严格横向比较。"
       },
       "recommended_stocks": [
-        {
-          "ts_code": "600519.SH",
-          "name": "贵州茅台",
-          "industry_name": "食品饮料",
-          "broker_count": 4,
-          "previous_broker_count": 0,
-          "broker_count_delta": 4,
-          "broker_names": [
-            "中银证券",
-            "招商证券",
-            "申万宏源",
-            "财信证券"
-          ]
-        },
         {
           "ts_code": "603345.SH",
           "name": "安井食品",
           "industry_name": "食品饮料",
-          "broker_count": 4,
-          "previous_broker_count": 0,
-          "broker_count_delta": 4,
-          "broker_names": [
-            "兴业证券",
-            "华龙证券",
-            "国联民生",
-            "财通证券"
-          ]
-        },
-        {
-          "ts_code": "002714.SZ",
-          "name": "牧原股份",
-          "industry_name": "农林牧渔",
-          "broker_count": 3,
-          "previous_broker_count": 0,
-          "broker_count_delta": 3,
-          "broker_names": [
-            "中国银河",
-            "中金公司",
-            "财通证券"
-          ]
-        },
-        {
-          "ts_code": "002831.SZ",
-          "name": "裕同科技",
-          "industry_name": "轻工制造",
-          "broker_count": 3,
-          "previous_broker_count": 0,
-          "broker_count_delta": 3,
-          "broker_names": [
-            "国金证券",
-            "浙商证券",
-            "长江证券"
-          ]
-        },
-        {
-          "ts_code": "600754.SH",
-          "name": "锦江酒店",
-          "industry_name": "社会服务",
-          "broker_count": 3,
-          "previous_broker_count": 0,
-          "broker_count_delta": 3,
-          "broker_names": [
-            "光大证券",
-            "国泰海通",
-            "国金证券"
-          ]
-        },
-        {
-          "ts_code": "603288.SH",
-          "name": "海天味业",
-          "industry_name": "食品饮料",
-          "broker_count": 3,
-          "previous_broker_count": 0,
-          "broker_count_delta": 3,
-          "broker_names": [
-            "华安证券",
-            "国泰海通",
-            "国盛证券"
-          ]
-        },
-        {
-          "ts_code": "000333.SZ",
-          "name": "美的集团",
-          "industry_name": "家用电器",
-          "broker_count": 2,
-          "previous_broker_count": 0,
-          "broker_count_delta": 2,
-          "broker_names": [
-            "国联民生",
-            "财通证券"
-          ]
-        },
-        {
-          "ts_code": "000729.SZ",
-          "name": "燕京啤酒",
-          "industry_name": "食品饮料",
-          "broker_count": 2,
-          "previous_broker_count": 0,
-          "broker_count_delta": 2,
-          "broker_names": [
-            "东海证券",
-            "国盛证券"
-          ]
-        },
-        {
-          "ts_code": "600429.SH",
-          "name": "三元股份",
-          "industry_name": "食品饮料",
-          "broker_count": 2,
-          "previous_broker_count": 0,
-          "broker_count_delta": 2,
-          "broker_names": [
-            "华西证券",
-            "长江证券"
-          ]
-        },
-        {
-          "ts_code": "601952.SH",
-          "name": "苏垦农发",
-          "industry_name": "农林牧渔",
-          "broker_count": 2,
-          "previous_broker_count": 1,
+          "broker_count": 5,
+          "previous_broker_count": 4,
           "broker_count_delta": 1,
           "broker_names": [
-            "中原证券",
+            "东海证券",
+            "华龙证券",
+            "国信证券",
+            "国联民生",
             "太平洋"
           ]
         },
         {
-          "ts_code": "603816.SH",
-          "name": "顾家家居",
-          "industry_name": "轻工制造",
-          "broker_count": 2,
-          "previous_broker_count": 0,
-          "broker_count_delta": 2,
-          "broker_names": [
-            "中国银河",
-            "招商证券"
-          ]
-        },
-        {
-          "ts_code": "000858.SZ",
-          "name": "五粮液",
-          "industry_name": "食品饮料",
+          "ts_code": "000651.SZ",
+          "name": "格力电器",
+          "industry_name": "家用电器",
           "broker_count": 1,
           "previous_broker_count": 0,
           "broker_count_delta": 1,
           "broker_names": [
-            "招商证券"
+            "光大证券"
           ]
         },
         {
-          "ts_code": "001221.SZ",
-          "name": "悍高集团",
-          "industry_name": "轻工制造",
+          "ts_code": "002100.SZ",
+          "name": "天康生物",
+          "industry_name": "农林牧渔",
           "broker_count": 1,
-          "previous_broker_count": 1,
-          "broker_count_delta": 0,
+          "previous_broker_count": 0,
+          "broker_count_delta": 1,
           "broker_names": [
-            "招商证券"
+            "太平洋"
           ]
         },
         {
-          "ts_code": "002293.SZ",
-          "name": "罗莱生活",
-          "industry_name": "纺织服饰",
+          "ts_code": "002840.SZ",
+          "name": "华统股份",
+          "industry_name": "食品饮料",
           "broker_count": 1,
           "previous_broker_count": 0,
           "broker_count_delta": 1,
@@ -2216,185 +2093,42 @@
           ]
         },
         {
-          "ts_code": "002311.SZ",
-          "name": "海大集团",
-          "industry_name": "农林牧渔",
-          "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
-          "broker_names": [
-            "中国银河"
-          ]
-        },
-        {
-          "ts_code": "002458.SZ",
-          "name": "益生股份",
-          "industry_name": "农林牧渔",
-          "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
-          "broker_names": [
-            "华西证券"
-          ]
-        },
-        {
-          "ts_code": "002627.SZ",
-          "name": "三峡旅游",
-          "industry_name": "社会服务",
-          "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
-          "broker_names": [
-            "长江证券"
-          ]
-        },
-        {
-          "ts_code": "002832.SZ",
-          "name": "比音勒芬",
-          "industry_name": "纺织服饰",
-          "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
-          "broker_names": [
-            "东北证券"
-          ]
-        },
-        {
-          "ts_code": "002946.SZ",
-          "name": "新乳业",
-          "industry_name": "食品饮料",
-          "broker_count": 1,
-          "previous_broker_count": 1,
-          "broker_count_delta": 0,
-          "broker_names": [
-            "财信证券"
-          ]
-        },
-        {
-          "ts_code": "002991.SZ",
-          "name": "甘源食品",
-          "industry_name": "食品饮料",
-          "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
-          "broker_names": [
-            "东兴证券"
-          ]
-        },
-        {
-          "ts_code": "003010.SZ",
-          "name": "若羽臣",
-          "industry_name": "商贸零售",
-          "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
-          "broker_names": [
-            "财信证券"
-          ]
-        },
-        {
-          "ts_code": "300138.SZ",
-          "name": "晨光生物",
-          "industry_name": "农林牧渔",
-          "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
-          "broker_names": [
-            "国泰海通"
-          ]
-        },
-        {
           "ts_code": "300662.SZ",
           "name": "科锐国际",
           "industry_name": "社会服务",
           "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
-          "broker_names": [
-            "中银证券"
-          ]
-        },
-        {
-          "ts_code": "600251.SH",
-          "name": "冠农股份",
-          "industry_name": "农林牧渔",
-          "broker_count": 1,
           "previous_broker_count": 1,
           "broker_count_delta": 0,
           "broker_names": [
-            "东北证券"
+            "中泰证券"
           ]
         },
         {
-          "ts_code": "600258.SH",
-          "name": "首旅酒店",
-          "industry_name": "社会服务",
-          "broker_count": 1,
-          "previous_broker_count": 1,
-          "broker_count_delta": 0,
-          "broker_names": [
-            "中国银河"
-          ]
-        },
-        {
-          "ts_code": "600398.SH",
-          "name": "海澜之家",
-          "industry_name": "纺织服饰",
-          "broker_count": 1,
-          "previous_broker_count": 1,
-          "broker_count_delta": 0,
-          "broker_names": [
-            "长江证券"
-          ]
-        },
-        {
-          "ts_code": "600600.SH",
-          "name": "青岛啤酒",
-          "industry_name": "食品饮料",
+          "ts_code": "301193.SZ",
+          "name": "家联科技",
+          "industry_name": "轻工制造",
           "broker_count": 1,
           "previous_broker_count": 0,
           "broker_count_delta": 1,
           "broker_names": [
-            "海通国际"
+            "国金证券"
           ]
         },
         {
-          "ts_code": "600690.SH",
-          "name": "海尔智家",
+          "ts_code": "600060.SH",
+          "name": "海信视像",
           "industry_name": "家用电器",
           "broker_count": 1,
-          "previous_broker_count": 2,
-          "broker_count_delta": -1,
-          "broker_names": [
-            "光大证券"
-          ]
-        },
-        {
-          "ts_code": "601339.SH",
-          "name": "百隆东方",
-          "industry_name": "纺织服饰",
-          "broker_count": 1,
           "previous_broker_count": 0,
           "broker_count_delta": 1,
           "broker_names": [
-            "国泰海通"
+            "国联民生"
           ]
         },
         {
-          "ts_code": "601888.SH",
-          "name": "中国中免",
-          "industry_name": "商贸零售",
-          "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
-          "broker_names": [
-            "中信建投"
-          ]
-        },
-        {
-          "ts_code": "603199.SH",
-          "name": "九华旅游",
-          "industry_name": "社会服务",
+          "ts_code": "600189.SH",
+          "name": "泉阳泉",
+          "industry_name": "食品饮料",
           "broker_count": 1,
           "previous_broker_count": 0,
           "broker_count_delta": 1,
@@ -2403,47 +2137,47 @@
           ]
         },
         {
-          "ts_code": "603499.SH",
-          "name": "翔港科技",
-          "industry_name": "轻工制造",
+          "ts_code": "600415.SH",
+          "name": "小商品城",
+          "industry_name": "商贸零售",
           "broker_count": 1,
           "previous_broker_count": 0,
           "broker_count_delta": 1,
           "broker_names": [
-            "中国银河"
+            "国金证券"
           ]
         },
         {
-          "ts_code": "605098.SH",
-          "name": "行动教育",
+          "ts_code": "600690.SH",
+          "name": "海尔智家",
+          "industry_name": "家用电器",
+          "broker_count": 1,
+          "previous_broker_count": 1,
+          "broker_count_delta": 0,
+          "broker_names": [
+            "国信证券"
+          ]
+        },
+        {
+          "ts_code": "600754.SH",
+          "name": "锦江酒店",
           "industry_name": "社会服务",
           "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
+          "previous_broker_count": 3,
+          "broker_count_delta": -2,
           "broker_names": [
-            "财通证券"
+            "光大证券"
           ]
         },
         {
-          "ts_code": "605296.SH",
-          "name": "神农集团",
-          "industry_name": "农林牧渔",
+          "ts_code": "600872.SH",
+          "name": "中炬高新",
+          "industry_name": "食品饮料",
           "broker_count": 1,
           "previous_broker_count": 0,
           "broker_count_delta": 1,
           "broker_names": [
-            "中航证券"
-          ]
-        },
-        {
-          "ts_code": "605377.SH",
-          "name": "华旺科技",
-          "industry_name": "轻工制造",
-          "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
-          "broker_names": [
-            "申万宏源"
+            "长城证券"
           ]
         }
       ]
