@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-07T11:39:26",
+  "updated_at": "2026-05-07T13:21:11",
   "source": "内部通胀与收入数据表 + input_data/household_asset.xlsx + 手动维护的消费者信心月度数据 + iFind（收入、储户意愿增量更新） + data_sources/raw/macro_depositor_intentions_history.csv（储户意愿历史基线） + data_sources/raw/macro_urban_apc_history.csv（平均消费倾向）",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -792,8 +792,8 @@
           {
             "label": "上市公司人均薪酬增速",
             "basis_label": "较上年",
-            "direction": "down",
-            "delta_value": -1.86,
+            "direction": "up",
+            "delta_value": 1.37,
             "unit": "%"
           },
           {
@@ -886,7 +886,7 @@
               null,
               null,
               null,
-              null,
+              3.75,
               null
             ],
             "show_point_markers": true
@@ -1007,7 +1007,7 @@
               -37.28,
               -36.07,
               -41.42,
-              -36.4
+              -36.28
             ],
             "render_type": "bar",
             "stack": "household-balance-sheet",
@@ -1073,7 +1073,7 @@
               15.76,
               15.14,
               14.64,
-              null
+              13.12
             ],
             "render_type": "bar",
             "stack": "household-balance-sheet",
@@ -1106,7 +1106,7 @@
               -13.49,
               -10.95,
               -16.13,
-              null
+              -9.71
             ],
             "render_type": "line",
             "show_point_markers": true
