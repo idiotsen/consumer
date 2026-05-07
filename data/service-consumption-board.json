@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-07T08:48:13",
+  "updated_at": "2026-05-07T14:49:43",
   "source": "餐饮指数来自 input_data/industry_data.xlsx；社零、餐饮社零、飞天批价与茅台相对PE主源来自 iFind，失败时回退国家统计局 / input_data/industry_data.xlsx",
   "stale_after_minutes": 1440,
   "status": "ok",
