@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-07T13:21:11",
+  "updated_at": "2026-05-07T13:56:19",
   "source": "内部通胀与收入数据表 + input_data/household_asset.xlsx + 手动维护的消费者信心月度数据 + iFind（收入、储户意愿增量更新） + data_sources/raw/macro_depositor_intentions_history.csv（储户意愿历史基线） + data_sources/raw/macro_urban_apc_history.csv（平均消费倾向）",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -983,7 +983,7 @@
           {
             "series_id": "housing",
             "label": "住房资产环比变化（4Q累计）",
-            "unit": "%",
+            "unit": "万亿元",
             "y_axis_id": "left",
             "span_gaps": false,
             "values": [
@@ -1016,7 +1016,7 @@
           {
             "series_id": "stock",
             "label": "股票资产环比变化（4Q累计）",
-            "unit": "%",
+            "unit": "万亿元",
             "y_axis_id": "left",
             "span_gaps": false,
             "values": [
@@ -1049,7 +1049,7 @@
           {
             "series_id": "deposit",
             "label": "储蓄存款环比变化（4Q累计）",
-            "unit": "%",
+            "unit": "万亿元",
             "y_axis_id": "left",
             "span_gaps": false,
             "values": [
@@ -1082,7 +1082,7 @@
           {
             "series_id": "total",
             "label": "三项合计（4Q累计）",
-            "unit": "%",
+            "unit": "万亿元",
             "y_axis_id": "left",
             "span_gaps": false,
             "values": [
