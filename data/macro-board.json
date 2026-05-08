@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-07T14:46:27",
+  "updated_at": "2026-05-08T10:20:50",
   "source": "内部通胀与收入数据表 + input_data/household_asset.xlsx + 手动维护的消费者信心月度数据 + iFind（收入、储户意愿增量更新） + data_sources/raw/macro_depositor_intentions_history.csv（储户意愿历史基线） + data_sources/raw/macro_urban_apc_history.csv（平均消费倾向）",
   "stale_after_minutes": 1440,
   "status": "ok",
