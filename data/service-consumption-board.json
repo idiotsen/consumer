@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-11T19:16:34",
+  "updated_at": "2026-05-13T21:18:10",
   "source": "餐饮指数来自 input_data/industry_data.xlsx；社零、餐饮社零、飞天批价与茅台相对PE主源来自 iFind，失败时回退国家统计局 / input_data/industry_data.xlsx",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -4411,7 +4411,7 @@
           "chart_type": "line",
           "x_axis_label": "日期",
           "latest_label": "数据截至",
-          "latest_time_text": "2026-05-11",
+          "latest_time_text": "2026-05-13",
           "show_point_markers": false,
           "latest_changes": [],
           "labels": [
@@ -5654,7 +5654,9 @@
             "2026-05-06",
             "2026-05-07",
             "2026-05-08",
-            "2026-05-11"
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13"
           ],
           "series": [
             {
@@ -6903,6 +6905,8 @@
                 1665.0,
                 1665.0,
                 1665.0,
+                1680.0,
+                1685.0,
                 1680.0
               ]
             },
@@ -8152,7 +8156,9 @@
                 1.41,
                 1.41,
                 1.41,
-                1.39
+                1.39,
+                1.38,
+                1.37
               ]
             }
           ]
