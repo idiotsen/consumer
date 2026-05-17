@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-13T22:12:58",
-  "source": "内部通胀与收入数据表 + input_data/household_asset.xlsx + 手动维护的消费者信心月度数据 + iFind（收入、储户意愿增量更新） + data_sources/raw/macro_depositor_intentions_history.csv（储户意愿历史基线） + data_sources/raw/macro_urban_apc_history.csv（平均消费倾向）",
+  "updated_at": "2026-05-17T22:42:30",
+  "source": "iFind（国家统计局通胀、消费者信心、居民收入消费、央行储户意愿增量更新） + input_data/employee_history.xlsx（上市公司薪酬） + input_data/household_asset.xlsx（居民资产负债表）",
   "stale_after_minutes": 1440,
   "status": "ok",
   "status_message": "已接入 4 个宏观栏目，0 个栏目保留占位，0 个栏目加载失败。",
@@ -567,7 +567,7 @@
                   0.81,
                   0.72,
                   null,
-                  0.88,
+                  0.91,
                   0.71,
                   0.88
                 ]
@@ -676,7 +676,7 @@
                   0.36,
                   0.32,
                   0.27,
-                  0.36,
+                  0.72,
                   0.36,
                   0.41
                 ],
@@ -697,7 +697,7 @@
                   -0.5,
                   0.03,
                   0.19,
-                  0.09,
+                  0.29,
                   0.05,
                   -0.28
                 ],
@@ -718,7 +718,7 @@
                   -0.19,
                   -0.26,
                   -0.29,
-                  -0.34,
+                  -0.31,
                   0.12,
                   0.61
                 ],
@@ -760,7 +760,7 @@
                   0.23,
                   0.26,
                   0.22,
-                  0.23,
+                  -0.36,
                   0.07,
                   0.18
                 ],
@@ -1306,7 +1306,7 @@
         {
           "chart_id": "urban-apc-seasonal",
           "title": "城镇居民平均消费倾向",
-          "description": "基于本地维护的平均消费倾向季度序列，按季度节点展示季节性变化。",
+          "description": "基于国家统计局城镇居民收入与消费支出公告计算平均消费倾向，按季度节点展示季节性变化。",
           "chart_type": "line",
           "x_axis_label": "季度",
           "latest_label": "数据截至",
@@ -1437,7 +1437,7 @@
         {
           "chart_id": "consumer-confidence",
           "title": "消费者信心",
-          "description": "手动维护的国家统计局月度消费者信心数据，包含总指数以及就业、收入和消费意愿三个分项。",
+          "description": "基于 iFind 国家统计局月度消费者信心数据，包含总指数以及就业、收入和消费意愿三个分项。",
           "chart_type": "line",
           "x_axis_label": "时间",
           "latest_label": "数据截至",
