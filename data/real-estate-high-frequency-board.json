@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-22T14:52:36",
+  "updated_at": "2026-06-26T21:04:55",
   "source": "input_data/bingshan_index.xlsx + iFind（新房价格与销售；失败时回退既有缓存或已发布图表种子数据） + input_data/industry_data.xlsx",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -2033,11 +2033,10 @@
           "chart_type": "combo",
           "x_axis_label": "月份",
           "latest_label": "数据截至",
-          "latest_time_text": "2026-04",
+          "latest_time_text": "2026-05",
           "show_point_markers": false,
           "latest_changes": [],
           "labels": [
-            "2021-04",
             "2021-05",
             "2021-06",
             "2021-07",
@@ -2097,7 +2096,8 @@
             "2026-01",
             "2026-02",
             "2026-03",
-            "2026-04"
+            "2026-04",
+            "2026-05"
           ],
           "series": [
             {
@@ -2109,7 +2109,6 @@
               "span_gaps": false,
               "show_point_markers": true,
               "values": [
-                4.4,
                 4.5,
                 4.3,
                 4.1,
@@ -2169,7 +2168,8 @@
                 -3.33,
                 -3.46,
                 -3.59,
-                -3.65
+                -3.65,
+                -3.64
               ]
             },
             {
@@ -2181,7 +2181,6 @@
               "span_gaps": false,
               "show_point_markers": false,
               "values": [
-                0.5,
                 0.5,
                 0.4,
                 0.3,
@@ -2241,7 +2240,8 @@
                 -0.37,
                 -0.28,
                 -0.21,
-                -0.19
+                -0.19,
+                -0.2
               ]
             }
           ]
@@ -2253,11 +2253,10 @@
           "chart_type": "line",
           "x_axis_label": "月份",
           "latest_label": "数据截至",
-          "latest_time_text": "2026-04",
+          "latest_time_text": "2026-05",
           "show_point_markers": false,
           "latest_changes": [],
           "labels": [
-            "2021-04",
             "2021-05",
             "2021-06",
             "2021-07",
@@ -2317,7 +2316,8 @@
             "2026-01",
             "2026-02",
             "2026-03",
-            "2026-04"
+            "2026-04",
+            "2026-05"
           ],
           "series": [
             {
@@ -2328,7 +2328,6 @@
               "span_gaps": true,
               "show_point_markers": true,
               "values": [
-                20.5,
                 11.25,
                 6.66,
                 -9.45,
@@ -2388,7 +2387,8 @@
                 null,
                 -15.98,
                 -10.8,
-                -9.63
+                -9.63,
+                -12.35
               ]
             },
             {
@@ -2399,7 +2399,6 @@
               "span_gaps": true,
               "show_point_markers": true,
               "values": [
-                34.74,
                 20.07,
                 9.13,
                 -7.19,
@@ -2459,7 +2458,8 @@
                 null,
                 -21.79,
                 -15.7,
-                -6.47
+                -6.47,
+                -8.61
               ]
             }
           ]
