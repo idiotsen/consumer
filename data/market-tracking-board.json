@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-26T21:05:39",
+  "updated_at": "2026-06-28T21:04:06",
   "source": "Tushare sw_daily + income_vip + balancesheet_vip + daily + stock_basic + index_daily(000985.CSI) + broker_recommend + index_member + index_classify(SW2021)",
   "stale_after_minutes": 1440,
   "status": "partial",
@@ -613,7 +613,7 @@
               "roe_percentile_5y": 25.0,
               "latest_pb": 2.29,
               "latest_pb_date": "2026-06-26",
-              "latest_roe": 6.07,
+              "latest_roe": 6.08,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
             },
