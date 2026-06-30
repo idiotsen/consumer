@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-29",
+  "updated_at": "2026-06-30",
   "source": "Tushare sw_daily + index_member + fina_indicator_vip",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -48,12 +48,12 @@
           "pb_roe_alignment": {
             "pb_pct_3y": 64.6,
             "pb_pct_5y": 40.1,
-            "roe_pct_20q": 20.0,
+            "roe_pct_20q": 21.1,
             "current_roe": -0.26,
             "current_roe_period": "2026-03-31",
-            "match_gap": 20.1,
-            "status": "expensive_vs_roe",
-            "label": "估值高于业绩"
+            "match_gap": 19.0,
+            "status": "balanced",
+            "label": "估值与业绩基本匹配"
           }
         },
         {
@@ -109,10 +109,10 @@
           "pb_roe_alignment": {
             "pb_pct_3y": 1.3,
             "pb_pct_5y": 0.8,
-            "roe_pct_20q": 25.0,
+            "roe_pct_20q": 26.3,
             "current_roe": 3.05,
             "current_roe_period": "2026-03-31",
-            "match_gap": -24.2,
+            "match_gap": -25.5,
             "status": "cheap_vs_roe",
             "label": "业绩强于估值"
           }
@@ -144,10 +144,10 @@
           "pb_roe_alignment": {
             "pb_pct_3y": 0.8,
             "pb_pct_5y": 0.5,
-            "roe_pct_20q": 5.0,
+            "roe_pct_20q": 5.3,
             "current_roe": 1.11,
             "current_roe_period": "2026-03-31",
-            "match_gap": -4.5,
+            "match_gap": -4.8,
             "status": "balanced",
             "label": "估值与业绩基本匹配"
           }
@@ -197,10 +197,10 @@
           "pb_roe_alignment": {
             "pb_pct_3y": 0.3,
             "pb_pct_5y": 0.2,
-            "roe_pct_20q": 55.0,
+            "roe_pct_20q": 52.6,
             "current_roe": 0.69,
             "current_roe_period": "2026-03-31",
-            "match_gap": -54.8,
+            "match_gap": -52.4,
             "status": "cheap_vs_roe",
             "label": "业绩强于估值"
           }
@@ -232,10 +232,10 @@
           "pb_roe_alignment": {
             "pb_pct_3y": 0.4,
             "pb_pct_5y": 11.1,
-            "roe_pct_20q": 50.0,
+            "roe_pct_20q": 47.4,
             "current_roe": 0.53,
             "current_roe_period": "2026-03-31",
-            "match_gap": -38.9,
+            "match_gap": -36.3,
             "status": "cheap_vs_roe",
             "label": "业绩强于估值"
           }
