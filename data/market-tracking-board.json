@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-03T21:09:18",
+  "updated_at": "2026-07-05T21:09:02",
   "source": "Tushare sw_daily + income_vip + balancesheet_vip + daily + stock_basic + index_daily(000985.CSI) + broker_recommend + index_member + index_classify(SW2021)",
   "stale_after_minutes": 1440,
   "status": "partial",
@@ -530,17 +530,17 @@
           "x_axis_label": "PB五年分位数",
           "y_axis_label": "ROE(TTM)近20季分位数",
           "latest_label": "数据截至",
-          "latest_time_text": "PB 2026-07-02 / ROE 2026-03-31",
+          "latest_time_text": "PB 2026-07-03 / ROE 2026-03-31",
           "points": [
             {
               "ts_code": "801170.SI",
               "industry_name": "交通运输",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 0.8,
+              "pb_percentile_5y": 1.4,
               "roe_percentile_5y": 35.0,
-              "latest_pb": 1.15,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.16,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 7.03,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -550,10 +550,10 @@
               "industry_name": "传媒",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 61.5,
+              "pb_percentile_5y": 56.9,
               "roe_percentile_5y": 35.0,
-              "latest_pb": 2.55,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.51,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 4.23,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -566,7 +566,7 @@
               "pb_percentile_5y": 41.9,
               "roe_percentile_5y": 50.0,
               "latest_pb": 1.57,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 8.19,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -576,10 +576,10 @@
               "industry_name": "农林牧渔",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 2.0,
+              "pb_percentile_5y": 1.9,
               "roe_percentile_5y": 45.0,
-              "latest_pb": 2.12,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.11,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 2.67,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -589,10 +589,10 @@
               "industry_name": "医药生物",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 16.4,
+              "pb_percentile_5y": 20.6,
               "roe_percentile_5y": 10.0,
-              "latest_pb": 2.48,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.53,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 6.05,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -605,7 +605,7 @@
               "pb_percentile_5y": 27.7,
               "roe_percentile_5y": 25.0,
               "latest_pb": 1.6,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb_date": "2026-07-03",
               "latest_roe": -2.1,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -615,10 +615,10 @@
               "industry_name": "国防军工",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 72.8,
+              "pb_percentile_5y": 80.0,
               "roe_percentile_5y": 40.0,
-              "latest_pb": 3.54,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 3.67,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 4.76,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -628,10 +628,10 @@
               "industry_name": "基础化工",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 69.6,
+              "pb_percentile_5y": 66.5,
               "roe_percentile_5y": 30.0,
-              "latest_pb": 2.47,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.42,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 6.48,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -641,10 +641,10 @@
               "industry_name": "家用电器",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 4.6,
+              "pb_percentile_5y": 9.7,
               "roe_percentile_5y": 5.0,
-              "latest_pb": 2.17,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.21,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 13.15,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -654,10 +654,10 @@
               "industry_name": "建筑材料",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 78.6,
+              "pb_percentile_5y": 81.6,
               "roe_percentile_5y": 5.0,
-              "latest_pb": 1.85,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.89,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 1.49,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -667,10 +667,10 @@
               "industry_name": "建筑装饰",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 13.5,
+              "pb_percentile_5y": 16.8,
               "roe_percentile_5y": 5.0,
-              "latest_pb": 0.72,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 0.73,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 4.65,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -680,10 +680,10 @@
               "industry_name": "房地产",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 32.5,
+              "pb_percentile_5y": 32.6,
               "roe_percentile_5y": 5.0,
               "latest_pb": 0.77,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb_date": "2026-07-03",
               "latest_roe": -16.06,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -693,10 +693,10 @@
               "industry_name": "有色金属",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 74.2,
+              "pb_percentile_5y": 75.3,
               "roe_percentile_5y": 100.0,
-              "latest_pb": 3.24,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 3.27,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 17.21,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -706,10 +706,10 @@
               "industry_name": "机械设备",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 98.6,
+              "pb_percentile_5y": 99.8,
               "roe_percentile_5y": 15.0,
-              "latest_pb": 3.66,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 3.75,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 6.38,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -719,10 +719,10 @@
               "industry_name": "汽车",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 32.0,
+              "pb_percentile_5y": 43.1,
               "roe_percentile_5y": 50.0,
-              "latest_pb": 2.18,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.27,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 7.27,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -732,10 +732,10 @@
               "industry_name": "煤炭",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 38.8,
+              "pb_percentile_5y": 42.6,
               "roe_percentile_5y": 5.0,
-              "latest_pb": 1.34,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.35,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 8.55,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -745,10 +745,10 @@
               "industry_name": "环保",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 61.9,
+              "pb_percentile_5y": 65.6,
               "roe_percentile_5y": 25.0,
-              "latest_pb": 1.62,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.65,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 4.79,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -758,10 +758,10 @@
               "industry_name": "电力设备",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 50.5,
+              "pb_percentile_5y": 50.7,
               "roe_percentile_5y": 35.0,
-              "latest_pb": 3.27,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 3.28,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 5.75,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -771,10 +771,10 @@
               "industry_name": "电子",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 99.5,
+              "pb_percentile_5y": 99.4,
               "roe_percentile_5y": 70.0,
-              "latest_pb": 8.2,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 8.14,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 7.84,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -784,10 +784,10 @@
               "industry_name": "石油石化",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 22.0,
+              "pb_percentile_5y": 30.1,
               "roe_percentile_5y": 25.0,
-              "latest_pb": 1.23,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.25,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 9.3,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -797,10 +797,10 @@
               "industry_name": "社会服务",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 9.4,
+              "pb_percentile_5y": 9.7,
               "roe_percentile_5y": 60.0,
-              "latest_pb": 2.54,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.55,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 4.71,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -810,10 +810,10 @@
               "industry_name": "纺织服饰",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 44.0,
+              "pb_percentile_5y": 54.8,
               "roe_percentile_5y": 35.0,
-              "latest_pb": 1.73,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.76,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 6.34,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -823,10 +823,10 @@
               "industry_name": "综合",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 95.9,
+              "pb_percentile_5y": 95.4,
               "roe_percentile_5y": 30.0,
-              "latest_pb": 2.96,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.93,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": -2.95,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -836,10 +836,10 @@
               "industry_name": "美容护理",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 0.6,
+              "pb_percentile_5y": 0.9,
               "roe_percentile_5y": 15.0,
-              "latest_pb": 2.38,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.41,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 7.22,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -849,10 +849,10 @@
               "industry_name": "计算机",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 47.0,
+              "pb_percentile_5y": 47.9,
               "roe_percentile_5y": 45.0,
-              "latest_pb": 3.72,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 3.73,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 2.86,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -862,10 +862,10 @@
               "industry_name": "轻工制造",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 30.0,
+              "pb_percentile_5y": 31.4,
               "roe_percentile_5y": 5.0,
-              "latest_pb": 1.79,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.8,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 2.86,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -875,10 +875,10 @@
               "industry_name": "通信",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 98.3,
+              "pb_percentile_5y": 98.1,
               "roe_percentile_5y": 95.0,
-              "latest_pb": 7.23,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 7.2,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 9.09,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -888,10 +888,10 @@
               "industry_name": "钢铁",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 39.0,
+              "pb_percentile_5y": 39.1,
               "roe_percentile_5y": 30.0,
               "latest_pb": 0.98,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 1.3,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -901,10 +901,10 @@
               "industry_name": "银行",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 24.7,
+              "pb_percentile_5y": 24.8,
               "roe_percentile_5y": 5.0,
               "latest_pb": 0.48,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 8.59,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -914,10 +914,10 @@
               "industry_name": "非银金融",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 30.4,
+              "pb_percentile_5y": 32.7,
               "roe_percentile_5y": 90.0,
-              "latest_pb": 1.14,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.15,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 11.81,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": false
@@ -927,10 +927,10 @@
               "industry_name": "食品饮料",
               "level": "L1",
               "parent_l1_name": null,
-              "pb_percentile_5y": 0.5,
+              "pb_percentile_5y": 0.6,
               "roe_percentile_5y": 5.0,
               "latest_pb": 2.99,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 15.61,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -945,17 +945,17 @@
           "x_axis_label": "PB五年分位数",
           "y_axis_label": "ROE(TTM)近20季分位数",
           "latest_label": "数据截至",
-          "latest_time_text": "PB 2026-07-02 / ROE 2026-03-31",
+          "latest_time_text": "PB 2026-07-03 / ROE 2026-03-31",
           "points": [
             {
               "ts_code": "801128.SI",
               "industry_name": "休闲食品",
               "level": "L2",
               "parent_l1_name": "食品饮料",
-              "pb_percentile_5y": 3.2,
+              "pb_percentile_5y": 4.0,
               "roe_percentile_5y": 65.0,
-              "latest_pb": 1.89,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.9,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 9.18,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -965,10 +965,10 @@
               "industry_name": "白酒Ⅱ",
               "level": "L2",
               "parent_l1_name": "食品饮料",
-              "pb_percentile_5y": 0.5,
+              "pb_percentile_5y": 0.2,
               "roe_percentile_5y": 5.0,
-              "latest_pb": 3.4,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 3.38,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 18.61,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -978,10 +978,10 @@
               "industry_name": "调味发酵品Ⅱ",
               "level": "L2",
               "parent_l1_name": "食品饮料",
-              "pb_percentile_5y": 0.7,
+              "pb_percentile_5y": 1.0,
               "roe_percentile_5y": 20.0,
-              "latest_pb": 3.28,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 3.29,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 14.07,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -991,10 +991,10 @@
               "industry_name": "非白酒",
               "level": "L2",
               "parent_l1_name": "食品饮料",
-              "pb_percentile_5y": 0.6,
+              "pb_percentile_5y": 0.7,
               "roe_percentile_5y": 100.0,
-              "latest_pb": 2.32,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.33,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 10.6,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1004,10 +1004,10 @@
               "industry_name": "食品加工",
               "level": "L2",
               "parent_l1_name": "食品饮料",
-              "pb_percentile_5y": 1.0,
+              "pb_percentile_5y": 1.3,
               "roe_percentile_5y": 5.0,
-              "latest_pb": 1.95,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.96,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 6.98,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1017,10 +1017,10 @@
               "industry_name": "饮料乳品",
               "level": "L2",
               "parent_l1_name": "食品饮料",
-              "pb_percentile_5y": 5.5,
+              "pb_percentile_5y": 5.9,
               "roe_percentile_5y": 70.0,
-              "latest_pb": 2.71,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.73,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 15.09,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1030,10 +1030,10 @@
               "industry_name": "养殖业",
               "level": "L2",
               "parent_l1_name": "农林牧渔",
-              "pb_percentile_5y": 2.1,
+              "pb_percentile_5y": 1.9,
               "roe_percentile_5y": 45.0,
-              "latest_pb": 2.28,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.26,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 3.96,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1043,10 +1043,10 @@
               "industry_name": "农产品加工",
               "level": "L2",
               "parent_l1_name": "农林牧渔",
-              "pb_percentile_5y": 12.5,
+              "pb_percentile_5y": 15.2,
               "roe_percentile_5y": 50.0,
-              "latest_pb": 1.82,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.84,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 3.76,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1056,10 +1056,10 @@
               "industry_name": "动物保健Ⅱ",
               "level": "L2",
               "parent_l1_name": "农林牧渔",
-              "pb_percentile_5y": 21.4,
+              "pb_percentile_5y": 25.8,
               "roe_percentile_5y": 35.0,
-              "latest_pb": 1.88,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.95,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 4.9,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1069,10 +1069,10 @@
               "industry_name": "渔业",
               "level": "L2",
               "parent_l1_name": "农林牧渔",
-              "pb_percentile_5y": 65.1,
+              "pb_percentile_5y": 66.7,
               "roe_percentile_5y": 5.0,
-              "latest_pb": 2.12,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.14,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": -19.76,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1082,10 +1082,10 @@
               "industry_name": "种植业",
               "level": "L2",
               "parent_l1_name": "农林牧渔",
-              "pb_percentile_5y": 2.7,
+              "pb_percentile_5y": 3.1,
               "roe_percentile_5y": 70.0,
-              "latest_pb": 2.02,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.03,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 5.42,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1095,10 +1095,10 @@
               "industry_name": "饲料",
               "level": "L2",
               "parent_l1_name": "农林牧渔",
-              "pb_percentile_5y": 0.8,
+              "pb_percentile_5y": 0.3,
               "roe_percentile_5y": 45.0,
-              "latest_pb": 1.99,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.97,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": -1.78,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1108,10 +1108,10 @@
               "industry_name": "个护用品",
               "level": "L2",
               "parent_l1_name": "美容护理",
-              "pb_percentile_5y": 6.8,
+              "pb_percentile_5y": 7.2,
               "roe_percentile_5y": 45.0,
-              "latest_pb": 1.86,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.88,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 7.09,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1121,10 +1121,10 @@
               "industry_name": "化妆品",
               "level": "L2",
               "parent_l1_name": "美容护理",
-              "pb_percentile_5y": 3.1,
+              "pb_percentile_5y": 3.5,
               "roe_percentile_5y": 65.0,
-              "latest_pb": 2.48,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.51,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 8.09,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1134,10 +1134,10 @@
               "industry_name": "厨卫电器",
               "level": "L2",
               "parent_l1_name": "家用电器",
-              "pb_percentile_5y": 0.6,
+              "pb_percentile_5y": 0.8,
               "roe_percentile_5y": 5.0,
-              "latest_pb": 1.44,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.46,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 5.03,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1147,10 +1147,10 @@
               "industry_name": "家电零部件Ⅱ",
               "level": "L2",
               "parent_l1_name": "家用电器",
-              "pb_percentile_5y": 53.5,
+              "pb_percentile_5y": 62.8,
               "roe_percentile_5y": 5.0,
-              "latest_pb": 3.97,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 4.22,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 9.1,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1160,10 +1160,10 @@
               "industry_name": "小家电",
               "level": "L2",
               "parent_l1_name": "家用电器",
-              "pb_percentile_5y": 0.6,
+              "pb_percentile_5y": 1.0,
               "roe_percentile_5y": 5.0,
-              "latest_pb": 2.3,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.39,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 11.41,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1173,10 +1173,10 @@
               "industry_name": "照明设备Ⅱ",
               "level": "L2",
               "parent_l1_name": "家用电器",
-              "pb_percentile_5y": 62.3,
+              "pb_percentile_5y": 70.4,
               "roe_percentile_5y": 5.0,
-              "latest_pb": 2.03,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.09,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 3.36,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1186,10 +1186,10 @@
               "industry_name": "白色家电",
               "level": "L2",
               "parent_l1_name": "家用电器",
-              "pb_percentile_5y": 0.9,
+              "pb_percentile_5y": 1.4,
               "roe_percentile_5y": 5.0,
-              "latest_pb": 1.95,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.97,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 16.2,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1199,10 +1199,10 @@
               "industry_name": "黑色家电",
               "level": "L2",
               "parent_l1_name": "家用电器",
-              "pb_percentile_5y": 67.7,
+              "pb_percentile_5y": 67.3,
               "roe_percentile_5y": 30.0,
-              "latest_pb": 2.26,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.23,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 7.15,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1212,10 +1212,10 @@
               "industry_name": "一般零售",
               "level": "L2",
               "parent_l1_name": "商贸零售",
-              "pb_percentile_5y": 39.7,
+              "pb_percentile_5y": 41.6,
               "roe_percentile_5y": 10.0,
-              "latest_pb": 1.4,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.41,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": -7.03,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1225,10 +1225,10 @@
               "industry_name": "专业连锁Ⅱ",
               "level": "L2",
               "parent_l1_name": "商贸零售",
-              "pb_percentile_5y": 28.7,
+              "pb_percentile_5y": 29.5,
               "roe_percentile_5y": 10.0,
-              "latest_pb": 2.54,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.56,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 2.61,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1238,10 +1238,10 @@
               "industry_name": "互联网电商",
               "level": "L2",
               "parent_l1_name": "商贸零售",
-              "pb_percentile_5y": 38.6,
+              "pb_percentile_5y": 39.3,
               "roe_percentile_5y": 100.0,
-              "latest_pb": 2.47,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.48,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 5.17,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1254,7 +1254,7 @@
               "pb_percentile_5y": 54.3,
               "roe_percentile_5y": 100.0,
               "latest_pb": 1.32,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 7.63,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1264,10 +1264,10 @@
               "industry_name": "专业服务",
               "level": "L2",
               "parent_l1_name": "社会服务",
-              "pb_percentile_5y": 41.2,
+              "pb_percentile_5y": 38.6,
               "roe_percentile_5y": 15.0,
-              "latest_pb": 2.69,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.65,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 7.49,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1277,10 +1277,10 @@
               "industry_name": "教育",
               "level": "L2",
               "parent_l1_name": "社会服务",
-              "pb_percentile_5y": 64.3,
+              "pb_percentile_5y": 65.6,
               "roe_percentile_5y": 85.0,
-              "latest_pb": 3.95,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 4.01,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": -0.86,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1290,10 +1290,10 @@
               "industry_name": "旅游及景区",
               "level": "L2",
               "parent_l1_name": "社会服务",
-              "pb_percentile_5y": 12.1,
+              "pb_percentile_5y": 12.3,
               "roe_percentile_5y": 65.0,
-              "latest_pb": 2.32,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.35,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 3.36,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1303,10 +1303,10 @@
               "industry_name": "酒店餐饮",
               "level": "L2",
               "parent_l1_name": "社会服务",
-              "pb_percentile_5y": 0.5,
+              "pb_percentile_5y": 0.6,
               "roe_percentile_5y": 80.0,
-              "latest_pb": 1.47,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.48,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 4.62,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1319,7 +1319,7 @@
               "pb_percentile_5y": 76.7,
               "roe_percentile_5y": 5.0,
               "latest_pb": 2.41,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 4.0,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1329,10 +1329,10 @@
               "industry_name": "家居用品",
               "level": "L2",
               "parent_l1_name": "轻工制造",
-              "pb_percentile_5y": 12.3,
+              "pb_percentile_5y": 13.8,
               "roe_percentile_5y": 5.0,
-              "latest_pb": 1.82,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.83,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 5.48,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1342,10 +1342,10 @@
               "industry_name": "文娱用品",
               "level": "L2",
               "parent_l1_name": "轻工制造",
-              "pb_percentile_5y": 12.0,
+              "pb_percentile_5y": 12.8,
               "roe_percentile_5y": 5.0,
-              "latest_pb": 2.76,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 2.79,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 5.12,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1355,10 +1355,10 @@
               "industry_name": "造纸",
               "level": "L2",
               "parent_l1_name": "轻工制造",
-              "pb_percentile_5y": 16.4,
+              "pb_percentile_5y": 21.1,
               "roe_percentile_5y": 20.0,
-              "latest_pb": 1.11,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.13,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": -3.17,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1368,10 +1368,10 @@
               "industry_name": "服装家纺",
               "level": "L2",
               "parent_l1_name": "纺织服饰",
-              "pb_percentile_5y": 71.6,
+              "pb_percentile_5y": 77.4,
               "roe_percentile_5y": 30.0,
-              "latest_pb": 1.81,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.84,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 4.56,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1381,10 +1381,10 @@
               "industry_name": "纺织制造",
               "level": "L2",
               "parent_l1_name": "纺织服饰",
-              "pb_percentile_5y": 43.8,
+              "pb_percentile_5y": 47.1,
               "roe_percentile_5y": 15.0,
-              "latest_pb": 1.59,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.6,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 8.23,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1394,10 +1394,10 @@
               "industry_name": "饰品",
               "level": "L2",
               "parent_l1_name": "纺织服饰",
-              "pb_percentile_5y": 16.0,
+              "pb_percentile_5y": 19.7,
               "roe_percentile_5y": 60.0,
-              "latest_pb": 1.75,
-              "latest_pb_date": "2026-07-02",
+              "latest_pb": 1.81,
+              "latest_pb_date": "2026-07-03",
               "latest_roe": 8.72,
               "latest_roe_period": "2026-03-31",
               "is_consumer_related": true
@@ -1415,7 +1415,7 @@
         {
           "group_id": "l1",
           "title": "申万一级行业",
-          "as_of_date": "2026-07-02",
+          "as_of_date": "2026-07-03",
           "industries": [
             {
               "ts_code": "801010.SI",
@@ -1502,13 +1502,23 @@
         {
           "group_id": "l2",
           "title": "申万二级行业",
-          "as_of_date": "2026-07-02",
+          "as_of_date": "2026-07-03",
           "industries": [
             {
               "ts_code": "801017.SI",
               "industry_name": "养殖业",
               "level": "L2",
               "parent_l1_name": "农林牧渔",
+              "total_score": 1,
+              "high_crowding": false,
+              "excluded_signal": false,
+              "crowded_20d_count": 0
+            },
+            {
+              "ts_code": "801142.SI",
+              "industry_name": "家居用品",
+              "level": "L2",
+              "parent_l1_name": "轻工制造",
               "total_score": 1,
               "high_crowding": false,
               "excluded_signal": false,
@@ -1522,7 +1532,7 @@
               "total_score": 1,
               "high_crowding": false,
               "excluded_signal": false,
-              "crowded_20d_count": 1
+              "crowded_20d_count": 0
             },
             {
               "ts_code": "801129.SI",
@@ -1639,16 +1649,6 @@
               "industry_name": "厨卫电器",
               "level": "L2",
               "parent_l1_name": "家用电器",
-              "total_score": 0,
-              "high_crowding": false,
-              "excluded_signal": false,
-              "crowded_20d_count": 0
-            },
-            {
-              "ts_code": "801142.SI",
-              "industry_name": "家居用品",
-              "level": "L2",
-              "parent_l1_name": "轻工制造",
               "total_score": 0,
               "high_crowding": false,
               "excluded_signal": false,
@@ -1870,7 +1870,7 @@
         "chart_type": "line",
         "x_axis_label": "时间",
         "latest_label": "数据截至",
-        "latest_time_text": "2026-06",
+        "latest_time_text": "2026-07",
         "show_point_markers": false,
         "latest_changes": [],
         "labels": [
@@ -1934,7 +1934,8 @@
           "2026-03",
           "2026-04",
           "2026-05",
-          "2026-06"
+          "2026-06",
+          "2026-07"
         ],
         "series": [
           {
@@ -2005,89 +2006,38 @@
               13.93,
               14.32,
               10.32,
-              13.78
+              13.78,
+              8.44
             ]
           }
         ]
       },
-      "notice_message": "样本月度间券商家数不一致，范围为 11-44 家。与最新月份 2026-06 相比，有 60 个月的券商名单不同。因此该占比更适合做趋势跟踪，不宜直接做严格横向比较。",
+      "notice_message": "样本月度间券商家数不一致，范围为 11-44 家。与最新月份 2026-07 相比，有 61 个月的券商名单不同。因此该占比更适合做趋势跟踪，不宜直接做严格横向比较。",
       "coverage": {
-        "latest_month": "2026-06",
-        "months_covered": 61,
-        "latest_broker_count": 34,
+        "latest_month": "2026-07",
+        "months_covered": 62,
+        "latest_broker_count": 32,
         "min_broker_count": 11,
         "max_broker_count": 44,
         "broker_count_consistent": false,
         "broker_members_consistent": false,
-        "latest_total_recommendations": 341,
-        "latest_consumer_recommendations": 47,
-        "latest_consumer_stock_count": 34,
-        "latest_consumer_share_pct": 13.78,
-        "comparison_note": "样本月度间券商家数不一致，范围为 11-44 家。与最新月份 2026-06 相比，有 60 个月的券商名单不同。因此该占比更适合做趋势跟踪，不宜直接做严格横向比较。"
+        "latest_total_recommendations": 308,
+        "latest_consumer_recommendations": 26,
+        "latest_consumer_stock_count": 23,
+        "latest_consumer_share_pct": 8.44,
+        "comparison_note": "样本月度间券商家数不一致，范围为 11-44 家。与最新月份 2026-07 相比，有 61 个月的券商名单不同。因此该占比更适合做趋势跟踪，不宜直接做严格横向比较。"
       },
       "recommended_stocks": [
-        {
-          "ts_code": "603345.SH",
-          "name": "安井食品",
-          "industry_name": "食品饮料",
-          "broker_count": 5,
-          "previous_broker_count": 5,
-          "broker_count_delta": 0,
-          "broker_names": [
-            "东兴证券",
-            "东海证券",
-            "华安证券",
-            "华龙证券",
-            "国信证券"
-          ]
-        },
-        {
-          "ts_code": "600415.SH",
-          "name": "小商品城",
-          "industry_name": "商贸零售",
-          "broker_count": 3,
-          "previous_broker_count": 1,
-          "broker_count_delta": 2,
-          "broker_names": [
-            "东吴证券",
-            "国金证券",
-            "长江证券"
-          ]
-        },
         {
           "ts_code": "000333.SZ",
           "name": "美的集团",
           "industry_name": "家用电器",
           "broker_count": 2,
-          "previous_broker_count": 0,
-          "broker_count_delta": 2,
+          "previous_broker_count": 2,
+          "broker_count_delta": 0,
           "broker_names": [
-            "兴业证券",
-            "开源证券"
-          ]
-        },
-        {
-          "ts_code": "002290.SZ",
-          "name": "禾盛新材",
-          "industry_name": "家用电器",
-          "broker_count": 2,
-          "previous_broker_count": 0,
-          "broker_count_delta": 2,
-          "broker_names": [
-            "东吴证券",
-            "太平洋"
-          ]
-        },
-        {
-          "ts_code": "002311.SZ",
-          "name": "海大集团",
-          "industry_name": "农林牧渔",
-          "broker_count": 2,
-          "previous_broker_count": 0,
-          "broker_count_delta": 2,
-          "broker_names": [
-            "华泰证券",
-            "天风证券"
+            "交银国际",
+            "华泰证券"
           ]
         },
         {
@@ -2095,8 +2045,8 @@
           "name": "比音勒芬",
           "industry_name": "纺织服饰",
           "broker_count": 2,
-          "previous_broker_count": 0,
-          "broker_count_delta": 2,
+          "previous_broker_count": 2,
+          "broker_count_delta": 0,
           "broker_names": [
             "华泰证券",
             "长江证券"
@@ -2107,35 +2057,22 @@
           "name": "海信视像",
           "industry_name": "家用电器",
           "broker_count": 2,
-          "previous_broker_count": 1,
+          "previous_broker_count": 2,
+          "broker_count_delta": 0,
+          "broker_names": [
+            "财信证券",
+            "财通证券"
+          ]
+        },
+        {
+          "ts_code": "000524.SZ",
+          "name": "岭南控股",
+          "industry_name": "社会服务",
+          "broker_count": 1,
+          "previous_broker_count": 0,
           "broker_count_delta": 1,
           "broker_names": [
-            "天风证券",
-            "财信证券"
-          ]
-        },
-        {
-          "ts_code": "600258.SH",
-          "name": "首旅酒店",
-          "industry_name": "社会服务",
-          "broker_count": 2,
-          "previous_broker_count": 0,
-          "broker_count_delta": 2,
-          "broker_names": [
-            "中银证券",
-            "天风证券"
-          ]
-        },
-        {
-          "ts_code": "603605.SH",
-          "name": "珀莱雅",
-          "industry_name": "美容护理",
-          "broker_count": 2,
-          "previous_broker_count": 0,
-          "broker_count_delta": 2,
-          "broker_names": [
-            "国元证券",
-            "天风证券"
+            "中银证券"
           ]
         },
         {
@@ -2150,75 +2087,64 @@
           ]
         },
         {
-          "ts_code": "000729.SZ",
-          "name": "燕京啤酒",
-          "industry_name": "食品饮料",
-          "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
-          "broker_names": [
-            "中银证券"
-          ]
-        },
-        {
-          "ts_code": "002050.SZ",
-          "name": "三花智控",
-          "industry_name": "家用电器",
-          "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
-          "broker_names": [
-            "财信证券"
-          ]
-        },
-        {
           "ts_code": "002078.SZ",
           "name": "太阳纸业",
           "industry_name": "轻工制造",
           "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
+          "previous_broker_count": 1,
+          "broker_count_delta": 0,
           "broker_names": [
             "华安证券"
           ]
         },
         {
-          "ts_code": "002345.SZ",
-          "name": "潮宏基",
-          "industry_name": "纺织服饰",
+          "ts_code": "002100.SZ",
+          "name": "天康生物",
+          "industry_name": "农林牧渔",
           "broker_count": 1,
           "previous_broker_count": 0,
           "broker_count_delta": 1,
           "broker_names": [
-            "天风证券"
+            "太平洋"
           ]
         },
         {
-          "ts_code": "002429.SZ",
-          "name": "兆驰股份",
+          "ts_code": "002290.SZ",
+          "name": "禾盛新材",
           "industry_name": "家用电器",
           "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
+          "previous_broker_count": 2,
+          "broker_count_delta": -1,
           "broker_names": [
-            "浙商证券"
+            "太平洋"
           ]
         },
         {
-          "ts_code": "002568.SZ",
-          "name": "百润股份",
-          "industry_name": "食品饮料",
+          "ts_code": "002311.SZ",
+          "name": "海大集团",
+          "industry_name": "农林牧渔",
           "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
+          "previous_broker_count": 2,
+          "broker_count_delta": -1,
           "broker_names": [
-            "财通证券"
+            "华泰证券"
           ]
         },
         {
           "ts_code": "002627.SZ",
           "name": "三峡旅游",
           "industry_name": "社会服务",
+          "broker_count": 1,
+          "previous_broker_count": 1,
+          "broker_count_delta": 0,
+          "broker_names": [
+            "长江证券"
+          ]
+        },
+        {
+          "ts_code": "002714.SZ",
+          "name": "牧原股份",
+          "industry_name": "农林牧渔",
           "broker_count": 1,
           "previous_broker_count": 0,
           "broker_count_delta": 1,
@@ -2227,58 +2153,25 @@
           ]
         },
         {
-          "ts_code": "002668.SZ",
-          "name": "TCL智家",
-          "industry_name": "家用电器",
-          "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
-          "broker_names": [
-            "国信证券"
-          ]
-        },
-        {
           "ts_code": "002831.SZ",
           "name": "裕同科技",
           "industry_name": "轻工制造",
           "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
+          "previous_broker_count": 1,
+          "broker_count_delta": 0,
           "broker_names": [
-            "国金证券"
+            "浙商证券"
           ]
         },
         {
-          "ts_code": "002847.SZ",
-          "name": "盐津铺子",
+          "ts_code": "002991.SZ",
+          "name": "甘源食品",
           "industry_name": "食品饮料",
           "broker_count": 1,
           "previous_broker_count": 0,
           "broker_count_delta": 1,
           "broker_names": [
-            "东吴证券"
-          ]
-        },
-        {
-          "ts_code": "002956.SZ",
-          "name": "西麦食品",
-          "industry_name": "食品饮料",
-          "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
-          "broker_names": [
-            "开源证券"
-          ]
-        },
-        {
-          "ts_code": "300740.SZ",
-          "name": "水羊股份",
-          "industry_name": "美容护理",
-          "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
-          "broker_names": [
-            "财信证券"
+            "东兴证券"
           ]
         },
         {
@@ -2286,16 +2179,16 @@
           "name": "华致酒行",
           "industry_name": "商贸零售",
           "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
+          "previous_broker_count": 1,
+          "broker_count_delta": 0,
           "broker_names": [
             "长城证券"
           ]
         },
         {
-          "ts_code": "300761.SZ",
-          "name": "立华股份",
-          "industry_name": "农林牧渔",
+          "ts_code": "300972.SZ",
+          "name": "万辰集团",
+          "industry_name": "商贸零售",
           "broker_count": 1,
           "previous_broker_count": 0,
           "broker_count_delta": 1,
@@ -2308,87 +2201,76 @@
           "name": "致欧科技",
           "industry_name": "轻工制造",
           "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
+          "previous_broker_count": 1,
+          "broker_count_delta": 0,
           "broker_names": [
-            "天风证券"
+            "国金证券"
           ]
         },
         {
-          "ts_code": "600189.SH",
-          "name": "泉阳泉",
+          "ts_code": "600298.SH",
+          "name": "安琪酵母",
           "industry_name": "食品饮料",
           "broker_count": 1,
-          "previous_broker_count": 1,
-          "broker_count_delta": 0,
+          "previous_broker_count": 0,
+          "broker_count_delta": 1,
           "broker_names": [
             "长江证券"
           ]
         },
         {
-          "ts_code": "600754.SH",
-          "name": "锦江酒店",
-          "industry_name": "社会服务",
+          "ts_code": "600415.SH",
+          "name": "小商品城",
+          "industry_name": "商贸零售",
           "broker_count": 1,
-          "previous_broker_count": 1,
-          "broker_count_delta": 0,
+          "previous_broker_count": 3,
+          "broker_count_delta": -2,
           "broker_names": [
-            "国联民生"
+            "长江证券"
           ]
         },
         {
-          "ts_code": "603112.SH",
-          "name": "华翔股份",
-          "industry_name": "家用电器",
-          "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
-          "broker_names": [
-            "浙商证券"
-          ]
-        },
-        {
-          "ts_code": "603195.SH",
-          "name": "公牛集团",
-          "industry_name": "轻工制造",
-          "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
-          "broker_names": [
-            "开源证券"
-          ]
-        },
-        {
-          "ts_code": "603486.SH",
-          "name": "科沃斯",
-          "industry_name": "家用电器",
-          "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
-          "broker_names": [
-            "财通证券"
-          ]
-        },
-        {
-          "ts_code": "603661.SH",
-          "name": "恒林股份",
-          "industry_name": "轻工制造",
-          "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
-          "broker_names": [
-            "天风证券"
-          ]
-        },
-        {
-          "ts_code": "603697.SH",
-          "name": "有友食品",
+          "ts_code": "600882.SH",
+          "name": "妙可蓝多",
           "industry_name": "食品饮料",
           "broker_count": 1,
           "previous_broker_count": 0,
           "broker_count_delta": 1,
           "broker_names": [
-            "华鑫证券"
+            "华西证券"
+          ]
+        },
+        {
+          "ts_code": "601888.SH",
+          "name": "中国中免",
+          "industry_name": "商贸零售",
+          "broker_count": 1,
+          "previous_broker_count": 0,
+          "broker_count_delta": 1,
+          "broker_names": [
+            "长城证券"
+          ]
+        },
+        {
+          "ts_code": "603288.SH",
+          "name": "海天味业",
+          "industry_name": "食品饮料",
+          "broker_count": 1,
+          "previous_broker_count": 0,
+          "broker_count_delta": 1,
+          "broker_names": [
+            "兴业证券"
+          ]
+        },
+        {
+          "ts_code": "603605.SH",
+          "name": "珀莱雅",
+          "industry_name": "美容护理",
+          "broker_count": 1,
+          "previous_broker_count": 2,
+          "broker_count_delta": -1,
+          "broker_names": [
+            "国元证券"
           ]
         },
         {
@@ -2396,21 +2278,10 @@
           "name": "行动教育",
           "industry_name": "社会服务",
           "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
+          "previous_broker_count": 1,
+          "broker_count_delta": 0,
           "broker_names": [
             "财通证券"
-          ]
-        },
-        {
-          "ts_code": "688169.SH",
-          "name": "石头科技",
-          "industry_name": "家用电器",
-          "broker_count": 1,
-          "previous_broker_count": 0,
-          "broker_count_delta": 1,
-          "broker_names": [
-            "天风证券"
           ]
         }
       ]
