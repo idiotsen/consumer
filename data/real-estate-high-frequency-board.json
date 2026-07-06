@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06T13:35:02",
+  "updated_at": "2026-07-06T16:08:50",
   "source": "input_data/bingshan_index.xlsx + iFind（新房价格与销售；失败时回退既有缓存或已发布图表种子数据） + input_data/industry_data.xlsx",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -16,10 +16,10 @@
       "charts": [
         {
           "chart_id": "second-hand-price-mom",
-          "title": "二手房价格月环比",
+          "title": "二手房价格月环比（周度）",
           "description": "冰山统计的全国、一线、强二线、弱二线和三线城市的二手房价格月环比走势。",
           "chart_type": "line",
-          "x_axis_label": "周度时间",
+          "x_axis_label": " ",
           "latest_label": "数据截至",
           "latest_time_text": "2026-07-05",
           "show_point_markers": false,
@@ -1018,10 +1018,10 @@
         },
         {
           "chart_id": "second-hand-activity",
-          "title": "二手房活跃度",
+          "title": "二手房活跃度（周度）",
           "description": "冰山统计的全国、一线、强二线、弱二线和三线城市的二手房带看活跃度走势。",
           "chart_type": "line",
-          "x_axis_label": "周度时间",
+          "x_axis_label": " ",
           "latest_label": "数据截至",
           "latest_time_text": "2026-07-05",
           "show_point_markers": false,
