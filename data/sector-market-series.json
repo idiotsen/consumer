@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-05",
+  "updated_at": "2026-07-06",
   "source": "Tushare sw_daily + index_daily(000906.SH)",
   "stale_after_minutes": 1440,
   "status": "ok",
