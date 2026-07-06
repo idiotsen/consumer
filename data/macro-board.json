@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06T09:26:16",
+  "updated_at": "2026-07-06T13:34:37",
   "source": "iFind（国家统计局通胀、消费者信心、居民收入消费、央行储户意愿增量更新） + input_data/employee_history.xlsx（上市公司薪酬） + input_data/household_asset.xlsx（居民资产负债表）",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -1445,7 +1445,7 @@
           "chart_type": "line",
           "x_axis_label": "时间",
           "latest_label": "数据截至",
-          "latest_time_text": "2026-12",
+          "latest_time_text": "2026-05",
           "show_point_markers": false,
           "latest_changes": [
             {
@@ -1472,8 +1472,8 @@
             {
               "label": "消费意愿",
               "basis_label": "环比",
-              "direction": "down",
-              "delta_value": -113.4,
+              "direction": "up",
+              "delta_value": 0.8,
               "unit": "点"
             }
           ],
@@ -1566,8 +1566,7 @@
             "2026-02",
             "2026-03",
             "2026-04",
-            "2026-05",
-            "2026-12"
+            "2026-05"
           ],
           "series": [
             {
@@ -1665,8 +1664,7 @@
                 91.6,
                 90.0,
                 89.0,
-                89.9,
-                null
+                89.9
               ]
             },
             {
@@ -1764,8 +1762,7 @@
                 76.3,
                 74.4,
                 73.4,
-                74.6,
-                null
+                74.6
               ]
             },
             {
@@ -1863,8 +1860,7 @@
                 100.3,
                 98.9,
                 97.9,
-                98.8,
-                null
+                98.8
               ]
             },
             {
@@ -1962,8 +1958,7 @@
                 98.1,
                 96.8,
                 95.6,
-                96.4,
-                -17.0
+                96.4
               ]
             }
           ]
