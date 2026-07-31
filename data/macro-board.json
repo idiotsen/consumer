@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-30T21:00:11",
+  "updated_at": "2026-07-31T21:00:06",
   "source": "iFind（国家统计局通胀、消费者信心、居民收入消费、央行储户意愿增量更新） + input_data/employee_history.xlsx（上市公司薪酬） + input_data/household_asset.xlsx（居民资产负债表）",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -613,8 +613,8 @@
               {
                 "label": "食品拉动",
                 "basis_label": "环比",
-                "direction": "up",
-                "delta_value": 0.01,
+                "direction": "down",
+                "delta_value": -0.03,
                 "unit": "pct"
               },
               {
@@ -635,7 +635,7 @@
                 "label": "工业消费品拉动（不含燃料+黄金饰品）",
                 "basis_label": "环比",
                 "direction": "up",
-                "delta_value": 0.05,
+                "delta_value": 0.1,
                 "unit": "pct"
               }
             ],
@@ -699,15 +699,15 @@
                 "y_axis_id": "left",
                 "span_gaps": false,
                 "values": [
-                  -0.76,
-                  -0.5,
-                  0.03,
-                  0.19,
-                  0.29,
-                  0.05,
-                  -0.28,
+                  -0.31,
+                  -0.33,
                   -0.29,
-                  -0.28
+                  -0.26,
+                  0.09,
+                  0.07,
+                  -0.02,
+                  -0.07,
+                  -0.1
                 ],
                 "render_type": "bar",
                 "stack": "cpi-passthrough",
@@ -762,15 +762,15 @@
                 "y_axis_id": "left",
                 "span_gaps": false,
                 "values": [
-                  0.14,
-                  0.23,
-                  0.26,
-                  0.22,
-                  -0.36,
-                  0.07,
-                  0.18,
-                  0.16,
-                  0.21
+                  -0.3,
+                  0.05,
+                  0.59,
+                  0.66,
+                  -0.15,
+                  0.06,
+                  -0.08,
+                  -0.06,
+                  0.04
                 ],
                 "render_type": "bar",
                 "stack": "cpi-passthrough",
@@ -1465,22 +1465,22 @@
             {
               "label": "就业",
               "basis_label": "环比",
-              "direction": "up",
-              "delta_value": 1.2,
+              "direction": "down",
+              "delta_value": -0.9,
               "unit": "点"
             },
             {
               "label": "收入",
               "basis_label": "环比",
-              "direction": "up",
-              "delta_value": 0.9,
+              "direction": "down",
+              "delta_value": -0.3,
               "unit": "点"
             },
             {
               "label": "消费意愿",
               "basis_label": "环比",
-              "direction": "up",
-              "delta_value": 0.8,
+              "direction": "down",
+              "delta_value": -0.4,
               "unit": "点"
             }
           ],
@@ -1772,7 +1772,7 @@
                 74.4,
                 73.4,
                 74.6,
-                null
+                73.7
               ]
             },
             {
@@ -1871,7 +1871,7 @@
                 98.9,
                 97.9,
                 98.8,
-                null
+                98.5
               ]
             },
             {
@@ -1970,7 +1970,7 @@
                 96.8,
                 95.6,
                 96.4,
-                null
+                96.0
               ]
             }
           ]
