@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31T21:02:48",
+  "updated_at": "2026-08-02T21:11:01",
   "source": "Tushare sw_daily + income_vip + balancesheet_vip + daily + stock_basic + index_daily(000985.CSI) + broker_recommend + index_member + index_classify(SW2021)",
   "stale_after_minutes": 1440,
   "status": "partial",
@@ -178,7 +178,7 @@
             "industry_name": "非白酒",
             "latest_roe_ttm": 10.6,
             "previous_roe_ttm": 10.48,
-            "roe_percentile_10y": 100.0,
+            "roe_percentile_10y": 97.5,
             "direction": "up"
           },
           {
@@ -590,7 +590,7 @@
               "level": "L1",
               "parent_l1_name": null,
               "pb_percentile_5y": 20.9,
-              "roe_percentile_5y": 10.0,
+              "roe_percentile_5y": 20.0,
               "latest_pb": 2.52,
               "latest_pb_date": "2026-07-31",
               "latest_roe": 6.05,
@@ -992,7 +992,7 @@
               "level": "L2",
               "parent_l1_name": "食品饮料",
               "pb_percentile_5y": 2.9,
-              "roe_percentile_5y": 100.0,
+              "roe_percentile_5y": 95.0,
               "latest_pb": 2.56,
               "latest_pb_date": "2026-07-31",
               "latest_roe": 10.6,

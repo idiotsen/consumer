@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31T21:00:06",
+  "updated_at": "2026-08-02T21:00:12",
   "source": "iFind（国家统计局通胀、消费者信心、居民收入消费、央行储户意愿增量更新） + input_data/employee_history.xlsx（上市公司薪酬） + input_data/household_asset.xlsx（居民资产负债表）",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -561,7 +561,7 @@
                   0.16,
                   0.27,
                   null,
-                  0.14,
+                  2.94,
                   0.33,
                   0.32,
                   0.4,
@@ -613,8 +613,8 @@
               {
                 "label": "食品拉动",
                 "basis_label": "环比",
-                "direction": "down",
-                "delta_value": -0.03,
+                "direction": "up",
+                "delta_value": 0.01,
                 "unit": "pct"
               },
               {
@@ -635,7 +635,7 @@
                 "label": "工业消费品拉动（不含燃料+黄金饰品）",
                 "basis_label": "环比",
                 "direction": "up",
-                "delta_value": 0.1,
+                "delta_value": 0.05,
                 "unit": "pct"
               }
             ],
@@ -699,15 +699,15 @@
                 "y_axis_id": "left",
                 "span_gaps": false,
                 "values": [
-                  -0.31,
-                  -0.33,
+                  -0.76,
+                  -0.5,
+                  0.03,
+                  0.19,
+                  0.29,
+                  0.05,
+                  -0.28,
                   -0.29,
-                  -0.26,
-                  0.09,
-                  0.07,
-                  -0.02,
-                  -0.07,
-                  -0.1
+                  -0.28
                 ],
                 "render_type": "bar",
                 "stack": "cpi-passthrough",
@@ -762,15 +762,15 @@
                 "y_axis_id": "left",
                 "span_gaps": false,
                 "values": [
-                  -0.3,
-                  0.05,
-                  0.59,
-                  0.66,
-                  -0.15,
-                  0.06,
-                  -0.08,
-                  -0.06,
-                  0.04
+                  0.14,
+                  0.23,
+                  0.26,
+                  0.22,
+                  -0.36,
+                  0.07,
+                  0.18,
+                  0.16,
+                  0.21
                 ],
                 "render_type": "bar",
                 "stack": "cpi-passthrough",
