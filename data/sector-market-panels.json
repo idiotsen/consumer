@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-07",
+  "updated_at": "2026-08-09",
   "source": "Tushare sw_daily + index_member + fina_indicator_vip",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -144,10 +144,10 @@
           "pb_roe_alignment": {
             "pb_pct_3y": 6.4,
             "pb_pct_5y": 3.9,
-            "roe_pct_20q": 35.0,
-            "current_roe": 2.39,
+            "roe_pct_20q": 55.0,
+            "current_roe": 3.58,
             "current_roe_period": "2026-06-30",
-            "match_gap": -31.1,
+            "match_gap": -51.1,
             "status": "cheap_vs_roe",
             "label": "业绩强于估值"
           }
