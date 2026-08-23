@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21",
+  "updated_at": "2026-08-23",
   "source": "Tushare sw_daily + index_member + fina_indicator_vip",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -48,12 +48,12 @@
           "pb_roe_alignment": {
             "pb_pct_3y": 56.7,
             "pb_pct_5y": 34.5,
-            "roe_pct_20q": 90.0,
-            "current_roe": 1.68,
+            "roe_pct_20q": 15.0,
+            "current_roe": -1.7,
             "current_roe_period": "2026-06-30",
-            "match_gap": -55.5,
-            "status": "cheap_vs_roe",
-            "label": "业绩强于估值"
+            "match_gap": 19.5,
+            "status": "balanced",
+            "label": "估值与业绩基本匹配"
           }
         },
         {
@@ -145,7 +145,7 @@
             "pb_pct_3y": 12.2,
             "pb_pct_5y": 7.3,
             "roe_pct_20q": 55.0,
-            "current_roe": 4.13,
+            "current_roe": 3.58,
             "current_roe_period": "2026-06-30",
             "match_gap": -47.7,
             "status": "cheap_vs_roe",
