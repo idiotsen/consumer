@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28",
+  "updated_at": "2026-08-30",
   "source": "Tushare sw_daily + index_member + fina_indicator_vip",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -48,10 +48,10 @@
           "pb_roe_alignment": {
             "pb_pct_3y": 67.6,
             "pb_pct_5y": 43.4,
-            "roe_pct_20q": 20.0,
-            "current_roe": -0.77,
+            "roe_pct_20q": 15.0,
+            "current_roe": -0.86,
             "current_roe_period": "2026-06-30",
-            "match_gap": 23.4,
+            "match_gap": 28.4,
             "status": "expensive_vs_roe",
             "label": "估值高于业绩"
           }
@@ -144,12 +144,12 @@
           "pb_roe_alignment": {
             "pb_pct_3y": 14.7,
             "pb_pct_5y": 8.8,
-            "roe_pct_20q": 35.0,
-            "current_roe": 2.09,
+            "roe_pct_20q": 25.0,
+            "current_roe": 1.68,
             "current_roe_period": "2026-06-30",
-            "match_gap": -26.2,
-            "status": "cheap_vs_roe",
-            "label": "业绩强于估值"
+            "match_gap": -16.2,
+            "status": "balanced",
+            "label": "估值与业绩基本匹配"
           }
         }
       ]
@@ -232,10 +232,10 @@
           "pb_roe_alignment": {
             "pb_pct_3y": 21.4,
             "pb_pct_5y": 23.0,
-            "roe_pct_20q": 60.0,
-            "current_roe": 1.83,
+            "roe_pct_20q": 55.0,
+            "current_roe": 1.41,
             "current_roe_period": "2026-06-30",
-            "match_gap": -37.0,
+            "match_gap": -32.0,
             "status": "cheap_vs_roe",
             "label": "业绩强于估值"
           }
