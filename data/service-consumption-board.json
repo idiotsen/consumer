@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31T15:22:28",
+  "updated_at": "2026-09-16T16:24:56",
   "source": "餐饮指数来自 input_data/industry_data.xlsx；社零、餐饮社零、飞天批价与茅台相对PE主源来自 iFind，失败时回退国家统计局 / input_data/industry_data.xlsx",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -30,7 +30,7 @@
                 "chart_type": "line",
                 "x_axis_label": "自然日历",
                 "latest_label": "数据截至",
-                "latest_time_text": "2026-08-22",
+                "latest_time_text": "2026-09-05",
                 "show_point_markers": false,
                 "latest_changes": [],
                 "labels": [
@@ -790,11 +790,11 @@
                       null,
                       null,
                       null,
-                      259.92,
+                      253.27,
                       null,
                       null,
                       null,
-                      210.25,
+                      203.93,
                       null,
                       null,
                       null,
@@ -995,11 +995,11 @@
                       null,
                       null,
                       null,
+                      262.33,
                       null,
                       null,
                       null,
-                      null,
-                      null,
+                      216.07,
                       null,
                       null,
                       null,
@@ -1069,7 +1069,7 @@
                 "chart_type": "line",
                 "x_axis_label": "自然日历",
                 "latest_label": "数据截至",
-                "latest_time_text": "2026-08-22",
+                "latest_time_text": "2026-09-05",
                 "show_point_markers": false,
                 "latest_changes": [],
                 "labels": [
@@ -1829,11 +1829,11 @@
                       null,
                       null,
                       null,
-                      389.87,
+                      380.49,
                       null,
                       null,
                       null,
-                      371.47,
+                      362.59,
                       null,
                       null,
                       null,
@@ -2034,11 +2034,11 @@
                       null,
                       null,
                       null,
+                      388.74,
                       null,
                       null,
                       null,
-                      null,
-                      null,
+                      363.63,
                       null,
                       null,
                       null,
@@ -2108,7 +2108,7 @@
                 "chart_type": "line",
                 "x_axis_label": "自然日历",
                 "latest_label": "数据截至",
-                "latest_time_text": "2026-08-22",
+                "latest_time_text": "2026-09-05",
                 "show_point_markers": false,
                 "latest_changes": [],
                 "labels": [
@@ -2868,11 +2868,11 @@
                       null,
                       null,
                       null,
-                      66.67,
+                      66.57,
                       null,
                       null,
                       null,
-                      56.6,
+                      56.24,
                       null,
                       null,
                       null,
@@ -3073,11 +3073,11 @@
                       null,
                       null,
                       null,
+                      67.48,
                       null,
                       null,
                       null,
-                      null,
-                      null,
+                      59.42,
                       null,
                       null,
                       null,
@@ -3153,7 +3153,7 @@
                 "chart_type": "line",
                 "x_axis_label": "相对春节周序",
                 "latest_label": "数据截至",
-                "latest_time_text": "2026-08-22",
+                "latest_time_text": "2026-09-05",
                 "show_point_markers": false,
                 "latest_changes": [],
                 "labels": [
@@ -3317,7 +3317,7 @@
                 "chart_type": "line",
                 "x_axis_label": "相对春节周序",
                 "latest_label": "数据截至",
-                "latest_time_text": "2026-08-22",
+                "latest_time_text": "2026-09-05",
                 "show_point_markers": false,
                 "latest_changes": [],
                 "labels": [
@@ -3481,7 +3481,7 @@
                 "chart_type": "line",
                 "x_axis_label": "相对春节周序",
                 "latest_label": "数据截至",
-                "latest_time_text": "2026-08-22",
+                "latest_time_text": "2026-09-05",
                 "show_point_markers": false,
                 "latest_changes": [],
                 "labels": [
@@ -4073,11 +4073,10 @@
           "chart_type": "line",
           "x_axis_label": "月份",
           "latest_label": "数据截至",
-          "latest_time_text": "2026-07",
+          "latest_time_text": "2026-08",
           "show_point_markers": false,
           "latest_changes": [],
           "labels": [
-            "2022-07",
             "2022-08",
             "2022-09",
             "2022-10",
@@ -4121,7 +4120,8 @@
             "2026-04",
             "2026-05",
             "2026-06",
-            "2026-07"
+            "2026-07",
+            "2026-08"
           ],
           "series": [
             {
@@ -4132,7 +4132,6 @@
               "span_gaps": false,
               "show_point_markers": true,
               "values": [
-                2.7,
                 5.4,
                 2.5,
                 -0.5,
@@ -4176,7 +4175,8 @@
                 0.2,
                 -0.6,
                 1.0,
-                0.6
+                0.6,
+                0.4
               ]
             },
             {
@@ -4187,7 +4187,6 @@
               "span_gaps": false,
               "show_point_markers": true,
               "values": [
-                -1.5,
                 8.4,
                 -1.7,
                 -8.1,
@@ -4231,7 +4230,8 @@
                 2.2,
                 0.6,
                 1.2,
-                1.4
+                1.4,
+                1.1
               ]
             }
           ]
