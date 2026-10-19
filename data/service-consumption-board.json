@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T17:06:53",
+  "updated_at": "2026-10-19T14:05:48",
   "source": "餐饮指数来自 input_data/industry_data.xlsx；社零、餐饮社零、飞天批价与茅台相对PE主源来自 iFind，失败时回退国家统计局 / input_data/industry_data.xlsx；相对PE增量采用已核验的 Wind Excel COM PE_TTM",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -30,7 +30,7 @@
                 "chart_type": "line",
                 "x_axis_label": "自然日历",
                 "latest_label": "数据截至",
-                "latest_time_text": "2026-10-03",
+                "latest_time_text": "2026-10-10",
                 "show_point_markers": false,
                 "latest_changes": [],
                 "labels": [
@@ -814,7 +814,7 @@
                       null,
                       null,
                       null,
-                      219.29,
+                      210.93,
                       null,
                       null,
                       null,
@@ -1019,7 +1019,7 @@
                       null,
                       null,
                       null,
-                      null,
+                      227.81,
                       null,
                       null,
                       null,
@@ -1069,7 +1069,7 @@
                 "chart_type": "line",
                 "x_axis_label": "自然日历",
                 "latest_label": "数据截至",
-                "latest_time_text": "2026-10-03",
+                "latest_time_text": "2026-10-10",
                 "show_point_markers": false,
                 "latest_changes": [],
                 "labels": [
@@ -1853,7 +1853,7 @@
                       null,
                       null,
                       null,
-                      408.86,
+                      395.9,
                       null,
                       null,
                       null,
@@ -2058,7 +2058,7 @@
                       null,
                       null,
                       null,
-                      null,
+                      404.71,
                       null,
                       null,
                       null,
@@ -2108,7 +2108,7 @@
                 "chart_type": "line",
                 "x_axis_label": "自然日历",
                 "latest_label": "数据截至",
-                "latest_time_text": "2026-10-03",
+                "latest_time_text": "2026-10-10",
                 "show_point_markers": false,
                 "latest_changes": [],
                 "labels": [
@@ -2892,7 +2892,7 @@
                       null,
                       null,
                       null,
-                      53.64,
+                      53.28,
                       null,
                       null,
                       null,
@@ -3097,7 +3097,7 @@
                       null,
                       null,
                       null,
-                      null,
+                      56.29,
                       null,
                       null,
                       null,
@@ -3153,7 +3153,7 @@
                 "chart_type": "line",
                 "x_axis_label": "相对春节周序",
                 "latest_label": "数据截至",
-                "latest_time_text": "2026-10-03",
+                "latest_time_text": "2026-10-10",
                 "show_point_markers": false,
                 "latest_changes": [],
                 "labels": [
@@ -3317,7 +3317,7 @@
                 "chart_type": "line",
                 "x_axis_label": "相对春节周序",
                 "latest_label": "数据截至",
-                "latest_time_text": "2026-10-03",
+                "latest_time_text": "2026-10-10",
                 "show_point_markers": false,
                 "latest_changes": [],
                 "labels": [
@@ -3481,7 +3481,7 @@
                 "chart_type": "line",
                 "x_axis_label": "相对春节周序",
                 "latest_label": "数据截至",
-                "latest_time_text": "2026-10-03",
+                "latest_time_text": "2026-10-10",
                 "show_point_markers": false,
                 "latest_changes": [],
                 "labels": [
@@ -4073,11 +4073,10 @@
           "chart_type": "line",
           "x_axis_label": "月份",
           "latest_label": "数据截至",
-          "latest_time_text": "2026-08",
+          "latest_time_text": "2026-09",
           "show_point_markers": false,
           "latest_changes": [],
           "labels": [
-            "2022-08",
             "2022-09",
             "2022-10",
             "2022-11",
@@ -4121,7 +4120,8 @@
             "2026-05",
             "2026-06",
             "2026-07",
-            "2026-08"
+            "2026-08",
+            "2026-09"
           ],
           "series": [
             {
@@ -4132,7 +4132,6 @@
               "span_gaps": false,
               "show_point_markers": true,
               "values": [
-                5.4,
                 2.5,
                 -0.5,
                 -5.9,
@@ -4176,7 +4175,8 @@
                 -0.6,
                 1.0,
                 0.6,
-                0.4
+                0.4,
+                1.1
               ]
             },
             {
@@ -4187,7 +4187,6 @@
               "span_gaps": false,
               "show_point_markers": true,
               "values": [
-                8.4,
                 -1.7,
                 -8.1,
                 -8.4,
@@ -4231,7 +4230,8 @@
                 0.6,
                 1.2,
                 1.4,
-                1.1
+                1.1,
+                2.1
               ]
             }
           ]
@@ -4239,11 +4239,11 @@
         {
           "chart_id": "restaurant-maotai-price-relative-pe",
           "title": "飞天批价和茅台相对PE",
-          "description": "飞天茅台当年原箱批发参考价截至2026-05-13；茅台/沪深300相对PE截至2026-10-12。",
+          "description": "飞天茅台当年原箱批发参考价截至2026-05-13；茅台/沪深300相对PE截至2026-10-16。",
           "chart_type": "line",
           "x_axis_label": "日期",
           "latest_label": "批价截至 2026-05-13 / 相对PE截至",
-          "latest_time_text": "2026-10-12",
+          "latest_time_text": "2026-10-16",
           "show_point_markers": false,
           "latest_changes": [],
           "labels": [
@@ -5589,7 +5589,11 @@
             "2026-09-30",
             "2026-10-08",
             "2026-10-09",
-            "2026-10-12"
+            "2026-10-12",
+            "2026-10-13",
+            "2026-10-14",
+            "2026-10-15",
+            "2026-10-16"
           ],
           "series": [
             {
@@ -6841,6 +6845,10 @@
                 1680.0,
                 1685.0,
                 1680.0,
+                null,
+                null,
+                null,
+                null,
                 null,
                 null,
                 null,
@@ -8293,7 +8301,11 @@
                 1.47,
                 1.47,
                 1.48,
-                1.5
+                1.5,
+                1.49,
+                1.51,
+                1.55,
+                1.57
               ]
             }
           ]

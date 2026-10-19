@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T14:54:00",
+  "updated_at": "2026-10-19T14:04:43",
   "source": "iFind + 公共数据池（Wind历史） + DM/国家统计局核验补充（通胀、消费者信心、居民收入消费）；央行储户意愿 + input_data/employee_history.xlsx（上市公司薪酬） + input_data/household_asset.xlsx（居民资产负债表）",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -1329,14 +1329,14 @@
           "chart_type": "line",
           "x_axis_label": "季度",
           "latest_label": "数据截至",
-          "latest_time_text": "2026Q2",
+          "latest_time_text": "2026Q3",
           "show_point_markers": true,
           "latest_changes": [
             {
-              "label": "2026Q2",
+              "label": "2026Q3",
               "basis_label": "同比",
               "direction": "down",
-              "delta_value": -0.85,
+              "delta_value": -0.89,
               "unit": "%"
             }
           ],
@@ -1447,7 +1447,7 @@
               "values": [
                 58.22,
                 59.98,
-                null,
+                60.77,
                 null
               ]
             }
