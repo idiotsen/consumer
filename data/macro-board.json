@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T14:04:43",
+  "updated_at": "2026-11-16T13:38:01",
   "source": "iFind + 公共数据池（Wind历史） + DM/国家统计局核验补充（通胀、消费者信心、居民收入消费）；央行储户意愿 + input_data/employee_history.xlsx（上市公司薪酬） + input_data/household_asset.xlsx（居民资产负债表）",
   "stale_after_minutes": 1440,
   "status": "ok",
@@ -806,7 +806,7 @@
         "chart_type": "line",
         "x_axis_label": "季度",
         "latest_label": "数据截至",
-        "latest_time_text": "2026Q2",
+        "latest_time_text": "2026Q3",
         "show_point_markers": false,
         "latest_changes": [
           {
@@ -820,7 +820,7 @@
             "label": "城镇居民人均可支配收入增速",
             "basis_label": "较上季",
             "direction": "up",
-            "delta_value": 0.2,
+            "delta_value": 0.1,
             "unit": "%"
           }
         ],
@@ -862,7 +862,8 @@
           "2025Q3",
           "2025Q4",
           "2026Q1",
-          "2026Q2"
+          "2026Q2",
+          "2026Q3"
         ],
         "series": [
           {
@@ -908,6 +909,7 @@
               null,
               null,
               3.75,
+              null,
               null,
               null
             ],
@@ -957,7 +959,8 @@
               4.4,
               4.3,
               4.2,
-              4.4
+              4.4,
+              4.5
             ],
             "show_point_markers": true
           }
@@ -1354,7 +1357,7 @@
               "y_axis_id": "left",
               "span_gaps": false,
               "values": [
-                null,
+                61.55,
                 63.56,
                 63.81,
                 66.25
