@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-19T14:05:23",
-  "source": "input_data/bingshan_index.xlsx + iFind/公共数据池（Wind历史，新房价格与销售） + input_data/industry_data.xlsx",
+  "updated_at": "2026-11-16T14:06:22",
+  "source": "input_data/bingshan_index.xlsx + 历史缓存/公共数据池 + 国家统计局公开数据库与月度公告（新房价格、住宅销售） + input_data/industry_data.xlsx",
   "stale_after_minutes": 1440,
   "status": "ok",
   "status_message": "已接入 3 个栏目，待补充 0 个栏目，加载失败 0 个栏目。",
@@ -2023,22 +2023,20 @@
     {
       "section_id": "new-home",
       "title": "新房",
-      "description": "展示 70 大中城市新房价格同环比，以及新房销售面积和金额同比；iFind 不可用时接续公共数据池已核验序列，历史缓存保留。",
+      "description": "展示70城新房价格同环比及商品住宅销售面积、金额同比；国家统计局公开数据自动接续，历史缓存保留。",
       "status": "ready",
       "charts": [
         {
           "chart_id": "new-home-price-tier",
           "title": "70大中城市新房价格同环比",
-          "description": "70 大中城市新建商品住宅价格当月同比与环比，iFind 与公共数据池同口径序列接续，滚动 5 年展示。",
+          "description": "70 大中城市新建商品住宅价格当月同比与环比，国家统计局70城指数简单平均、保留一位小数，接续历史缓存，滚动5年展示。",
           "chart_type": "combo",
           "x_axis_label": "月份",
           "latest_label": "数据截至",
-          "latest_time_text": "2026-08",
+          "latest_time_text": "2026-10",
           "show_point_markers": false,
           "latest_changes": [],
           "labels": [
-            "2021-08",
-            "2021-09",
             "2021-10",
             "2021-11",
             "2021-12",
@@ -2097,7 +2095,9 @@
             "2026-05",
             "2026-06",
             "2026-07",
-            "2026-08"
+            "2026-08",
+            "2026-09",
+            "2026-10"
           ],
           "series": [
             {
@@ -2109,8 +2109,6 @@
               "span_gaps": false,
               "show_point_markers": true,
               "values": [
-                3.7,
-                3.3,
                 2.8,
                 2.4,
                 2.0,
@@ -2169,7 +2167,9 @@
                 -3.64,
                 -3.54,
                 -3.4,
-                -3.3
+                -3.3,
+                -3.0,
+                -2.7
               ]
             },
             {
@@ -2181,8 +2181,6 @@
               "span_gaps": false,
               "show_point_markers": false,
               "values": [
-                0.2,
-                -0.1,
                 -0.3,
                 -0.3,
                 -0.3,
@@ -2241,6 +2239,8 @@
                 -0.2,
                 -0.15,
                 -0.2,
+                -0.2,
+                -0.1,
                 -0.2
               ]
             }
@@ -2249,16 +2249,14 @@
         {
           "chart_id": "new-home-sales-monthly",
           "title": "新房销售面积和金额同比",
-          "description": "新建商品住宅销售面积和销售金额同比，iFind 与公共数据池同口径序列接续，1—2月为合计同比，滚动 5 年展示。",
+          "description": "国家统计局商品住宅累计销售面积和金额差分计算当月同比，1—2月为合计同比；发布日缺失月份采用官方公告累计值，接续历史缓存，滚动5年展示。",
           "chart_type": "line",
           "x_axis_label": "月份",
           "latest_label": "数据截至",
-          "latest_time_text": "2026-08",
+          "latest_time_text": "2026-10",
           "show_point_markers": false,
           "latest_changes": [],
           "labels": [
-            "2021-08",
-            "2021-09",
             "2021-10",
             "2021-11",
             "2021-12",
@@ -2317,7 +2315,9 @@
             "2026-05",
             "2026-06",
             "2026-07",
-            "2026-08"
+            "2026-08",
+            "2026-09",
+            "2026-10"
           ],
           "series": [
             {
@@ -2328,8 +2328,6 @@
               "span_gaps": true,
               "show_point_markers": true,
               "values": [
-                -17.61,
-                -15.77,
                 -24.11,
                 -16.29,
                 -19.45,
@@ -2388,7 +2386,9 @@
                 -12.35,
                 -15.34,
                 -15.5,
-                -16.23
+                -16.23,
+                -21.28,
+                -19.18
               ]
             },
             {
@@ -2399,8 +2399,6 @@
               "span_gaps": true,
               "show_point_markers": true,
               "values": [
-                -19.65,
-                -16.93,
                 -24.13,
                 -17.15,
                 -19.64,
@@ -2459,7 +2457,9 @@
                 -8.61,
                 -14.24,
                 -9.93,
-                -12.79
+                -12.79,
+                -19.22,
+                -19.31
               ]
             }
           ]

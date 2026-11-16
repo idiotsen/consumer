@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-16T13:38:01",
-  "source": "iFind + 公共数据池（Wind历史） + DM/国家统计局核验补充（通胀、消费者信心、居民收入消费）；央行储户意愿 + input_data/employee_history.xlsx（上市公司薪酬） + input_data/household_asset.xlsx（居民资产负债表）",
+  "updated_at": "2026-11-16T14:06:05",
+  "source": "历史缓存/公共数据池 + 国家统计局（通胀、居民收入消费） + 东方财富转引国家统计局（消费者信心总指数） + 央行储户意愿；input_data/employee_history.xlsx（上市公司薪酬）及 household_asset.xlsx（居民资产负债表）；iFind在线请求已禁用",
   "stale_after_minutes": 1440,
-  "status": "ok",
-  "status_message": "已接入 4 个宏观栏目，0 个栏目保留占位，0 个栏目加载失败。",
+  "status": "partial",
+  "status_message": "已接入 4 个宏观栏目，0 个栏目保留占位，0 个栏目加载失败。 自动补充源未完成核验：消费者信心分项；相关数据保留原截止日期。",
   "board_id": "macro",
   "title": "宏观",
   "description": "宏观看板当前接入通胀、收入、居民资产负债表，以及居民消费与消费意愿四组图表。",
@@ -25,28 +25,28 @@
             "chart_type": "line",
             "x_axis_label": "时间",
             "latest_label": "数据截至",
-            "latest_time_text": "2026-08",
+            "latest_time_text": "2026-10",
             "show_point_markers": false,
             "latest_changes": [
               {
                 "label": "PPI同比",
                 "basis_label": "环比",
                 "direction": "up",
-                "delta_value": 0.3,
+                "delta_value": 0.7,
                 "unit": "%"
               },
               {
                 "label": "CPI同比",
                 "basis_label": "环比",
-                "direction": "up",
-                "delta_value": 0.3,
+                "direction": "down",
+                "delta_value": -0.2,
                 "unit": "%"
               },
               {
                 "label": "核心CPI同比（剔除其他用品与服务）",
                 "basis_label": "环比",
-                "direction": "up",
-                "delta_value": 0.06,
+                "direction": "down",
+                "delta_value": -0.08,
                 "unit": "%"
               }
             ],
@@ -177,7 +177,9 @@
               "2026-05",
               "2026-06",
               "2026-07",
-              "2026-08"
+              "2026-08",
+              "2026-09",
+              "2026-10"
             ],
             "series": [
               {
@@ -313,7 +315,9 @@
                   3.9,
                   4.1,
                   3.5,
-                  3.8
+                  3.8,
+                  5.0,
+                  5.7
                 ]
               },
               {
@@ -449,7 +453,9 @@
                   1.2,
                   1.0,
                   0.5,
-                  0.8
+                  0.8,
+                  0.9,
+                  0.7
                 ]
               },
               {
@@ -585,7 +591,9 @@
                   0.81,
                   0.81,
                   0.73,
-                  0.79
+                  0.79,
+                  0.83,
+                  0.75
                 ]
               }
             ]
@@ -601,62 +609,62 @@
             "chart_type": "combo",
             "x_axis_label": "月份",
             "latest_label": "数据截至",
-            "latest_time_text": "2026-08",
+            "latest_time_text": "2026-10",
             "show_point_markers": false,
             "latest_changes": [
               {
                 "label": "CPI：同比",
                 "basis_label": "环比",
-                "direction": "up",
-                "delta_value": 0.3,
+                "direction": "down",
+                "delta_value": -0.2,
                 "unit": "%"
               },
               {
                 "label": "服务项拉动",
                 "basis_label": "环比",
-                "direction": "up",
-                "delta_value": 0.04,
+                "direction": "down",
+                "delta_value": -0.04,
                 "unit": "pct"
               },
               {
                 "label": "食品拉动",
                 "basis_label": "环比",
                 "direction": "down",
-                "delta_value": -0.12,
+                "delta_value": -0.21,
                 "unit": "pct"
               },
               {
                 "label": "交通燃料拉动",
                 "basis_label": "环比",
                 "direction": "up",
-                "delta_value": 0.26,
+                "delta_value": 0.18,
                 "unit": "pct"
               },
               {
                 "label": "黄金饰品拉动",
                 "basis_label": "环比",
-                "direction": "up",
-                "delta_value": 0.05,
+                "direction": "down",
+                "delta_value": -0.11,
                 "unit": "pct"
               },
               {
                 "label": "工业消费品拉动（不含燃料+黄金饰品）",
                 "basis_label": "环比",
-                "direction": "up",
-                "delta_value": 0.06,
+                "direction": "down",
+                "delta_value": -0.02,
                 "unit": "pct"
               }
             ],
             "labels": [
-              "2025-11",
-              "2025-12",
               "2026-02",
               "2026-03",
               "2026-04",
               "2026-05",
               "2026-06",
               "2026-07",
-              "2026-08"
+              "2026-08",
+              "2026-09",
+              "2026-10"
             ],
             "series": [
               {
@@ -666,15 +674,15 @@
                 "y_axis_id": "left",
                 "span_gaps": false,
                 "values": [
-                  0.7,
-                  0.8,
                   0.8,
                   1.0,
                   1.2,
                   1.2,
                   1.0,
                   0.5,
-                  0.8
+                  0.8,
+                  0.9,
+                  0.7
                 ],
                 "render_type": "line",
                 "show_point_markers": true
@@ -686,15 +694,15 @@
                 "y_axis_id": "left",
                 "span_gaps": false,
                 "values": [
-                  0.32,
-                  0.27,
                   0.72,
                   0.36,
                   0.41,
                   0.36,
                   0.36,
                   0.32,
-                  0.36
+                  0.36,
+                  0.36,
+                  0.32
                 ],
                 "render_type": "bar",
                 "stack": "cpi-passthrough",
@@ -707,15 +715,15 @@
                 "y_axis_id": "left",
                 "span_gaps": false,
                 "values": [
-                  -0.29,
-                  -0.26,
                   0.09,
                   0.07,
                   -0.02,
                   -0.07,
                   -0.1,
                   -0.12,
-                  -0.24
+                  -0.24,
+                  -0.29,
+                  -0.5
                 ],
                 "render_type": "bar",
                 "stack": "cpi-passthrough",
@@ -728,15 +736,15 @@
                 "y_axis_id": "left",
                 "span_gaps": false,
                 "values": [
-                  -0.26,
-                  -0.29,
                   -0.31,
                   0.12,
                   0.61,
                   0.74,
                   0.53,
                   0.03,
-                  0.29
+                  0.29,
+                  0.52,
+                  0.7
                 ],
                 "render_type": "bar",
                 "stack": "cpi-passthrough",
@@ -749,15 +757,15 @@
                 "y_axis_id": "left",
                 "span_gaps": false,
                 "values": [
-                  0.35,
-                  0.41,
                   0.46,
                   0.39,
                   0.28,
                   0.23,
                   0.17,
                   0.15,
-                  0.2
+                  0.2,
+                  0.14,
+                  0.03
                 ],
                 "render_type": "bar",
                 "stack": "cpi-passthrough",
@@ -770,15 +778,15 @@
                 "y_axis_id": "left",
                 "span_gaps": false,
                 "values": [
-                  0.59,
-                  0.66,
                   -0.15,
                   0.06,
                   -0.08,
                   -0.06,
                   0.04,
                   0.13,
-                  0.19
+                  0.19,
+                  0.17,
+                  0.15
                 ],
                 "render_type": "bar",
                 "stack": "cpi-passthrough",
@@ -1459,18 +1467,18 @@
         {
           "chart_id": "consumer-confidence",
           "title": "消费者信心",
-          "description": "基于国家统计局月度消费者信心数据，iFind 与公共数据池接续，包含总指数以及就业、收入和消费意愿三个分项。",
+          "description": "国家统计局月度数据；各序列截止期：总指数 2026-09 / 就业 2026-07 / 收入 2026-07 / 消费意愿 2026-07。总指数由公开接口接续，分项保留历史值且不向后填充。",
           "chart_type": "line",
           "x_axis_label": "时间",
-          "latest_label": "数据截至",
-          "latest_time_text": "2026-07",
+          "latest_label": "总指数截至",
+          "latest_time_text": "2026-09",
           "show_point_markers": false,
           "latest_changes": [
             {
               "label": "总指数",
               "basis_label": "环比",
               "direction": "down",
-              "delta_value": -0.2,
+              "delta_value": -0.5,
               "unit": "点"
             },
             {
@@ -1586,7 +1594,9 @@
             "2026-04",
             "2026-05",
             "2026-06",
-            "2026-07"
+            "2026-07",
+            "2026-08",
+            "2026-09"
           ],
           "series": [
             {
@@ -1686,7 +1696,9 @@
                 89.0,
                 89.9,
                 89.4,
-                89.2
+                89.2,
+                89.5,
+                89.0
               ]
             },
             {
@@ -1786,7 +1798,9 @@
                 73.4,
                 74.6,
                 73.7,
-                73.4
+                73.4,
+                null,
+                null
               ]
             },
             {
@@ -1886,7 +1900,9 @@
                 97.9,
                 98.8,
                 98.5,
-                98.2
+                98.2,
+                null,
+                null
               ]
             },
             {
@@ -1986,7 +2002,9 @@
                 95.6,
                 96.4,
                 96.0,
-                96.0
+                96.0,
+                null,
+                null
               ]
             }
           ]
