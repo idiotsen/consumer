@@ -1470,7 +1470,7 @@
           "description": "国家统计局月度数据；各序列截止期：总指数 2026-09 / 就业 2026-07 / 收入 2026-07 / 消费意愿 2026-07。总指数由公开接口接续，分项保留历史值且不向后填充。",
           "chart_type": "line",
           "x_axis_label": "时间",
-          "latest_label": "总指数截至",
+          "latest_label": "就业、收入、消费意愿截至 2026-07 / 总指数截至",
           "latest_time_text": "2026-09",
           "show_point_markers": false,
           "latest_changes": [
